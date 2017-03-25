@@ -293,7 +293,7 @@ def validateSet(set_data):
                         'init_date' : init_date,
                         'deck_min' : int(cycle_data['deck_min']),
                         'cycle_length' : int(cycle_data['cycle_length']),
-                        'total_sessions' : 0,
+                        'total_sessions' : 1,
                         'term_queues' : term_queues,
                         'terms_dict' : terms_dict}
 

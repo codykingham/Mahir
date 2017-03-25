@@ -12,7 +12,6 @@ def studySet(set_data):
 
     scoreNewTerms will pick up where user last left off at to score remaining un-scored terms.
     '''
-    set_data['total_sessions'] += 1
 
     # retrieve set data
     term_queues = set_data['term_queues']
@@ -29,7 +28,7 @@ def studySet(set_data):
     deck_stats = deck_data['deck_stats']
 
     clearDisplay()
-    print(f"\nbeginning study session {set_data['total_sessions']}...\n")
+    print(f"\nbeginning study session {set_data['total_sessions']+1}...\n")
     time.sleep(1)
     clearDisplay()
 
@@ -47,7 +46,7 @@ def studySet(set_data):
         # display deck name and statistics
         print(set_data['name'])
         for score, stat in deck_stats.items():
-            print(f'score {score}: {stat} cards')
+            print(f'score {score}: {stat} terms')
 
         # display control information
         print('\ndefinition - [SPACE]\tscore - [0-3]\tedit previous - [e]\tconfirm - [y/n]\tquit - [q]\n')
@@ -143,6 +142,7 @@ def studySet(set_data):
         recal_term_queues = recalibrated_set['term_queues']
 
         # update set data
+        set_data['total_sessions'] += 1
         set_data['terms_dict'] = recal_terms_dict
         set_data['term_queues'] = recal_term_queues
 

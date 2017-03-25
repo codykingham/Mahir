@@ -5,27 +5,27 @@ from Study import studySet
 from Ui import askQuestion, clearDisplay, runWelcome, displayNew
 from ManageSets import validateSet
 
-version = '0.5 Beta'
-
-with open('config.json') as config_file:
-    settings = json.load(config_file)
-
-# configure settings
-term_set = settings['set']
-delimiter = settings['delimiter']
-set_type = settings['type']
-
-    # load terms
-if set_type == 'new':
-    terms = loadNewSet(term_set, delimiter=delimiter)
-elif set_type == 'load':
-    terms = loadExistingSet(term_set)
-
 
 def runProgram():
     '''
     Run Mahir, display welcome screen, display menu options, wait for input.
     '''
+
+    version = '0.5 Beta'
+
+    with open('config.json') as config_file:
+        settings = json.load(config_file)
+
+    # configure settings
+    term_set = settings['set']
+    delimiter = settings['delimiter']
+    set_type = settings['type']
+
+    # load terms
+    if set_type == 'new':
+        terms = loadNewSet(term_set, delimiter=delimiter)
+    elif set_type == 'load':
+        terms = loadExistingSet(term_set)
 
     # Run the Menu Loop
     menu_options = {'score', 'q', 'study'}
@@ -35,9 +35,12 @@ def runProgram():
         runWelcome(version)
         # report on loaded terms
 
-        if set_type =='load':
+        # print loaded terms report for initialized terms
+        if 'init_date' in terms:
             print(f"{len(terms['terms_dict'])} terms loaded from [ {term_set} ]\n")
-        elif set_type =='new':
+
+        # print loaded terms report for new terms
+        else:
             print(f'{len(terms)} terms loaded from [ {term_set} ]\n')
 
 
@@ -63,11 +66,16 @@ def runProgram():
                 scored_terms = scoreNewTerms(terms)
 
                 # dump the scored terms
-                with open('scored_terms.json', 'w') as outfile:
+                if not term_set.endswith('.json'):
+                    clearDisplay()
+                    term_set = askQuestion({}, prompt='Name the new set...', simple=False)
+                
+                with open(term_set, 'w') as outfile:
                     json.dump(scored_terms,
                               outfile,
                               indent=1,
                               ensure_ascii=False)
+                
 
         elif module_selection == 'study':
 

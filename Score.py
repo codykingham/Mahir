@@ -109,7 +109,8 @@ def scoreNewTerms(terms_dict):
                             time.sleep(.5)
                             displayNew(f'{term_text}')
                             break
-
+        clearDisplay()
+        time.sleep(1)
         print(f'{score_count} terms have been scored and saved')
         break
 
