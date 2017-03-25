@@ -1,16 +1,17 @@
 # Mahir 0.5 Beta
 
-Experimental, long-term learning vocabulary program for command line.
+Experimental, bulk, long-term vocabulary review program for command line.
 
 © 2017 Cody Kingham, creative commons, CC BY-NC 4.0
 
 ## What is Mahir?
 
-Mahir is designed for reviewing large amounts of vocabulary terms while still learning new ones. Vocabulary tools like Quizlet are good for small stacks of vocabulary words that are marked in a binary way (starred or unstarred, learned or unlearned). Mahir, on the other hand, specializes in **bulk** vocabulary review and learning with a focus on familiarity through a 0-3 ranking system. It is a management system that ensures a user sees familiar terms regularly (to stay familiar), while introducing new terms. As terms are scored by a user for familiarity, Mahir dynamically adjusts each study session to reflect the new scores.
+Mahir is designed for reviewing large amounts of vocabulary terms while still learning new ones. Vocabulary tools like Quizlet are good for small stacks of vocabulary words that are marked in a binary way (starred or unstarred, learned or unlearned). Mahir, on the other hand, specializes in **bulk** vocabulary review and learning with a focus on familiarity through a 0-3 ranking system. It is a management system that ensures a user sees familiar terms regularly (to stay familiar), while introducing new terms. As terms are scored by a user for familiarity, Mahir dynamically adjusts each study session to reflect the new scores. Familiar terms are seen at least once in a study cycle (group of sessions); less familiar terms are seen numerous times depending on their score.
 
 
 ## Running Mahir
 `cd Mahir`
+
 `python3 Mahir.py`
 
 ## Set-Up and Use
