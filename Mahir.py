@@ -1,9 +1,9 @@
-import json, time
+import json, time, csv
 from Load import loadNewSet, loadExistingSet
 from Score import scoreNewTerms
 from Study import studySet
 from Ui import askQuestion, clearDisplay, runWelcome, displayNew
-from ManageSets import validateSet
+from ManageSets import validateSet, addToTerms
 
 
 def runProgram():
@@ -11,7 +11,7 @@ def runProgram():
     Run Mahir, display welcome screen, display menu options, wait for input.
     '''
 
-    version = '0.5 Beta'
+    version = '0.6 Beta'
 
     with open('config.json') as config_file:
         settings = json.load(config_file)
@@ -28,7 +28,7 @@ def runProgram():
         terms = loadExistingSet(term_set)
 
     # Run the Menu Loop
-    menu_options = {'score', 'q', 'study'}
+    menu_options = {'score', 'q', 'study', 'add'}
     while True:
 
         # display the welcome text
@@ -50,7 +50,7 @@ def runProgram():
                                        simple=False,
                                        reply=f'invalid...select from {sorted(menu_options)}\n')
 
-        # ** SCORING PROGRAM **
+        # SCORING
         if module_selection == 'score':
 
             # confirm scoring program
@@ -76,7 +76,7 @@ def runProgram():
                               indent=1,
                               ensure_ascii=False)
                 
-
+        # STUDY
         elif module_selection == 'study':
 
             # TO DO: remove the clear display and message
@@ -95,8 +95,60 @@ def runProgram():
                 print('returning to menu...')
                 time.sleep(.5)
 
+        # ADD
+        elif module_selection == 'add':
+
+            valid_path = False
+
+            while True:
+                clearDisplay()
+                print('Enter a valid pathway or "q" to quit...\n')
+                add_file = askQuestion({},
+                            prompt='enter the path to the new terms file...\n',
+                            confirm=True,
+                            simple=False)
+
+                try:
+                    new_terms_file = open(add_file, 'r')
+                    valid_path = True
+
+                except FileNotFoundError:
+                    if add_file != 'q':
+                        clearDisplay()
+                        print('file not found! Please re-enter the path...')
+                        time.sleep(1.5)
+
+                if valid_path:
+                    break
+
+                elif add_file == 'q':
+                    break
+
+            if valid_path:
+                num_old_terms = len(terms['terms_dict'])
+
+                new_terms = csv.reader(new_terms_file, delimiter=',')
+                new_terms_data = addToTerms(terms, new_terms)
+
+                print(f'\n{len(new_terms_data["terms_dict"]) - num_old_terms} new terms detected...')
+
+                time.sleep(.5)
+
+                with open(term_set, 'w') as outfile:
+                    json.dump(new_terms_data,
+                              outfile,
+                              indent=1,
+                              ensure_ascii=False)
+
+                print('\nterms added!')
+
+                time.sleep(2)
+
+        # QUIT
         elif module_selection == 'q':
             print('\nleaving Mahir...')
             break
+
+
 
 runProgram()

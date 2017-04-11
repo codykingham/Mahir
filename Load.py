@@ -21,6 +21,9 @@ def loadNewSet(dir_name, delimiter='\t'):
 
             # assign id and add to dict
             for term in reader:
+
+                if len(term) < 2:
+                    print(term)
                 cur_id += 1
                 terms[cur_id] = {'term': term[0],
                                  'definition': term[1]}

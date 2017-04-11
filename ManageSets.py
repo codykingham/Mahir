@@ -293,7 +293,7 @@ def validateSet(set_data):
                         'init_date' : init_date,
                         'deck_min' : int(cycle_data['deck_min']),
                         'cycle_length' : int(cycle_data['cycle_length']),
-                        'total_sessions' : 1,
+                        'total_sessions' : 0,
                         'term_queues' : term_queues,
                         'terms_dict' : terms_dict}
 
@@ -354,3 +354,32 @@ def validateSet(set_data):
         print('set ready!')
         time.sleep(.5)
         return set_data
+
+def addToTerms(terms, csv_object):
+
+    '''
+    Add new terms to an existing terms_dict and their queues.
+    Requires standard terms_dict. new_terms is formatted identically.
+
+    TO-DO: add an option for default score or for scoring terms.
+    '''
+
+    max_ID = max(int(ID) for ID in terms['terms_dict'])
+
+    for i, term in enumerate(csv_object):
+
+
+        # assign new ID number
+        ID = str(i + max_ID + 1)
+        term_text = term[0]
+        definition = term[1]
+
+        # Add term to terms data
+        terms['terms_dict'][ID] = {'term':term_text,
+                                   'definition':definition,
+                                   'score':'0'
+                                    }
+        # Add term to the back of the 0 queue
+        terms['term_queues']['0'].append(ID)
+
+    return terms

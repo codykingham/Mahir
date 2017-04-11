@@ -66,6 +66,7 @@ def studySet(set_data):
 
         term_text = terms_dict[term]['term']
         definition = terms_dict[term]['definition']
+        score = terms_dict[term]['score']
 
         # present term to user for scoring
         displayNew('\n\n\t\t\t'+term_text)
@@ -94,7 +95,7 @@ def studySet(set_data):
 
             # display definition
             elif score_input == ' ':
-                print('\t\t\t\t\t' + definition, end='\r')
+                print(f'\t\t\t\t\t{definition}\t\t{score}', end='\r')
 
             # save the score and move on
             elif score_input.isnumeric():
