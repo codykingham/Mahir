@@ -26,7 +26,7 @@ For a new set, first run the scoring program by selecting "score" after start-up
 
 You may quit the scoring program and return when you want to finish. If you are running Mahir from a directory of .tsv files, you will be prompted to name your new set. The program will export a new .json file with the name you enter. Before continuing to resume scoring the set, or before attempting to run the study module after scoring is finished, be sure to exit Mahir, edit config.json (see "set") to "load" the newly generated json file, then restart Mahir. *(This is primitive, but will be fixed later.)* 
 
-After all the terms are scored, you can run the "study" program to study your terms. You will be lead through a set-up process to set the minimum deck size and study cycle. During a study session, score terms 0-3. At the end of a full session, Mahir automatically accounts for the new scores for the cycle. The more terms you move to score 3 throughout the cycle, the more space is made during the cycle for new, score 0 terms.
+After all the terms are scored, you can run the "study" program to study your terms. You will be led through a set-up process to set the minimum deck size and study cycle. During a study session, score terms 0-3. At the end of a full session, Mahir automatically accounts for the new scores for the cycle. The more terms you move to score 3 throughout the cycle, the more space is made during the cycle for new, score 0 terms.
 
 Add new terms by running the "add" module within Mahir. You will need the file path to a csv file containing the terms, with a comma separated delimiter.
 
