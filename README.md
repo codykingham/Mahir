@@ -1,4 +1,4 @@
-# Mahir 0.6 Beta
+# Mahir 0.65 Beta
 
 Experimental, bulk, long-term vocabulary review program for command line.
 
@@ -22,7 +22,7 @@ Input new terms by modifying config.json where:
 	* "set" is either a directory location or the .json file already formatted by Mahir.
 	* "delimiter" can be set to something other than "\t" if you want to load a directory csv files or other. *Note that in the beta version, the program only loads files with .tsv extensions*
 
-For a new set, first run the scoring program by selecting "score" after start-up. Mark terms 0-3 based on familiarity (0 being unlearned and 3 being very familiar). Mahir will use your scores later for the study program to determine which and how many terms to populate a study session with. Those calculations are figured over a given study "cycle." A cycle is a user-selected number of sessions, over which period every term is seen at least once. Score 3 terms are seen once per cycle. Score 2 are seen 4x per cycle. Score 1 terms are seen 8x per cycle. And score 0 terms are seen each session until you mark them otherwise.
+For a new set, first run the scoring program by selecting "score" after start-up. Mark terms 0-3 based on familiarity (0 being unlearned and 3 being very familiar). Mahir will use your scores later for the study program to determine which and how many terms to populate a study session with. Those calculations are figured over a given study "cycle." A cycle is a user-selected number of sessions, over which period every term is seen at least once. Score 3 terms are seen once per cycle. Score 2 are seen every 4 review sessions. Score 1 terms are seen every other review session. And score 0 terms are seen each session until you mark them otherwise.
 
 You may quit the scoring program and return when you want to finish. If you are running Mahir from a directory of .tsv files, you will be prompted to name your new set. The program will export a new .json file with the name you enter. Before continuing to resume scoring the set, or before attempting to run the study module after scoring is finished, be sure to exit Mahir, edit config.json (see "set") to "load" the newly generated json file, then restart Mahir. *(This is primitive, but will be fixed later.)* 
 

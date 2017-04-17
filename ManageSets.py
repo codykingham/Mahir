@@ -46,9 +46,9 @@ def buildDeck(term_queues, s3_seen, deck_min=100, cycle_len=60):
     The cycle is repeated in the subsequent session.
 
     buildDeck pulls from lesser-known terms more often, which means their words cycle back more often.
-    S3 terms appear 1x per cycle.
-    S2 terms appear 4x per cycle.
-    S1 terms appear 8x per cycle.
+    S3 terms appear once per cycle.
+    S2 terms appear every 4 review sessions.
+    S1 terms appear ever other review session.
     S0 terms appear indefinitely (until they are marked otherwise).
     '''
 
@@ -56,8 +56,8 @@ def buildDeck(term_queues, s3_seen, deck_min=100, cycle_len=60):
 
     # calculate daily deck quota
     s3_quota = math.ceil((s_counts['3'] - s3_seen) / cycle_len)  # math.ceil rounds up
-    s2_quota = math.ceil(s_counts['2'] / (cycle_len/4))  # cycle_len/x == bigger quota
-    s1_quota = math.ceil(s_counts['1'] / (cycle_len/8))
+    s2_quota = math.ceil(s_counts['2'] / 4) # term is seen every 4 sessions
+    s1_quota = math.ceil(s_counts['1'] / 2) # temr is seen ever other session
 
     # construct a study deck and keep stats
     deck = []

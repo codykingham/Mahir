@@ -11,7 +11,7 @@ def runProgram():
     Run Mahir, display welcome screen, display menu options, wait for input.
     '''
 
-    version = '0.6 Beta'
+    version = '0.65 Beta'
 
     with open('config.json') as config_file:
         settings = json.load(config_file)
