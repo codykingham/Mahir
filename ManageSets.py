@@ -55,9 +55,9 @@ def buildDeck(term_queues, s3_seen, deck_min=100, cycle_len=60):
     s_counts = dict((score, len(terms)) for score, terms in term_queues.items())
 
     # calculate daily deck quota
-    s3_quota = math.ceil((s_counts['3'] - s3_seen) / cycle_len)  # math.ceil rounds up
-    s2_quota = math.ceil(s_counts['2'] / 4) # term is seen every 4 sessions
-    s1_quota = math.ceil(s_counts['1'] / 2) # temr is seen ever other session
+    s3_quota = math.ceil((s_counts['3'] - s3_seen) / cycle_len) if '3' in s_counts else 0  # math.ceil rounds up
+    s2_quota = math.ceil(s_counts['2'] / 4) if '2' in s_counts else 0 # term is seen every 4 sessions
+    s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0 # temr is seen ever other session
 
     # construct a study deck and keep stats
     deck = []
@@ -192,9 +192,9 @@ def selectCycle(terms_dict, term_queues):
         clearDisplay()
 
         # calculate daily deck quotas and deck size based on user input below
-        s3_quota = math.ceil(s_counts['3'] / cycle)  # math.ceil rounds up
-        s2_quota = math.ceil(s_counts['2'] / (cycle / 4))
-        s1_quota = math.ceil(s_counts['1'] / (cycle / 8))
+        s3_quota = math.ceil(s_counts['3'] / cycle) if '3' in s_counts else 0  # math.ceil rounds up
+        s2_quota = math.ceil(s_counts['2'] / 4) if '2' in s_counts else 0
+        s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0
         s0_quota = int(deck_min) - (s1_quota + s2_quota + s3_quota) \
                         if int(deck_min) - (s1_quota + s2_quota + s3_quota) >= 0 \
                         else 0 # prevent negative input

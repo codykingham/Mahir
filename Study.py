@@ -3,7 +3,7 @@ from Ui import askQuestion, displayNew, clearDisplay
 from ManageSets import buildDeck, recalibrateTermQueues
 from getch import getch
 
-def studySet(set_data):
+def studySet(set_data, outfile):
 
     '''
     Launch an interactive program which cycles through all terms in terms_dict,
@@ -47,6 +47,7 @@ def studySet(set_data):
         print(set_data['name'])
         for score, stat in deck_stats.items():
             print(f'score {score}: {stat} terms')
+        print(f'total: {sum(deck_stats.values())}')
 
         # display control information
         print('\ndefinition - [SPACE]\tscore - [0-3]\tedit previous - [e]\tconfirm - [y/n]\tquit - [q]\n')
@@ -69,7 +70,7 @@ def studySet(set_data):
         score = terms_dict[term]['score']
 
         # present term to user for scoring
-        displayNew('\n\n\t\t\t'+term_text)
+        displayNew('\n\n\t\t\t\t\t'+term_text)
 
         while run_review:
 
@@ -95,7 +96,8 @@ def studySet(set_data):
 
             # display definition
             elif score_input == ' ':
-                print(f'\t\t\t\t\t{definition}\t\t{score}', end='\r')
+                print(f'\n\n\t\t\t\t\t{definition}')
+                print(f'\n\t\t\t\t\t{score}')
 
             # save the score and move on
             elif score_input.isnumeric():
@@ -134,7 +136,7 @@ def studySet(set_data):
                         displayNew(f'{term_text}')
                         break
 
-    # don't save changes on incomplete session
+    # Save changes. But only on a complete session
     if run_review:
 
         # adjust term queues to new scores
@@ -149,9 +151,9 @@ def studySet(set_data):
 
         # save set file
         name = set_data['name']
-        with open(f'{name}.json','w') as outfile:
+        with open(outfile,'w') as ofile:
             json.dump(set_data,
-                      outfile,
+                      ofile,
                       indent=1,
                       ensure_ascii=False)
 

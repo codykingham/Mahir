@@ -11,7 +11,7 @@ def runProgram():
     Run Mahir, display welcome screen, display menu options, wait for input.
     '''
 
-    version = '0.65 Beta'
+    version = '0.66 Beta'
 
     with open('config.json') as config_file:
         settings = json.load(config_file)
@@ -89,7 +89,7 @@ def runProgram():
 
             if study_set:
                 # feed set to study module
-                studySet(study_set)
+                studySet(study_set, term_set)
             else:
                 clearDisplay()
                 print('returning to menu...')

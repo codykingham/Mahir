@@ -30,4 +30,20 @@ After all the terms are scored, you can run the "study" program to study your te
 
 Add new terms by running the "add" module within Mahir. You will need the file path to a csv file containing the terms, with a comma separated delimiter.
 
+## Progress Notes
+
+
+### 3 May 2017
+When scoring a new set of terms for the first time, it would probably be best to simply have two options: score 0 or 3.
+I have encountered some issues with freely scoring 0-3, such as an unnaturally large number of score 1 or 2 cards, which results in deck sizes over the minimum.
+This is an issue with the scorer module that I will fix in the near future.
+
+Otherwise, I am using Mahir now with 3 languages: Hebrew, Greek, and Dutch. It is working well for vocabulary acquisition. However, I do notice
+that it requires the user to think carefully about the scoring process. If a term goes into the score 3 set too early, it likely won't be seen for weeks in
+a big set.
+
+One idea to solve this problem: introduce a new quota for new score 3 terms. It will only pull from 50% (or so) from the new score 3 over the rest of the cycle.
+Those terms will be selected at random. This way, new score 3 terms will still be encountered, but without clogging up too much the term pipeline. I will have to see
+how this goes in practice.
+
 *This program has been built and tested on Mac OS 10.12.3 with Python 3.6. It has not yet been tested on other systems. I am sure some of the display features may be quirky in other terminals. Please let me know where you see room for improvement.*
