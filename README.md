@@ -1,8 +1,8 @@
-# Mahir 0.65 Beta
+# Mahir 0.66 Beta
 
 Experimental, bulk, long-term vocabulary review program for command line.
 
-© 2017 Cody Kingham, creative commons, CC BY-NC 4.0
+© 2017 Cody Kingham, the Unlicense
 
 ## What is Mahir?
 
@@ -43,7 +43,10 @@ that it requires the user to think carefully about the scoring process. If a ter
 a big set.
 
 One idea to solve this problem: introduce a new quota for new score 3 terms. It will only pull from 50% (or so) from the new score 3 over the rest of the cycle.
-Those terms will be selected at random. This way, new score 3 terms will still be encountered, but without clogging up too much the term pipeline. I will have to see
+Those terms will be selected at random. This way, new score 3 terms will still be encountered, but without clogging up too much of the term pipeline. I will have to see
 how this goes in practice.
+
+Also to do: add argparser to run Mahir with vocabulary file as a required argument instead of having to edit config file. Does Mahir really need a config file?
+I would like to phase it out soon.
 
 *This program has been built and tested on Mac OS 10.12.3 with Python 3.6. It has not yet been tested on other systems. I am sure some of the display features may be quirky in other terminals. Please let me know where you see room for improvement.*
