@@ -133,6 +133,10 @@ def recalibrateTermQueues(terms_dict, term_queues):
                     # add seen tag for S3 terms
                     if cur_score == '3':
                         terms_dict[term]['seen'] = True
+                    
+                    # remove seen tag from old S3 terms
+                    elif cur_score != '3' and 'seen' in terms_dict[term]:
+                        del terms_dict[term]['seen']
 
                 # send to front of new queue if downgraded
                 elif int(cur_score) < int(score):

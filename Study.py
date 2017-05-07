@@ -20,7 +20,8 @@ def studySet(set_data, outfile):
     deck_min = set_data['deck_min']
     s3_seen = len([term for term, term_data in terms_dict.items()
                         if 'seen' in term_data  # only s3 terms
-                        and term_data['seen'] == True])
+                        and term_data['seen']
+                        and term_data['score'] == '3']) # temporary fix to loophole
 
     # build the study deck
     deck_data = buildDeck(term_queues, s3_seen, deck_min=deck_min, cycle_len=cycle_len)
