@@ -159,7 +159,7 @@ def purgeTerms(terms_dict):
     for term, term_data in terms_dict.items():
         if term_data['score'] == '3':
             if 'seen' in term_data:
-                term_data['seen'] = False
+                del term_data['seen']
 
     return terms_dict
 
