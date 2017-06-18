@@ -126,19 +126,25 @@ def recalibrateTermQueues(terms_dict, term_queues):
                              else f'{cur_score}<-{score}'
                 recal_stats.update([change])
 
-                # send to middle of new queue if upgraded
-                if int(cur_score) > int(score):
+                # send to middle of new queue if upgraded to 1 or 2
+                if int(cur_score) > int(score) and cur_score != '3':
                     queue_middle = round(len(term_queues[cur_score])/2)
                     term_queues[score].remove(term)
                     term_queues[cur_score].insert(queue_middle, term)
 
-                    # add seen tag for S3 terms
-                    if cur_score == '3':
-                        terms_dict[term]['seen'] = True
-                    
                     # remove seen tag from old S3 terms
-                    elif cur_score != '3' and 'seen' in terms_dict[term]:
+                    if 'seen' in terms_dict[term]:
                         del terms_dict[term]['seen']
+
+                # send ot back of new queue if upgraded to 3
+                elif int(cur_score) > int(score) and cur_score == '3':   
+
+                    # add seen tag for S3 terms
+                    terms_dict[term]['seen'] = True
+                    
+                    # move to back of new queue
+                    term_queues[score].remove(term)
+                    term_queues[cur_score].append(term)
 
                 # send to front of new queue if downgraded
                 elif int(cur_score) < int(score):
