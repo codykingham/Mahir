@@ -1,6 +1,6 @@
 # Mahir 0.67 Beta
 
-> הוּא עֶזְרָא עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת מֹשׁה
+>   עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה
 
 Experimental, bulk, long-term vocabulary review program for command line.
 
