@@ -14,7 +14,7 @@ def runWelcome(version):
     print('        © 2017 Cody Kingham, the Unlicense')
 
     # display flying Hebrew text
-    magic_line = '     הוּא עֶזְרָא עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת מֹשׁה '
+    magic_line = '     הוּא עֶזְרָא עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה '
     fly_line = ''
     for letter in magic_line:
         fly_line += letter
