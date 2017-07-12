@@ -38,7 +38,7 @@ def studySet(set_data, outfile):
     run_review = True
     last_term = None  # for corrections
 
-    time.sleep(.5)
+    time.sleep(.3)
     progress = 0
     for term in deck:
 
@@ -67,11 +67,13 @@ def studySet(set_data, outfile):
             break
 
         term_text = terms_dict[term]['term']
+        term_formatted = '\n\t\t\t\t\t' + term_text
         definition = terms_dict[term]['definition']
         score = terms_dict[term]['score']
+        occurrences = terms_dict[term]['occurrences'] if 'occurrences' in terms_dict[term] else ''
 
         # present term to user for scoring
-        displayNew('\n\n\t\t\t\t\t'+term_text)
+        displayNew('\n'+term_formatted)
 
         while run_review:
 
@@ -97,8 +99,9 @@ def studySet(set_data, outfile):
 
             # display definition
             elif score_input == ' ':
-                print(f'\n\n\t\t\t\t\t{definition}')
+                print(f'\n\n\t\t\t\t\t{definition} ({occurrences})')
                 print(f'\n\t\t\t\t\t{score}')
+
 
             # save the score and move on
             elif score_input.isnumeric():
@@ -109,7 +112,7 @@ def studySet(set_data, outfile):
             # EDIT PREVIOUS
             elif score_input == 'e':
                 displayNew('editing previous score...')
-                time.sleep(.5)
+                time.sleep(.3)
                 pTerm_text = terms_dict[last_term]['term']  # previous term's text
 
                 # get the new score input
@@ -126,15 +129,15 @@ def studySet(set_data, outfile):
                     if confirm_change == 'y':
                         terms_dict[last_term]['score'] = new_score
                         displayNew('change logged...')
-                        time.sleep(.5)
-                        displayNew(f'{term_text}')
+                        time.sleep(.3)
+                        displayNew(term_formatted)
                         break
 
                     # resume if no change desired
                     else:
                         displayNew('resuming current term')
-                        time.sleep(.5)
-                        displayNew(f'{term_text}')
+                        time.sleep(.3)
+                        displayNew(term_formatted)
                         break
 
     # Save changes. But only on a complete session
@@ -172,5 +175,3 @@ def studySet(set_data, outfile):
             break
 
     clearDisplay()
-    print('session ended.')
-    time.sleep(1)

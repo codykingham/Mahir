@@ -11,7 +11,7 @@ def runProgram():
     Run Mahir, display welcome screen, display menu options, wait for input.
     '''
 
-    version = '0.67 Beta'
+    version = '0.68 Beta'
 
     with open('config.json') as config_file:
         settings = json.load(config_file)
@@ -82,7 +82,7 @@ def runProgram():
             # TO DO: remove the clear display and message
             clearDisplay()
             print('Running study module...')
-            time.sleep(.5)
+            time.sleep(.15)
 
             # validate the set
             study_set = validateSet(terms)
@@ -93,7 +93,7 @@ def runProgram():
             else:
                 clearDisplay()
                 print('returning to menu...')
-                time.sleep(.5)
+                time.sleep(.15)
 
         # ADD
         elif module_selection == 'add':
@@ -116,7 +116,7 @@ def runProgram():
                     if add_file != 'q':
                         clearDisplay()
                         print('file not found! Please re-enter the path...')
-                        time.sleep(1.5)
+                        time.sleep(1)
 
                 if valid_path:
                     break

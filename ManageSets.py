@@ -136,7 +136,7 @@ def recalibrateTermQueues(terms_dict, term_queues):
                     if 'seen' in terms_dict[term]:
                         del terms_dict[term]['seen']
 
-                # send ot back of new queue if upgraded to 3
+                # send to back of new queue if upgraded to 3
                 elif int(cur_score) > int(score) and cur_score == '3':   
 
                     # add seen tag for S3 terms
@@ -386,10 +386,16 @@ def addToTerms(terms, csv_object):
         term_text = term[0]
         definition = term[1]
 
+	# add occurrence data 
+        occurrences = term[2] if len(term) > 2 else ''
+        source = eval(term[3]) if len(term) > 3 else []
+
         # Add term to terms data
         terms['terms_dict'][ID] = {'term':term_text,
                                    'definition':definition,
-                                   'score':'0'
+                                   'score':'0',
+				   'occurrences':occurrences,
+                                   'source_lexemes': source
                                     }
         # Add term to the back of the 0 queue
         terms['term_queues']['0'].append(ID)

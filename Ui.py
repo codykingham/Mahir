@@ -27,7 +27,6 @@ def displayNew(display_string):
     '''
     Replaces previous output with a new output string in the terminal.
     Writes new output on the same line.
-    simple allows for simple print statement
     '''
 
     # add ANSI code for resetting previous display
