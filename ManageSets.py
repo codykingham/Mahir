@@ -170,7 +170,6 @@ def purgeTerms(terms_dict):
 
     return terms_dict
 
-
 def selectCycle(terms_dict, term_queues):
 
     '''
@@ -332,6 +331,9 @@ def validateSet(set_data):
                 # remark 'seen' to False
                 set_data['terms_dict'] = purgeTerms(set_data['terms_dict'])
 
+                # shuffle score 3 terms
+                random.shuffle(set_data['term_queues']['3'])
+
                 time.sleep(.5)
                 return set_data
 
@@ -344,10 +346,11 @@ def validateSet(set_data):
                 # launch user cycle interaction
                 new_cycle_data = selectCycle(set_data['terms_dict'], set_data['term_queues'])
 
-                # save new cycle length
+                # reset the terms for a new cycle
                 set_data['cycle_length'] = int(new_cycle_data['cycle_length'])
                 set_data['deck_min'] = int(new_cycle_data['deck_min'])
                 set_data['terms_dict'] = purgeTerms(set_data['terms_dict'])
+                random.shuffle(set_data['term_queues']['3']) # shuffle score 3 terms 
                 set_data['total_sessions'] = 0
 
                 clearDisplay()
