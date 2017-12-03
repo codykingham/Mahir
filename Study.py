@@ -2,6 +2,7 @@ import time, json
 from Ui import askQuestion, displayNew, clearDisplay
 from ManageSets import buildDeck, recalibrateTermQueues
 from getch import getch
+from datetime import datetime
 
 def studySet(set_data, outfile):
 
@@ -33,6 +34,8 @@ def studySet(set_data, outfile):
     time.sleep(1)
     clearDisplay()
 
+    # start a timer
+    start_time = datetime.now()
 
     # ** begin reviewing terms **
     run_review = True
@@ -162,12 +165,17 @@ def studySet(set_data, outfile):
                       ensure_ascii=False)
 
         while True:
-            # display logged changes
+            # display logged changes and duration of session
             clearDisplay()
             print('The following scores were changed ')
             recal_stats = recalibrated_set['recal_stats']
             for change, amount in recal_stats.items():
                 print(change, '\t\t', amount)
+            
+            # display duration of the session
+            end_time = datetime.now()
+            duration = end_time - start_time
+            print('\nduration: ', duration.__str__(), '\n')
 
             print('press any button to proceed...')
             proceed = getch()
