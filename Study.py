@@ -1,15 +1,18 @@
-import time, json
+import time, json, random
 from Ui import askQuestion, displayNew, clearDisplay
 from ManageSets import buildDeck, recalibrateTermQueues
 from getch import getch
 from datetime import datetime
 
-def studySet(set_data, outfile):
+def studySet(set_data, outfile, TF):
 
     '''
     Launch an interactive program which cycles through all terms in terms_dict,
     user scores terms 0-3, 0 being unknown, 3 being well-known.
     The scores are used to construct decks for study sessions (cf. decks.buildDeck)
+
+    If dataset is supported in TF, then a TF api object will be inserted and used to pull example passages.
+    Else, example passages are ignored.
 
     scoreNewTerms will pick up where user last left off at to score remaining un-scored terms.
     '''
@@ -73,10 +76,29 @@ def studySet(set_data, outfile):
         term_formatted = '\n\t\t\t\t\t' + term_text
         definition = terms_dict[term]['definition']
         score = terms_dict[term]['score']
-        occurrences = terms_dict[term]['occurrences'] if 'occurrences' in terms_dict[term] else ''
+        occurrences = terms_dict[term].get('occurrences', '')
+
+        # get example text if TF is loaded
+        if TF:
+            lexs = terms_dict[term]['source_lexemes']
+            if not lexs: # skip empty lexs 
+                example = ''
+           
+            # get random example from TF
+            else:
+                ex_lex = lexs[0]
+                ex_instance = random.choice(TF.L.d(ex_lex, otype='word'))
+                ex_unit = TF.L.u(ex_instance, otype='clause')[0]
+                ex_text = TF.T.text(TF.L.d(ex_unit, otype='word'))
+                ex_pass = '{} {}:{}'.format(*TF.T.sectionFromNode(ex_unit))
+                example = f'{ex_pass}\t{ex_text}'  
 
         # present term to user for scoring
         displayNew('\n'+term_formatted)
+ 
+        # print example if there is one
+        if TF and example:
+            print('\n\n\t\t\t'+example)
 
         while run_review:
 
@@ -104,8 +126,7 @@ def studySet(set_data, outfile):
             elif score_input == ' ':
                 print(f'\n\n\t\t\t\t\t{definition} ({occurrences})')
                 print(f'\n\t\t\t\t\t{score}')
-
-
+               
             # save the score and move on
             elif score_input.isnumeric():
                 terms_dict[term]['score'] = score_input

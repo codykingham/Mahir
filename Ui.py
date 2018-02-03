@@ -11,7 +11,7 @@ def runWelcome(version):
     time.sleep(0.1)
     print(f'                version {version}')
     time.sleep(0.1)
-    print('        © 2017 Cody Kingham, the Unlicense')
+    print('        © 2018 Cody Kingham, the Unlicense')
 
     # display flying Hebrew text
     magic_line = '     הוּא עֶזְרָא עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה '

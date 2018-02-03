@@ -1,10 +1,8 @@
-# Mahir 0.70 Beta 
-
 >   עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה
 
 Experimental, bulk, long-term vocabulary review program for command line.
 
-© 2017 Cody Kingham, the Unlicense
+© 2018 Cody Kingham, the Unlicense
 
 ## What is Mahir?
 
@@ -23,6 +21,8 @@ Input new terms by modifying config.json where:
 	* "type" is "load," for .json files already config'ed by Mahir, or "new," for a directory containing a set of .tsv files with term and tab-seprated definitions.
 	* "set" is either a directory location or the .json file already formatted by Mahir.
 	* "delimiter" can be set to something other than "\t" if you want to load a directory csv files or other. *Note that in the beta version, the program only loads files with .tsv extensions*
+        * "tf_location" is a string giving the location of data for Text-Fabric (such as a bhsa directory)
+        * "tf_module" tells Mahir which TF module to load (i.e. "c", "2017", etc., depending on which version of lexemes are stored in the vocabulary set.
 
 For a new set, first run the scoring program by selecting "score" after start-up. Mark terms 0-3 based on familiarity (0 being unlearned and 3 being very familiar). Mahir will use your scores later for the study program to determine which and how many terms to populate a study session with. Those calculations are figured over a given study "cycle." A cycle is a user-selected number of sessions, over which period every term is seen at least once. Score 3 terms are seen once per cycle. Score 2 are seen every 4 review sessions. Score 1 terms are seen every other review session. And score 0 terms are seen each session until you mark them otherwise.
 
@@ -33,6 +33,9 @@ After all the terms are scored, you can run the "study" program to study your te
 Add new terms by running the "add" module within Mahir. You will need the file path to a csv file containing the terms, with a comma separated delimiter.
 
 ## Progress Notes
+
+### 3 Feb 2018
+Added the ability to pull example passages from Text-Fabric, especially for use with the ETCBC BHSA dataset. The module will now load TF in advance. Examples are shown along with the surface form of the vocabulary term. The examples are selected at random from across the Hebrew Bible every time Mahir is loaded. For now, TF is loaded if it does not detect `"greek"` in the set's filename. This is a very primitive solution meant to prevent TF from loading with my Greek dataset. In the future, there should be a simple way of selecting which dataset to load, one which does not involve editing the config file everytime. Config data should instead go into the set data rather than being its own file. This would allow for the simple presence or absence of a text-fabric locations string to trigger whether TF is loaded or not. But for now, this low-level solution is sufficient for my purposes.
 
 
 ### 3 May 2017

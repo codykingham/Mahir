@@ -4,6 +4,7 @@ from Score import scoreNewTerms
 from Study import studySet
 from Ui import askQuestion, clearDisplay, runWelcome, displayNew
 from ManageSets import validateSet, addToTerms
+from tf.fabric import Fabric
 
 
 def runProgram():
@@ -11,7 +12,7 @@ def runProgram():
     Run Mahir, display welcome screen, display menu options, wait for input.
     '''
 
-    version = '0.70 Beta'
+    version = '0.80 Beta'
 
     with open('config.json') as config_file:
         settings = json.load(config_file)
@@ -20,6 +21,19 @@ def runProgram():
     term_set = settings['set']
     delimiter = settings['delimiter']
     set_type = settings['type']
+    tf_location = settings['tf_location']
+    tf_module = settings['tf_module']
+
+    # TEMPORARY FIX FOR TEXT FABRIC LOAD
+    # MUST AVOID TF LOAD WITH GREEK DATASET
+    # SHOULD IMPLEMENT NEW LOADING SYSTEM TO SOLVE THIS WORKAROUND
+    if 'greek' in term_set:
+        tf_api = None
+    else:
+        print('\nPreparing Text-Fabric Data for Mahir...\n\n')
+        TF = Fabric(locations=tf_location, modules=tf_module)
+        tf_api = TF.load('')
+        time.sleep(1)
 
     # load terms
     if set_type == 'new':
@@ -89,7 +103,7 @@ def runProgram():
 
             if study_set:
                 # feed set to study module
-                studySet(study_set, term_set)
+                studySet(study_set, term_set, tf_api) 
             else:
                 clearDisplay()
                 print('returning to menu...')

@@ -57,7 +57,7 @@ def buildDeck(term_queues, s3_seen, deck_min=100, cycle_len=60):
     # calculate daily deck quota
     s3_quota = math.ceil((s_counts['3'] - s3_seen) / cycle_len) if '3' in s_counts else 0  # math.ceil rounds up
     s2_quota = math.ceil(s_counts['2'] / 4) if '2' in s_counts else 0 # term is seen every 4 sessions
-    s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0 # temr is seen ever other session
+    s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0 # term is seen ever other session
 
     # construct a study deck and keep stats
     deck = []
