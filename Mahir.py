@@ -27,13 +27,13 @@ def runProgram():
     # TEMPORARY FIX FOR TEXT FABRIC LOAD
     # MUST AVOID TF LOAD WITH GREEK DATASET
     # SHOULD IMPLEMENT NEW LOADING SYSTEM TO SOLVE THIS WORKAROUND
-    if 'greek' in term_set:
-        tf_api = None
-    else:
+    if 'hebrew' in term_set:
         print('\nPreparing Text-Fabric Data for Mahir...\n\n')
         TF = Fabric(locations=tf_location, modules=tf_module)
         tf_api = TF.load('')
         time.sleep(1)
+    else:
+        tf_api = None
 
     # load terms
     if set_type == 'new':
