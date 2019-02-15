@@ -252,6 +252,9 @@ def validateSet(set_data):
     Return False if the set is not completely scored.
     '''
 
+    # clear terminal display
+    clearDisplay()
+
     # detect new sets
     if 'init_date' not in set_data:
         terms_dict = set_data
