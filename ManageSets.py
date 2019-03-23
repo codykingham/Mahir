@@ -15,7 +15,7 @@ def createTermQueues(terms_dict):
     The values are lists containing:
         the ID numbers of a term in terms_dict (e.g. "44")
     '''
-
+    
     # gather all the terms
     term_queues = collections.defaultdict(list)
 
@@ -28,71 +28,6 @@ def createTermQueues(terms_dict):
         random.shuffle(terms)
 
     return term_queues
-
-
-def buildDeck(term_queues, s3_seen, deck_min=100, cycle_len=60):
-    '''
-    Constructs a deck for a session that contains words scored 0-3.
-    term_queues is a dict with scores as keys, lists as values containing term IDs.
-    s3_seen are integer count of S3 terms newly marked as S3 during a cycle.
-    deck_max defines when S0 (new) cards should be inserted into a deck. (deck_max - deck_min = available_space).
-    cycle_len is the number of days in a full review cycle that buildDeck should calculate.
-
-    The key to buildDeck is the term queue.
-    The term queue is a list of term IDs of a given score.
-    These lists are modified while a deck is constructed.
-    When buildDeck adds terms to a deck, it also moves them to the end of their queue (with list.pop(0)).
-    The modified lists are then returned (along with the deck) to be used for the next study session.
-    The cycle is repeated in the subsequent session.
-
-    buildDeck pulls from lesser-known terms more often, which means their words cycle back more often.
-    S3 terms appear once per cycle.
-    S2 terms appear every 4 review sessions.
-    S1 terms appear ever other review session.
-    S0 terms appear indefinitely (until they are marked otherwise).
-    '''
-
-    s_counts = dict((score, len(terms)) for score, terms in term_queues.items())
-
-    # calculate daily deck quota
-    s3_quota = math.ceil((s_counts['3'] - s3_seen) / cycle_len) if '3' in s_counts else 0  # math.ceil rounds up
-    s2_quota = math.ceil(s_counts['2'] / 4) if '2' in s_counts else 0 # term is seen every 4 sessions
-    s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0 # term is seen ever other session
-
-    # construct a study deck and keep stats
-    deck = []
-    deck_stats = collections.Counter()
-
-    # add quotas from scores 1-3
-    for score, quota in (('1', s1_quota), ('2', s2_quota), ('3', s3_quota)):
-        while quota > 0:
-            # add new term to deck
-            deck.append(term_queues[score][0])
-            # move term to back of the queue
-            term_queues[score].append(term_queues[score].pop(0))
-            # decrease quota
-            quota -= 1
-            # log count
-            deck_stats.update([score])
-
-    # use any remaining space for score 0's
-    # note that the s0 queue does not shift
-    for s0_term in term_queues['0']:
-
-        # stop if there is no space for s0 terms
-        if len(deck) >= deck_min:
-            break
-
-        # add terms to deck
-        else:
-            deck.append(s0_term)
-            deck_stats.update(['0'])
-
-    # shuffle, assemble, and return deck data
-    random.shuffle(deck)
-
-    return {'deck':deck,'deck_stats':deck_stats, 'term_queues':term_queues}
-
 
 def recalibrateTermQueues(terms_dict, term_queues):
     '''
@@ -155,93 +90,6 @@ def purgeTerms(terms_dict):
                 del term_data['seen']
 
     return terms_dict
-
-def selectCycle(terms_dict, term_queues):
-
-    '''
-    Run an interactive program to select the cycle and deck sizes for a study set.
-    Return the cycle size selected by the user.
-    '''
-
-    clearDisplay()
-    print('Select set properties: \n')
-    print(f'There are {len(terms_dict)} terms in the set.\n')
-
-    time.sleep(.5)
-
-    # present user with minimum deck size selection
-    deck_min = askQuestion(set(str(i) for i in range(10, 500)),
-                           prompt='Enter a minimum deck size from 10-500\n',
-                           simple=False,
-                           reply='invalid. choose integer between 10-500...\n')
-
-
-    # prepare data for cycle and deck size selection
-    s_counts = dict((score, len(terms)) for score, terms in term_queues.items())  # counts of scores in a deck:
-
-
-    # present user with selection menu for cycle and deck sizes
-    # the program provides live feedback as the user decreases or increases the default cycle size (30)
-    cycle = 30  # user selection stored here
-    while True:
-        # clear terminal display
-        clearDisplay()
-
-        # calculate daily deck quotas and deck size based on user input below
-        s3_quota = math.ceil(s_counts['3'] / cycle) if '3' in s_counts else 0  # math.ceil rounds up
-        s2_quota = math.ceil(s_counts['2'] / 4) if '2' in s_counts else 0
-        s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0
-        s0_quota = int(deck_min) - (s1_quota + s2_quota + s3_quota) \
-                        if int(deck_min) - (s1_quota + s2_quota + s3_quota) >= 0 \
-                        else 0 # prevent negative input
-
-        deck_size = s1_quota + s2_quota + s3_quota + s0_quota
-
-        # present user selection screen
-        print('\ntype [2] for +, [1] for -, or [y] for accept\n')
-        print(f'SELECT CYCLE SIZE --> [ {cycle} ]\n')
-        print('-' * 50)
-        print('\t' * 2 + 'Session Deck Makeup:\n')
-        print('\t' * 2 + f'     size: {deck_size}\n')
-        print('score 0\t\tscore 1\t\tscore 2\t\tscore 3')
-        print(f'   {s0_quota}\t\t   {s1_quota}\t\t   {s2_quota}\t\t   {s3_quota}\t\n')
-
-        # retrieve and enact user input via set_cycle
-        set_cycle = askQuestion({'1', '2', 'y'})
-
-        # accept cycle as is
-        if set_cycle == 'y':
-            break
-
-        # decrease cycle
-        elif set_cycle == '1':
-
-            # decrease by 1 when < 5
-            if 1 < cycle <= 5:
-                cycle -= 1
-
-            # prevent 0 error if user subtracts below 1
-            elif cycle == 1:
-                displayNew('minimum cycle of 1...')
-                time.sleep(1)
-
-            # subtract by 5
-            else:
-                cycle -= 5
-
-        # increase cycle
-        elif set_cycle == '2':
-
-            # increase by 1 if cycle < 5
-            if cycle <= 4:
-                cycle += 1
-
-            # add by 5
-            else:
-                cycle += 5
-
-    return {'cycle_length':cycle, 'deck_min':deck_min}
-
 
 def validateSet(set_data):
     '''
@@ -386,3 +234,93 @@ def addToTerms(terms, csv_object):
         terms['term_queues']['0'].append(ID)
 
     return terms
+                   
+'''
+LEGACY MODULES BELOW
+'''
+                      
+def selectCycle(terms_dict, term_queues):
+
+    '''
+    Run an interactive program to select the cycle and deck sizes for a study set.
+    Return the cycle size selected by the user.
+    '''
+
+    clearDisplay()
+    print('Select set properties: \n')
+    print(f'There are {len(terms_dict)} terms in the set.\n')
+
+    time.sleep(.5)
+
+    # present user with minimum deck size selection
+    deck_min = askQuestion(set(str(i) for i in range(10, 500)),
+                           prompt='Enter a minimum deck size from 10-500\n',
+                           simple=False,
+                           reply='invalid. choose integer between 10-500...\n')
+
+
+    # prepare data for cycle and deck size selection
+    s_counts = dict((score, len(terms)) for score, terms in term_queues.items())  # counts of scores in a deck:
+
+
+    # present user with selection menu for cycle and deck sizes
+    # the program provides live feedback as the user decreases or increases the default cycle size (30)
+    cycle = 30  # user selection stored here
+    while True:
+        # clear terminal display
+        clearDisplay()
+
+        # calculate daily deck quotas and deck size based on user input below
+        s3_quota = math.ceil(s_counts['3'] / cycle) if '3' in s_counts else 0  # math.ceil rounds up
+        s2_quota = math.ceil(s_counts['2'] / 4) if '2' in s_counts else 0
+        s1_quota = math.ceil(s_counts['1'] / 2) if '1' in s_counts else 0
+        s0_quota = int(deck_min) - (s1_quota + s2_quota + s3_quota) \
+                        if int(deck_min) - (s1_quota + s2_quota + s3_quota) >= 0 \
+                        else 0 # prevent negative input
+
+        deck_size = s1_quota + s2_quota + s3_quota + s0_quota
+
+        # present user selection screen
+        print('\ntype [2] for +, [1] for -, or [y] for accept\n')
+        print(f'SELECT CYCLE SIZE --> [ {cycle} ]\n')
+        print('-' * 50)
+        print('\t' * 2 + 'Session Deck Makeup:\n')
+        print('\t' * 2 + f'     size: {deck_size}\n')
+        print('score 0\t\tscore 1\t\tscore 2\t\tscore 3')
+        print(f'   {s0_quota}\t\t   {s1_quota}\t\t   {s2_quota}\t\t   {s3_quota}\t\n')
+
+        # retrieve and enact user input via set_cycle
+        set_cycle = askQuestion({'1', '2', 'y'})
+
+        # accept cycle as is
+        if set_cycle == 'y':
+            break
+
+        # decrease cycle
+        elif set_cycle == '1':
+
+            # decrease by 1 when < 5
+            if 1 < cycle <= 5:
+                cycle -= 1
+
+            # prevent 0 error if user subtracts below 1
+            elif cycle == 1:
+                displayNew('minimum cycle of 1...')
+                time.sleep(1)
+
+            # subtract by 5
+            else:
+                cycle -= 5
+
+        # increase cycle
+        elif set_cycle == '2':
+
+            # increase by 1 if cycle < 5
+            if cycle <= 4:
+                cycle += 1
+
+            # add by 5
+            else:
+                cycle += 5
+
+    return {'cycle_length':cycle, 'deck_min':deck_min}
