@@ -145,7 +145,6 @@ def recalibrateTermQueues(terms_dict, term_queues):
     # also return terms_dict with S3 'seen' tags
     return {'terms_dict':terms_dict, 'term_queues':term_queues, 'recal_stats':recal_stats}
 
-
 def purgeTerms(terms_dict):
     '''
     Reset the 'seen' tag on S3 terms to False at the beginning of a new cycle.

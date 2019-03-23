@@ -8,6 +8,7 @@ to display formatted font.
 import json, time, random
 from datetime import datetime
 from tf.app import use
+from tf.fabric import Fabric
 from IPython.display import clear_output, display, HTML
 from ManageSets import buildDeck, purgeTerms, recalibrateTermQueues
 from Load import loadExistingSet
@@ -18,15 +19,17 @@ class Study:
     and formats it for use in a Jupyter notebook.
     '''
 
-    def __init__(self, vocab_json, tf_app='Bhsa', data_version='2017'):
+    def __init__(self, vocab_json, tf_app='bhsa', data_version='2017'):
         '''
         vocab_json - a json file formatted with term data for use with Mahir
         data_version - version of the data for Text-Fabric
         '''
         print('preparing TF...')
-        self.TF = use(tf_app, version=data_version, silent=True)
+        TF = Fabric(locations='/Users/cody/github/etcbc/bhsa/tf/2017')
+        TF_api = TF.load('''gloss freq_lex''')
+        self.TF = use(tf_app, api=TF_api, silent=True)
         self.F, self.T, self.L = self.TF.api.F, self.TF.api.T, self.TF.api.L
-
+        
         # load set data
         with open(vocab_json) as setfile:
             self.set_data = json.load(setfile)
@@ -91,7 +94,7 @@ class Study:
             except:
                 raise Exception(f'lexs: {lexs}; ex_lex: {ex_lex}')
             ex_passage = self.L.u(ex_instance, ex_otype)[0]
-            std_glosses = [(lx, self.F.gloss.v(lx)) for lx in lexs] if type(ex_lex) != list else []
+            std_glosses = [(lx, self.F.gloss.v(lx), self.F.freq_lex.v(lx)) for lx in lexs] if type(ex_lex) != list else []
               
             # display passage prompt and score box
             clear_output()
@@ -101,11 +104,11 @@ class Study:
             self.TF.plain(ex_passage, highlights={ex_instance:highlight})
 
             while True:
-                user_instruct = self.good_choice({'', '0', '1', '2', '3', ',', '.', 'q', 'c'}, ask='')
+                user_instruct = self.good_choice({'', '0', '1', '2', '3', ',', '.', 'q', 'c', 'e'}, ask='')
                 
                 if user_instruct in {''}:
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:16pt">{term_text}</span>'))
-                    display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{definition} ({occurrences})</span>'))
+                    display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{definition} </span>'))
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{score}</span>'))
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:10pt">{std_glosses}</span>'))
                 
@@ -128,6 +131,12 @@ class Study:
                 
                 # get a different word context
                 elif user_instruct == 'c':
+                    break
+              
+                # edit term definition on the fly
+                elif user_instruct == 'e':
+                    new_def = self.good_choice(set(), ask=f'edit def [{definition}]')
+                    self.terms_dict[term_ID]['definition'] = new_def
                     break
               
                 # user quit
@@ -199,7 +208,7 @@ class Study:
         '''
         choice = input(ask)
 
-        while not {choice} & good_choices:
+        while (not {choice} & good_choices) and (good_choices):
             print(f'Invalid. Choose from {good_choices}')
             choice = input(ask)
 
