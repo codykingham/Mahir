@@ -3,9 +3,13 @@ This module contains the Study class,
 used to launch a study session during a Jupyter notebook/lab session.
 The module prepares and consumes data from the Mahir deck handlers and uses Text-Fabric
 to display formatted font.
+
+
+FOR THE FUTURE:
+• Design a term object with callable attributes that can be populated from terms_dict.
 '''
 
-import json, time, random
+import collections, json, random, math
 from datetime import datetime
 from tf.app import use
 from tf.fabric import Fabric
@@ -31,22 +35,22 @@ class Study:
         # load set data
         with open(vocab_json) as setfile:
             set_data = json.load(setfile)
+            self.set_data = set_data
 
-        # check cycle length
+        # prepare for run, check cycle length
         run = self.check_end_cycle(set_data)
         if not run:
             self.save_file(set_data, vocab_json)
             raise Exception('EXIT PROGRAM INITIATED; FILE SHUFFLED AND SAVED')
 
         # build the study set, prep data for study session
-        self.set_data = set_data
-        self.session_data = Session() # build session data
+        self.session_data = Session(set_data) # build session data
         self.vocab_json = vocab_json
         
         # preliminary session report
         deck_stats = self.session_data.deck_stats
         print(set_data['name'], 'ready for study.')
-        print(f"this is session {set_data['total_sessions']+1}:")
+        print(f"this is session {set_data['cycle_data']['total_sessions']+1}:")
         for score, stat in deck_stats.items():
             print(f'score {score}: {stat} terms')
         print(f'total: {sum(deck_stats.values())}')
@@ -83,14 +87,15 @@ class Study:
               
             # display passage prompt and score box
             clear_output()
-            display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(self.deck)}</span>'))
+            display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
               
             highlight = 'lightgreen' if score == '3' else 'pink'
             self.TF.plain(ex_passage, highlights={ex_instance:highlight})
 
             while True:
-                user_instruct = self.good_choice({'', '0', '1', '2', '3', ',', '.', 'q', 'c', 'e'}, ask='')
+                user_instruct = self.good_choice({'', ',', '.', 'q', 'c', 'e', '>', '<'}, ask='', allowNumber=True)
                 
+                # show term glosses and data
                 if user_instruct in {''}:
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:16pt">{term_text}</span>'))
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{definition} </span>'))
@@ -98,7 +103,7 @@ class Study:
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:10pt">{std_glosses}</span>'))
                 
                 # score term
-                elif user_instruct in {'0', '1', '2', '3'}:
+                elif user_instruct.isnumeric():
                     terms_dict[term_ID]['score'] = user_instruct
                     term_n += 1
                     break
@@ -108,12 +113,19 @@ class Study:
                     if user_instruct == ',':
                         if term_n != 0:
                             term_n -= 1
-                        break
                     elif user_instruct == '.':
                         if term_n != len(deck):
                             term_n += 1
-                        break
-                
+                    break
+              
+                # skip to beginning or end of deck
+                elif user_instruct in {'>','<'}:
+                    if user_instruct == '>':
+                        term_n = len(deck)
+                    elif user_instruct == '<':
+                        term_n = 0
+                    break
+              
                 # get a different word context
                 elif user_instruct == 'c':
                     break
@@ -142,8 +154,7 @@ class Study:
         
         clear_output()
         print('The following scores were changed ')
-        recal_stats = recalibrated_set['recal_stats']
-        for change, amount in recal_stats.items():
+        for change, amount in self.set_data['stats'][-1]['changes'].items():
             print(change, '\t\t', amount)
         # display duration of the session
         end_time = datetime.now()
@@ -151,7 +162,7 @@ class Study:
         print('\nduration: ', duration.__str__())
 
               
-    def finalize_session(self, set_data, save_file, session_stats):
+    def finalize_session(self):
         '''
         Updates and saves session data and stats.
         '''
@@ -160,10 +171,11 @@ class Study:
         session_stats = {}
         session_stats['date'] = str(datetime.now())
         session_stats['deck'] = self.session_data.deck_stats
-        session_stats['cycle'] = set_data['cycle_data']['ncycle']
+        session_stats['cycle'] = self.set_data['cycle_data']['ncycle']
         
         # reset queues based on changed scores & update stats
         session_stats['changes'] = collections.Counter()
+        self.add_new_scores()
         self.update_queues(session_stats['changes']) 
               
         # update set data
@@ -172,9 +184,8 @@ class Study:
               
         # save new data
         self.save_file(self.set_data, self.vocab_json)
-        
               
-    def update_queues(self, stats_dict)
+    def update_queues(self, stats_dict):
 
         '''
         Adjusts term queues to the terms_dict when a term is changed to a new score.
@@ -226,30 +237,55 @@ class Study:
                 # some scores reset at cyclic intervals (e.g. S3 and S4)
                 # this config allows those scores to be reset on a modulo trigger
                 for score, configdata in set_data['scoreconfig'].items():
-                    ncycles = configdata['ncycles']
+                    ncycle = set_data['cycle_data']['ncycle']
                     nreset = configdata['nreset']
                     shuffle = configdata['shuffle']
-                    if ncycles % nreset == 0:
-                        if shuffle:
+                    if ncycle % nreset == 0:
+                        if shuffle == 'yes':
                             random.shuffle(set_data['term_queues'][score])
                         set_data['cycle_data']['score_starts'][score] = len(set_data['term_queues'][score])
-                        set_data['shuffle_config'][score]['ncycles'] += 1
               
             elif keep_same == 'n':
                 print('You must reset parameters manually...')
-                print('But I will shuffle score 3 data for you now...')
-                random.shuffle(set_data['term_queues']['3']) # shuffle score 3 terms
                 run_study = False
 
         return run_study
 
-    def good_choice(self, good_choices, ask=''):
+    def add_new_scores(self):
+        '''
+        Adds any new scores to the vocab set
+        by checking term scores against term queues and score config.
+        '''
+        queues = self.set_data['term_queues']
+        score_configs = self.set_data['scoreconfig']
+        terms_dict = self.set_data['terms_dict']
+              
+        # add new scores and terms to term queues
+        newscores = collections.defaultdict(list)
+        for termID, tdata in terms_dict.items():
+            score = tdata['score']
+            if score not in queues:
+                if score not in score_configs:
+                    print(f'CAUTION: score {score} is not configured! (found on term {termID})')
+                    print('NB: a new score queue has been generated!')
+                queues[score] = []
+        
+        # set initial start counts; the number of so-scored terms will be the initial value
+        # this is an imperfect solution
+        for score, terms in newscores.items():
+            self.set_data['cycle_data']['score_starts'][score] = len(terms)
+              
+              
+    def good_choice(self, good_choices, ask='', allowNumber=False):
         '''
         Gathers and checks a user's input against the 
         allowed choices. Runs loop until valid choice provided.
         '''
         choice = input(ask)
-
+     
+        if allowNumber and choice.isnumeric(): # allow arbitrary score choices
+            good_choices.add(choice)
+            
         while (not {choice} & good_choices) and (good_choices):
             print(f'Invalid. Choose from {good_choices}')
             choice = input(ask)
@@ -264,6 +300,7 @@ class Study:
         with open(file,'w') as outfile:
             json.dump(set_data, outfile, indent=1, ensure_ascii=False)
 
+              
 class Session:
 
     '''
@@ -280,20 +317,25 @@ class Session:
     The cycle is repeated in the subsequent session.
     '''
     
-    def __init__(self):
+    def __init__(self, set_data):
 
         # grab set data
-        term_queues = self.set_data['term_queues']
-        deck_min = self.set_data['cycle_data']['deck_min']
-        cycle_len = self.set_data['cycle_data']['cycle_length']
-        s_starts = self.set_data['cycle_data']['score_starts'] # sum of scores at start of the cycle
+        term_queues = set_data['term_queues']
+        deck_min = set_data['cycle_data']['deck_min']
+        cycle_len = set_data['cycle_data']['cycle_length']
+        nsession = set_data['cycle_data']['total_sessions']
+        s_starts = set_data['cycle_data']['score_starts'] # sum of scores at start of the cycle
         s_counts = dict((score, len(terms)) for score, terms in term_queues.items()) # sum of all scores by this session
 
         # calculate daily set quotas, NB math.ceil rounds up^
-        score2quota = {'4': math.ceil((s_starts['4'] / cycle_len) / 2) if s_counts.get('4', 0) else 0, # s4 seen every 2 cycles
+        # score 4 formula optimizes with decimal issues in Python
+        # formula is: int(round(((nterms/nsessions/nreset)*(NthSession-1))-int((nterms/nsessions/nreset)*(NthSession-1)) + (nterms/nsessions/nreset), 2))
+              
+        score2quota = {'4': int(round(((s_starts['4']/cycle_len/2)*(nsession-1))-int((s_starts['4']/cycle_len/2)*(nsession-1))\
+                                + (s_starts['4']/cycle_len/2), 2)) if s_counts.get('4', 0) else 0,     # s4 seen every 2 cycles
                        '3': math.ceil(s_starts['3'] / cycle_len) if s_counts.get('3', 0) else 0,       # s3 seen every cycle
-                       '2': math.ceil(s_counts['2'] / 4) if '2' if s_counts.get('2', 0) else 0,        # s2 seen every 4 sessions
-                       '1': math.ceil(s_counts['1'] / 2) if '1' if s_counts.get('1', 0) else 0,        # s1 seen ever other session
+                       '2': math.ceil(s_counts['2'] / 4) if s_counts.get('2', 0) else 0,               # s2 seen every 4 sessions
+                       '1': math.ceil(s_counts['1'] / 2) if s_counts.get('1', 0) else 0,               # s1 seen ever other session
                        } 
 
         # construct a study deck and keep stats
@@ -333,3 +375,11 @@ class Session:
         self.deck = deck
         self.deck_stats = deck_stats
         self.term_queues = term_queues
+                                
+    def swap_zero(number):
+        # returns 0 or 1
+        # needed for skipping behavior with modulo
+        if number == 0:
+            return 1
+        else:
+            return 0
