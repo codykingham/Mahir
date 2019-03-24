@@ -30,7 +30,7 @@ For how to format the data, see the [sample vocabulary json](sample_vocab/hebrew
 
 The `learn` module is currently only configured for use with `BHSA` (Hebrew Bible data), but a Greek New Testament module with TF will follow whenever I have time to develop it. 
 
-Every term has a score, which tells Mahir how often it should be shown. Scores range from 0-4 but higher scores can be configured. The higher a score, the less often it is seen. For example, score 0 terms that fit in the daily quota are shown every session so they can be learned, score 1 terms are shown every other session. Score 3 terms are seen every cycle period. A cycle period is defined as an X number of cycles. Score 4 terms are super-cycle terms, they are only seen once every other cycle. These parameters can be tweaked in the `Session` object of `iMahir.py`.
+Every term has a score, which tells Mahir how often it should be shown. Scores range from 0-4 but higher scores can be configured. The higher a score, the less often it is seen. For example, score 0 terms that fit in the daily quota are shown every session so they can be learned, score 1 terms are shown every other session. Score 3 terms are seen every cycle period. A cycle period is defined as an X number of sessions. Score 4 terms are super-cycle terms, they are only seen once every other cycle. These parameters can be tweaked in the `Session` object of `iMahir.py`.
 
 ## Progress Notes
 
