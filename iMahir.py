@@ -89,11 +89,11 @@ class Study:
             clear_output()
             display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
               
-            highlight = 'lightgreen' if score == '3' else 'pink'
+            highlight = 'lightgreen' if int(score)>2 else 'pink'
             self.TF.plain(ex_passage, highlights={ex_instance:highlight})
 
             while True:
-                user_instruct = self.good_choice({'', ',', '.', 'q', 'c', 'e', '>', '<'}, ask='', allowNumber=True)
+                user_instruct = self.good_choice({'', ',', '.', 'q', 'c', 'e', 'l', '>', '<'}, ask='', allowNumber=True)
                 
                 # show term glosses and data
                 if user_instruct in {''}:
@@ -134,6 +134,14 @@ class Study:
                 elif user_instruct == 'e':
                     new_def = self.good_choice(set(), ask=f'edit def [{definition}]')
                     terms_dict[term_ID]['definition'] = new_def
+                    break
+              
+                # edit lexeme nodes on the fly
+                elif user_instruct == 'l':
+                    lexs = terms_dict[term_ID].get('source_lexemes', )
+                    new_lexs = self.good_choice(set(), ask=f'edit lex nodes {lexs}')
+                    new_lexs = [int(l.strip()) for l in new_lexs.split(',')]
+                    terms_dict[term_ID]['source_lexemes'] = new_lexs
                     break
               
                 # user quit
@@ -261,7 +269,6 @@ class Study:
         terms_dict = self.set_data['terms_dict']
               
         # add new scores and terms to term queues
-        newscores = collections.defaultdict(list)
         for termID, tdata in terms_dict.items():
             score = tdata['score']
             if score not in queues:
@@ -269,12 +276,7 @@ class Study:
                     print(f'CAUTION: score {score} is not configured! (found on term {termID})')
                     print('NB: a new score queue has been generated!')
                 queues[score] = []
-        
-        # set initial start counts; the number of so-scored terms will be the initial value
-        # this is an imperfect solution
-        for score, terms in newscores.items():
-            self.set_data['cycle_data']['score_starts'][score] = len(terms)
-              
+                self.set_data['cycle_data']['score_starts'][score] = 0
               
     def good_choice(self, good_choices, ask='', allowNumber=False):
         '''
@@ -368,18 +370,10 @@ class Session:
                 deck.append(s0_term)
                 deck_stats.update(['0'])
 
-        # shuffle, assemble, and return deck data
+        # shuffle deck data
         random.shuffle(deck)
 
-        # make session data available
+        # make session data available to class
         self.deck = deck
         self.deck_stats = deck_stats
         self.term_queues = term_queues
-                                
-    def swap_zero(number):
-        # returns 0 or 1
-        # needed for skipping behavior with modulo
-        if number == 0:
-            return 1
-        else:
-            return 0
