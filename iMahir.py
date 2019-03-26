@@ -154,7 +154,7 @@ class Study:
                 ask_end = self.good_choice({'y', 'n'}, 'session is complete, quit now?')
                 
                 if ask_end == 'y':
-                    self.finalize_session()              
+                    self.finalize_session(start_time)              
                     break
               
                 elif ask_end == 'n':
@@ -164,20 +164,18 @@ class Study:
         print('The following scores were changed ')
         for change, amount in self.set_data['stats'][-1]['changes'].items():
             print(change, '\t\t', amount)
-        # display duration of the session
-        end_time = datetime.now()
-        duration = end_time - start_time
-        print('\nduration: ', duration.__str__())
-
+        print('\nduration: ', self.set_data['stats'][-1]['duration'])
+        
               
-    def finalize_session(self):
+    def finalize_session(self, start_time):
         '''
         Updates and saves session data and stats.
         '''
-              
+        
         # log session stats
         session_stats = {}
         session_stats['date'] = str(datetime.now())
+        session_stats['duration'] = str(datetime.now() - start_time)
         session_stats['deck'] = self.session_data.deck_stats
         session_stats['cycle'] = self.set_data['cycle_data']['ncycle']
         
