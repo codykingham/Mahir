@@ -210,13 +210,21 @@ class Study:
                 if score != cur_score:
 
                     # make string for stats count
-                    change = f'{score}->{cur_score}' if int(cur_score) > int(score) \
-                                 else f'{cur_score}<-{score}'
+                    downgrade = int(cur_score) < int(score)
+                    change = f'{cur_score}<-{score}' if downgrade else f'{score}->{cur_score}'
+              
+                    # make records of change
                     stats_dict.update([change])
+                    if downgrade:
+                        terms_dict[term].setdefault('times_missed', 0)
+                        terms_dict[term]['times_missed'] += 1
 
-                    # send to back of new queue 
-                    term_queues[score].remove(term)
-                    term_queues[cur_score].append(term)
+                    # assign new queue position
+                    term_queues[score].remove(term)              
+                    if cur_score != '0':
+                        term_queues[cur_score].append(term) # scores >0 go to back of queue
+                    else:
+                        term_queues[cur_score].insert(0, term) # score 0 goes to front of queue
 
                 # if no change, move on
                 else:
