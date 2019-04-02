@@ -71,9 +71,8 @@ class Study:
         while True:
             term_ID = deck[term_n]
             term_text = terms_dict[term_ID]['term']
-            definition = terms_dict[term_ID]['definition']
+            gloss = terms_dict[term_ID]['gloss']
             score = terms_dict[term_ID]['score']
-            occurrences = terms_dict[term_ID].get('occurrences','') or len(terms_dict[term_ID]['custom_lexemes'])
             
             # assemble and select examples (cycle through lexemes)
             lexs = terms_dict[term_ID]['source_lexemes'] or terms_dict[term_ID]['custom_lexemes']
@@ -98,7 +97,7 @@ class Study:
                 # show term glosses and data
                 if user_instruct in {''}:
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:16pt">{term_text}</span>'))
-                    display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{definition} </span>'))
+                    display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{gloss} </span>'))
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{score}</span>'))
                     display(HTML(f'<span style="font-family:Times New Roman; font-size:10pt">{std_glosses}</span>'))
                 
@@ -130,10 +129,10 @@ class Study:
                 elif user_instruct == 'c':
                     break
               
-                # edit term definition on the fly
+                # edit term gloss on the fly
                 elif user_instruct == 'e':
-                    new_def = self.good_choice(set(), ask=f'edit def [{definition}]')
-                    terms_dict[term_ID]['definition'] = new_def
+                    new_def = self.good_choice(set(), ask=f'edit def [{gloss}]')
+                    terms_dict[term_ID]['gloss'] = new_def
                     break
               
                 # edit lexeme nodes on the fly
@@ -178,12 +177,14 @@ class Study:
         session_stats['duration'] = str(datetime.now() - start_time)
         session_stats['deck'] = self.session_data.deck_stats
         session_stats['cycle'] = self.set_data['cycle_data']['ncycle']
+        for term in self.session_data.deck:
+            self.set_data['terms_dict'][term]['stats']['seen'] += 1 # count term as seen
         
         # reset queues based on changed scores & update stats
         session_stats['changes'] = collections.Counter()
         self.add_new_scores()
         self.update_queues(session_stats['changes']) 
-              
+             
         # update set data
         self.set_data['cycle_data']['total_sessions'] += 1      
         self.set_data['stats'].append(session_stats)
@@ -204,9 +205,10 @@ class Study:
               
         for score, term_queue in term_queues.items():
             for term in term_queue:
-
+                
                 # compare old/new score, change if needed
                 cur_score = terms_dict[term]['score']
+                  
                 if score != cur_score:
 
                     # make string for stats count
@@ -216,8 +218,7 @@ class Study:
                     # make records of change
                     stats_dict.update([change])
                     if downgrade:
-                        terms_dict[term].setdefault('times_missed', 0)
-                        terms_dict[term]['times_missed'] += 1
+                        terms_dict[term]['stats']['missed'] += 1
 
                     # assign new queue position
                     term_queues[score].remove(term)              
