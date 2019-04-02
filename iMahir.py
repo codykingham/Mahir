@@ -89,6 +89,9 @@ class Study:
             display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
               
             highlight = 'lightgreen' if int(score)>2 else 'pink'
+            
+            book, chapter, verse = self.T.sectionFromNode(ex_passage)
+            display(HTML(f'<span style="float:right; font-family:Times New Roman; font-size:14pt">{book} {chapter}:{verse}<span>'))
             self.TF.plain(ex_passage, highlights={ex_instance:highlight})
 
             while True:
