@@ -27,7 +27,7 @@ class Study:
         data_version - version of the data for Text-Fabric
         '''
         print('preparing TF...')
-        TF = Fabric(locations='/Users/cody/github/etcbc/bhsa/tf/2017')
+        TF = Fabric(locations='~/text-fabric-data/etcbc/bhsa/tf/2017')
         TF_api = TF.load('''gloss freq_lex''')
         self.TF = use(tf_app, api=TF_api, silent=True)
         self.F, self.T, self.L = self.TF.api.F, self.TF.api.T, self.TF.api.L
@@ -88,7 +88,10 @@ class Study:
             clear_output()
             display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
               
-            highlight = 'lightgreen' if int(score)>2 else 'pink'
+              
+            highlights = {'0':'pink', '1': 'pink', '2':'pink', 
+                          '3':'lightgreen', '4':'lightblue'}
+            highlight = highlights[score]
             
             book, chapter, verse = self.T.sectionFromNode(ex_passage)
             display(HTML(f'<span style="float:right; font-family:Times New Roman; font-size:14pt">{book} {chapter}:{verse}<span>'))
