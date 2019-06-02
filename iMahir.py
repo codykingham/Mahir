@@ -9,7 +9,7 @@ FOR THE FUTURE:
 • Design a term object with callable attributes that can be populated from terms_dict.
 '''
 
-import collections, json, random, math
+import collections, json, random, math, copy
 from datetime import datetime
 from tf.app import use
 from tf.fabric import Fabric
@@ -89,7 +89,7 @@ class Study:
             display(HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
               
               
-            highlights = {'0':'pink', '1': 'pink', '2':'pink', 
+            highlights = {'0':'pink', '1': 'yellow', '2':'yellow', 
                           '3':'lightgreen', '4':'lightblue'}
             highlight = highlights[score]
             
@@ -189,8 +189,11 @@ class Study:
         # reset queues based on changed scores & update stats
         session_stats['changes'] = collections.Counter()
         self.add_new_scores()
-        self.update_queues(session_stats['changes']) 
-             
+        self.update_queues(session_stats['changes'])
+        # track final score count at end of session
+        session_stats['score_counts'] = dict((score, len(queue)) 
+                                                for score, queue in self.set_data['term_queues'].items())
+        
         # update set data
         self.set_data['cycle_data']['total_sessions'] += 1      
         self.set_data['stats'].append(session_stats)
@@ -208,8 +211,11 @@ class Study:
 
         term_queues = self.set_data['term_queues']
         terms_dict = self.set_data['terms_dict']
+        # make buffer queues for iteration
+        # prevents altering original during iteration
+        buffer_queues = copy.deepcopy(term_queues) 
               
-        for score, term_queue in term_queues.items():
+        for score, term_queue in buffer_queues.items():
             for term in term_queue:
                 
                 # compare old/new score, change if needed
