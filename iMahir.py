@@ -25,21 +25,22 @@ class Study:
     and formats it for use in a Jupyter notebook.
     '''
 
-    def __init__(self, vocab_json, tf_app='bhsa', data_version='2017'):
+    def __init__(self, vocab_json, tf_app='bhsa'):
         '''
         vocab_json - a json file formatted with term data for use with Mahir
         data_version - version of the data for Text-Fabric
         '''
-        print('preparing TF...')
-        TF = Fabric(locations='~/text-fabric-data/etcbc/bhsa/tf/2017')
-        TF_api = TF.load('''gloss freq_lex''')
-        self.TF = use(tf_app, api=TF_api, silent=True)
-        self.F, self.T, self.L = self.TF.api.F, self.TF.api.T, self.TF.api.L
-
         # load set data
         with open(vocab_json) as setfile:
             set_data = json.load(setfile)
             self.set_data = set_data
+        
+        tfversion = set_data['bhsa_version']
+        print('preparing TF...')
+        TF = Fabric(locations=f'~/text-fabric-data/etcbc/bhsa/tf/{tfversion}')
+        TF_api = TF.load('''gloss freq_lex''')
+        self.TF = use(tf_app, api=TF_api, silent=True)
+        self.F, self.T, self.L = self.TF.api.F, self.TF.api.T, self.TF.api.L
 
         # prepare for run, check cycle length
         run = self.check_end_cycle(set_data)
