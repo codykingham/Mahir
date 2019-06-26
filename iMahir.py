@@ -12,9 +12,10 @@ FOR THE FUTURE:
 import collections
 import json
 import random
+import time
 import math
 import copy
-from datetime import datetime
+from datetime import datetime, timedelta
 from tf.app import use
 from tf.fabric import Fabric
 from IPython.display import clear_output, display, HTML
@@ -65,7 +66,8 @@ class Study:
         Runs a study session with the user.
         '''
         print('beginning study session...')
-        start_time = datetime.now()
+        start_time = datetime.now() # to be filled in on first instructions
+        pause_times = []
 
         deck = self.session_data.deck
         terms_dict = self.set_data['terms_dict']
@@ -106,8 +108,14 @@ class Study:
 
             while True:
                 user_instruct = self.good_choice(
-                    {'', ',', '.', 'q', 'c', 'e', 'l', '>', '<'}, ask='', allowNumber=True)
-
+                    {'', ',', '.', 'q', 'c', 'e', 'l', '>', '<', 'p'}, ask='', allowNumber=True)
+                
+                # start timer upon user instruct if not already
+                if not start_time:
+                    start_time = datetime.now()
+                    print('Resuming session...')
+                    time.sleep(0.5)
+              
                 # show term glosses and data
                 if user_instruct in {''}:
                     display(HTML(
@@ -163,6 +171,13 @@ class Study:
                     new_lexs = [int(l.strip()) for l in new_lexs.split(',')]
                     terms_dict[term_ID]['source_lexemes'] = new_lexs
                     break
+              
+                # pause timer
+                elif user_instruct == 'p':
+                    this_duration = datetime.now() - start_time
+                    pause_times.append(this_duration)
+                    start_time = None # reset clock
+                    print('Session time paused...')
 
                 # user quit
                 elif user_instruct == 'q':
@@ -175,7 +190,8 @@ class Study:
                     {'y', 'n'}, 'session is complete, quit now?')
 
                 if ask_end == 'y':
-                    self.finalize_session(start_time)
+                    times = [datetime.now() - start_time] + pause_times
+                    self.finalize_session(times)
                     break
 
                 elif ask_end == 'n':
@@ -187,7 +203,7 @@ class Study:
             print(change, '\t\t', amount)
         print('\nduration: ', self.set_data['stats'][-1]['duration'])
 
-    def finalize_session(self, start_time):
+    def finalize_session(self, times):
         '''
         Updates and saves session data and stats.
         '''
@@ -195,7 +211,7 @@ class Study:
         # log session stats
         session_stats = {}
         session_stats['date'] = str(datetime.now())
-        session_stats['duration'] = str(datetime.now() - start_time)
+        session_stats['duration'] = str(sum(times, timedelta()))
         session_stats['deck'] = self.session_data.deck_stats
         session_stats['cycle'] = self.set_data['cycle_data']['ncycle']
         for term in self.session_data.deck:
