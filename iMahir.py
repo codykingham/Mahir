@@ -202,6 +202,7 @@ class Study:
         for change, amount in self.set_data['stats'][-1]['changes'].items():
             print(change, '\t\t', amount)
         print('\nduration: ', self.set_data['stats'][-1]['duration'])
+        print('\nduration per term:', self.set_data['stats'][-1]['secs_per_term'])
 
     def finalize_session(self, times):
         '''
@@ -210,8 +211,11 @@ class Study:
 
         # log session stats
         session_stats = {}
+        duration = sum(times, timedelta())
+        secs_per_term = round(duration.total_seconds() / len(self.session_data.deck), 2) # average seconds per term
         session_stats['date'] = str(datetime.now())
         session_stats['duration'] = str(sum(times, timedelta()))
+        session_stats['secs_per_term'] = secs_per_term
         session_stats['deck'] = self.session_data.deck_stats
         session_stats['cycle'] = self.set_data['cycle_data']['ncycle']
         for term in self.session_data.deck:
