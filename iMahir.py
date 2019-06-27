@@ -214,7 +214,7 @@ class Study:
         duration = sum(times, timedelta())
         secs_per_term = round(duration.total_seconds() / len(self.session_data.deck), 2) # average seconds per term
         session_stats['date'] = str(datetime.now())
-        session_stats['duration'] = str(sum(times, timedelta()))
+        session_stats['duration'] = str(duration) 
         session_stats['secs_per_term'] = secs_per_term
         session_stats['deck'] = self.session_data.deck_stats
         session_stats['cycle'] = self.set_data['cycle_data']['ncycle']
