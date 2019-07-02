@@ -202,7 +202,7 @@ class Study:
         for change, amount in self.set_data['stats'][-1]['changes'].items():
             print(change, '\t\t', amount)
         print('\nduration: ', self.set_data['stats'][-1]['duration'])
-        print('\nduration per term:', self.set_data['stats'][-1]['secs_per_term'])
+        print('\nseconds per term:', self.set_data['stats'][-1]['secs_per_term'])
 
     def finalize_session(self, times):
         '''
