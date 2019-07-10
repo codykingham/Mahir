@@ -36,11 +36,18 @@ class Study:
             set_data = json.load(setfile)
             self.set_data = set_data
         
-        tfversion = set_data['bhsa_version']
+        # retrieve TF app data
+        appdata = set_data['app_data']
+        datversion = appdata['version']
+        app = appdata['app']
+        self.glossfeat = appdata['gloss_feature']
+        self.freqfeat = appdata['freq_feature']
+        self.wordtype = appdata['wordtype']
+        self.context = appdata['context']
+        
+        # load the app
         print('preparing TF...')
-        TF = Fabric(locations=f'~/text-fabric-data/etcbc/bhsa/tf/{tfversion}')
-        TF_api = TF.load('''gloss freq_lex''')
-        self.TF = use(tf_app, api=TF_api, silent=True)
+        self.TF = use(app, version=datversion, silent=True)
         self.F, self.T, self.L = self.TF.api.F, self.TF.api.T, self.TF.api.L
 
         # prepare for run, check cycle length
@@ -61,7 +68,7 @@ class Study:
             print(f'score {score}: {stat} terms')
         print(f'total: {sum(deck_stats.values())}')
 
-    def learn(self, ex_otype='verse'):
+    def learn(self):
         '''
         Runs a study session with the user.
         '''
@@ -72,27 +79,29 @@ class Study:
         deck = self.session_data.deck
         terms_dict = self.set_data['terms_dict']
 
+        # make shortform TF methods / data names
+        glossfeat, freqfeat, wordtype, context = self.glossfeat, self.freqfeat, self.slotype, self.context
+        L, T, Fs = self.L, self.T, self.Fs
+              
         # begin UI loop
         term_n = 0
         while True:
+              
+            # get term data
             term_ID = deck[term_n]
             term_text = terms_dict[term_ID]['term']
             gloss = terms_dict[term_ID]['gloss']
             score = terms_dict[term_ID]['score']
 
-            # assemble and select examples (cycle through lexemes)
-            lexs = terms_dict[term_ID]['source_lexemes'] or terms_dict[term_ID]['custom_lexemes']
+            # -- assemble and select examples (cycle through lexemes) -- 
+            lexs = terms_dict[term_ID]['source_lexemes']
             ex_lex = random.choice(lexs)
-            try:
-                ex_instance = random.choice(self.L.d(ex_lex, 'word')) if type(
-                    ex_lex) != list else ex_lex[0]
-            except:
-                raise Exception(f'lexs: {lexs}; ex_lex: {ex_lex}')
-            ex_passage = self.L.u(ex_instance, ex_otype)[0]
-            std_glosses = [(lx, self.F.gloss.v(lx), self.F.freq_lex.v(lx))
-                           for lx in lexs] if type(ex_lex) != list else []
+            ex_instance = random.choice(L.d(ex_lex, wordtype))
+            ex_passage = L.u(ex_instance, context)[0]
+            std_glosses = [(lx, Fs(glossfeat).v(lx), Fs(freqfeat).v(lx))
+                               for lx in lexs]
 
-            # display passage prompt and score box
+            # -- display passage prompt and score box -- 
             clear_output()
             display(HTML(
                 f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
@@ -101,11 +110,12 @@ class Study:
                           '3': 'lightgreen', '4': 'lightblue'}
             highlight = highlights[score]
 
-            book, chapter, verse = self.T.sectionFromNode(ex_passage)
+            passage = self.TF.sectionStrFromNode(ex_passage)
             display(HTML(
-                f'<span style="float:right; font-family:Times New Roman; font-size:14pt">{book} {chapter}:{verse}<span>'))
+                f'<span style="float:right; font-family:Times New Roman; font-size:14pt">{passage}<span>'))
             self.TF.plain(ex_passage, highlights={ex_instance: highlight})
 
+            # -- get user input --
             while True:
                 user_instruct = self.good_choice(
                     {'', ',', '.', 'q', 'c', 'e', 'l', '>', '<', 'p'}, ask='', allowNumber=True)
@@ -255,12 +265,13 @@ class Study:
         # prevents altering original during iteration
         buffer_queues = copy.deepcopy(term_queues)
 
+        # make adjustments
         for score, term_queue in buffer_queues.items():
             for term in term_queue:
 
-                # compare old/new score, change if needed
                 cur_score = terms_dict[term]['score']
-
+              
+                # compare old/new score, change if needed
                 if score != cur_score:
 
                     # make string for stats count
