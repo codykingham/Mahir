@@ -181,7 +181,12 @@ class Study:
 
                 # user quit
                 elif user_instruct == 'q':
-                    raise Exception('Quit initiated. Nothing saved.')
+                    
+                    confirm = self.good_choice({'y', 'n'}, ask='confirm quit?') # double check
+                    if confirm == 'y':
+                        raise Exception('Quit initiated. Nothing saved.')
+                    else:
+                        break
 
             # launch end program sequence
             if term_n > len(deck)-1:
