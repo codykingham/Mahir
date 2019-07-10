@@ -97,7 +97,7 @@ class Study:
             display(HTML(
                 f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
 
-            highlights = {'0': 'pink', '1': 'yellow', '2': 'yellow',
+            highlights = {'0': 'pink', '1': 'yellow', '2': 'lightgreen',
                           '3': 'lightgreen', '4': 'lightblue'}
             highlight = highlights[score]
 
