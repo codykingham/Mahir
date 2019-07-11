@@ -20,6 +20,13 @@ from tf.app import use
 from tf.fabric import Fabric
 from IPython.display import clear_output, display, HTML
 
+def safediv(a, b):
+    '''Return zero in zero divisions'''
+    try:
+        return a/b
+    except ZeroDivisionError:
+        return 0
+
 class Study:
     '''
     Prepares and consumes data from Mahir 
@@ -38,8 +45,8 @@ class Study:
         
         # retrieve TF app data
         appdata = set_data['app_data']
-        datversion = appdata['version']
         app = appdata['app']
+        datversion = appdata['version']
         self.glossfeat = appdata['gloss_feature']
         self.freqfeat = appdata['freq_feature']
         self.wordtype = appdata['wordtype']
@@ -80,8 +87,8 @@ class Study:
         terms_dict = self.set_data['terms_dict']
 
         # make shortform TF methods / data names
-        glossfeat, freqfeat, wordtype, context = self.glossfeat, self.freqfeat, self.slotype, self.context
-        L, T, Fs = self.L, self.T, self.Fs
+        glossfeat, freqfeat, wordtype, context = self.glossfeat, self.freqfeat, self.wordtype, self.context
+        L, T, Fs = self.L, self.T, self.TF.api.Fs
               
         # begin UI loop
         term_n = 0
@@ -305,7 +312,7 @@ class Study:
 
         run_study = True
 
-        if set_data['cycle_data']['cycle_length'] / set_data['cycle_data']['total_sessions'] == 1:
+        if safediv(set_data['cycle_data']['cycle_length'], set_data['cycle_data']['total_sessions']) == 1:
             print('cycle for this set is complete...')
             keep_same = self.good_choice(
                 {'y', 'n'}, ask='keep cycle parameters the same?')
