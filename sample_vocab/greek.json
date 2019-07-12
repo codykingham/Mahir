@@ -3,7 +3,7 @@
  "init_date": "2019-07-11 17:42:27.439942",
  "description": "This vocabulary set contains lexemes and glosses as derived in the Tischendorf Greek New Testament (8th edition). The glosses are from Bill Mounce and edited by Eliran Wong for brevity.",
  "app_data": {
-  "app": "tisch:clone",
+  "app": "tisch",
   "version": "2.8",
   "gloss_feature": "gloss",
   "freq_feature": "freq_lex",
@@ -12,10 +12,13 @@
  },
  "cycle_data": {
   "ncycle": 0,
-  "total_sessions": 0,
+  "total_sessions": 5,
   "cycle_length": 10,
   "new_quota": 100,
-  "score_starts": {}
+  "score_starts": {
+   "3": 0,
+   "4": 0
+  }
  },
  "scoreconfig": {
   "3": {
@@ -29,444 +32,34 @@
  },
  "term_queues": {
   "0": [
-   "1",
-   "2",
-   "3",
-   "4",
-   "5",
-   "6",
-   "7",
-   "8",
-   "9",
-   "10",
-   "11",
-   "12",
-   "13",
-   "14",
-   "15",
-   "16",
-   "17",
-   "18",
-   "19",
-   "20",
-   "21",
-   "22",
-   "23",
-   "24",
-   "25",
-   "26",
-   "27",
-   "28",
-   "29",
-   "30",
-   "31",
-   "32",
-   "33",
-   "34",
-   "35",
-   "36",
-   "37",
-   "38",
-   "39",
-   "40",
-   "41",
-   "42",
-   "43",
-   "44",
-   "45",
-   "46",
-   "47",
-   "48",
-   "49",
-   "50",
-   "51",
-   "52",
-   "53",
-   "54",
-   "55",
-   "56",
-   "57",
-   "58",
-   "59",
-   "60",
-   "61",
-   "62",
-   "63",
-   "64",
-   "65",
-   "66",
-   "67",
-   "68",
-   "69",
-   "70",
-   "71",
-   "72",
-   "73",
-   "74",
-   "75",
-   "76",
-   "77",
-   "78",
-   "79",
-   "80",
-   "81",
-   "82",
-   "83",
-   "84",
-   "85",
-   "86",
-   "87",
-   "88",
-   "89",
-   "90",
-   "91",
-   "92",
-   "93",
-   "94",
-   "95",
-   "96",
-   "97",
-   "98",
-   "99",
-   "100",
-   "101",
-   "102",
-   "103",
-   "104",
-   "105",
-   "106",
-   "107",
-   "108",
-   "109",
-   "110",
-   "111",
-   "112",
-   "113",
-   "114",
-   "115",
-   "116",
-   "117",
-   "118",
-   "119",
-   "120",
-   "121",
-   "122",
-   "123",
-   "124",
-   "125",
-   "126",
-   "127",
-   "128",
-   "129",
-   "130",
-   "131",
-   "132",
-   "133",
-   "134",
-   "135",
-   "136",
-   "137",
-   "138",
-   "139",
-   "140",
-   "141",
-   "142",
-   "143",
-   "144",
-   "145",
-   "146",
-   "147",
-   "148",
-   "149",
-   "150",
-   "151",
-   "152",
-   "153",
-   "154",
-   "155",
-   "156",
-   "157",
-   "158",
-   "159",
-   "160",
-   "161",
-   "162",
-   "163",
-   "164",
-   "165",
-   "166",
-   "167",
-   "168",
-   "169",
-   "170",
    "171",
-   "172",
-   "173",
-   "174",
-   "175",
-   "176",
-   "177",
-   "178",
-   "179",
-   "180",
-   "181",
-   "182",
-   "183",
-   "184",
-   "185",
-   "186",
-   "187",
-   "188",
-   "189",
-   "190",
-   "191",
-   "192",
-   "193",
-   "194",
-   "195",
-   "196",
-   "197",
-   "198",
-   "199",
-   "200",
-   "201",
-   "202",
-   "203",
-   "204",
-   "205",
-   "206",
-   "207",
-   "208",
-   "209",
-   "210",
-   "211",
-   "212",
-   "213",
-   "214",
-   "215",
-   "216",
-   "217",
-   "218",
-   "219",
-   "220",
-   "221",
-   "222",
-   "223",
-   "224",
-   "225",
-   "226",
-   "227",
-   "228",
-   "229",
-   "230",
-   "231",
-   "232",
    "233",
-   "234",
-   "235",
-   "236",
-   "237",
    "238",
-   "239",
-   "240",
-   "241",
-   "242",
    "243",
-   "244",
-   "245",
-   "246",
-   "247",
-   "248",
-   "249",
-   "250",
-   "251",
-   "252",
-   "253",
-   "254",
-   "255",
    "256",
-   "257",
-   "258",
-   "259",
-   "260",
-   "261",
-   "262",
-   "263",
-   "264",
-   "265",
-   "266",
-   "267",
-   "268",
-   "269",
-   "270",
-   "271",
-   "272",
-   "273",
-   "274",
-   "275",
-   "276",
-   "277",
-   "278",
-   "279",
-   "280",
-   "281",
-   "282",
-   "283",
-   "284",
-   "285",
-   "286",
-   "287",
-   "288",
-   "289",
-   "290",
-   "291",
-   "292",
-   "293",
-   "294",
-   "295",
-   "296",
    "297",
-   "298",
-   "299",
-   "300",
-   "301",
-   "302",
-   "303",
-   "304",
-   "305",
    "306",
-   "307",
-   "308",
-   "309",
    "310",
-   "311",
-   "312",
-   "313",
-   "314",
-   "315",
-   "316",
-   "317",
-   "318",
-   "319",
-   "320",
-   "321",
-   "322",
-   "323",
-   "324",
-   "325",
-   "326",
-   "327",
    "328",
-   "329",
-   "330",
-   "331",
-   "332",
-   "333",
-   "334",
    "335",
    "336",
-   "337",
-   "338",
-   "339",
    "340",
-   "341",
-   "342",
-   "343",
-   "344",
-   "345",
-   "346",
-   "347",
-   "348",
-   "349",
-   "350",
-   "351",
-   "352",
-   "353",
-   "354",
-   "355",
-   "356",
-   "357",
-   "358",
-   "359",
-   "360",
-   "361",
-   "362",
    "363",
-   "364",
-   "365",
    "366",
-   "367",
-   "368",
-   "369",
-   "370",
    "371",
-   "372",
-   "373",
-   "374",
-   "375",
-   "376",
-   "377",
-   "378",
-   "379",
-   "380",
    "381",
-   "382",
-   "383",
-   "384",
-   "385",
-   "386",
-   "387",
-   "388",
-   "389",
    "390",
-   "391",
-   "392",
    "393",
-   "394",
-   "395",
-   "396",
-   "397",
-   "398",
-   "399",
-   "400",
-   "401",
-   "402",
-   "403",
-   "404",
-   "405",
    "406",
-   "407",
-   "408",
    "409",
    "410",
-   "411",
-   "412",
    "413",
-   "414",
-   "415",
-   "416",
-   "417",
    "418",
-   "419",
    "420",
-   "421",
-   "422",
    "423",
    "424",
-   "425",
-   "426",
    "427",
    "428",
-   "429",
-   "430",
-   "431",
-   "432",
-   "433",
-   "434",
-   "435",
-   "436",
-   "437",
-   "438",
    "439",
    "440",
    "441",
@@ -4856,2049 +4449,2462 @@
    "4825",
    "4826"
   ],
-  "1": [],
-  "2": [],
-  "3": [],
+  "1": [
+   "158",
+   "190",
+   "250"
+  ],
+  "2": [
+   "187",
+   "211",
+   "263",
+   "302",
+   "314",
+   "347",
+   "353",
+   "405",
+   "145"
+  ],
+  "3": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21",
+   "22",
+   "23",
+   "26",
+   "27",
+   "28",
+   "29",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40",
+   "41",
+   "42",
+   "43",
+   "44",
+   "45",
+   "46",
+   "48",
+   "49",
+   "50",
+   "51",
+   "52",
+   "53",
+   "54",
+   "55",
+   "56",
+   "57",
+   "59",
+   "60",
+   "61",
+   "62",
+   "63",
+   "64",
+   "66",
+   "67",
+   "68",
+   "69",
+   "70",
+   "71",
+   "72",
+   "74",
+   "75",
+   "76",
+   "77",
+   "78",
+   "79",
+   "80",
+   "81",
+   "82",
+   "83",
+   "84",
+   "85",
+   "86",
+   "87",
+   "88",
+   "89",
+   "90",
+   "91",
+   "92",
+   "93",
+   "94",
+   "95",
+   "96",
+   "97",
+   "98",
+   "99",
+   "100",
+   "24",
+   "25",
+   "47",
+   "58",
+   "65",
+   "73",
+   "101",
+   "103",
+   "104",
+   "105",
+   "106",
+   "107",
+   "108",
+   "109",
+   "110",
+   "111",
+   "112",
+   "113",
+   "114",
+   "115",
+   "116",
+   "117",
+   "118",
+   "119",
+   "120",
+   "121",
+   "122",
+   "123",
+   "124",
+   "125",
+   "126",
+   "127",
+   "128",
+   "129",
+   "130",
+   "131",
+   "132",
+   "133",
+   "134",
+   "135",
+   "136",
+   "137",
+   "138",
+   "139",
+   "140",
+   "141",
+   "142",
+   "143",
+   "144",
+   "146",
+   "147",
+   "148",
+   "149",
+   "150",
+   "151",
+   "152",
+   "153",
+   "154",
+   "155",
+   "156",
+   "157",
+   "159",
+   "160",
+   "161",
+   "162",
+   "163",
+   "164",
+   "165",
+   "166",
+   "167",
+   "168",
+   "169",
+   "170",
+   "172",
+   "173",
+   "174",
+   "175",
+   "176",
+   "177",
+   "178",
+   "179",
+   "180",
+   "181",
+   "182",
+   "183",
+   "184",
+   "185",
+   "186",
+   "188",
+   "189",
+   "191",
+   "192",
+   "193",
+   "194",
+   "195",
+   "196",
+   "197",
+   "199",
+   "200",
+   "201",
+   "202",
+   "203",
+   "204",
+   "205",
+   "206",
+   "207",
+   "208",
+   "209",
+   "210",
+   "212",
+   "213",
+   "214",
+   "215",
+   "216",
+   "217",
+   "218",
+   "219",
+   "220",
+   "221",
+   "222",
+   "223",
+   "224",
+   "225",
+   "226",
+   "227",
+   "228",
+   "229",
+   "230",
+   "231",
+   "232",
+   "234",
+   "235",
+   "236",
+   "237",
+   "239",
+   "240",
+   "241",
+   "242",
+   "244",
+   "245",
+   "246",
+   "247",
+   "248",
+   "249",
+   "251",
+   "252",
+   "253",
+   "255",
+   "257",
+   "258",
+   "259",
+   "260",
+   "261",
+   "262",
+   "264",
+   "265",
+   "266",
+   "267",
+   "268",
+   "269",
+   "270",
+   "271",
+   "272",
+   "273",
+   "274",
+   "275",
+   "276",
+   "277",
+   "278",
+   "279",
+   "280",
+   "281",
+   "282",
+   "283",
+   "284",
+   "285",
+   "286",
+   "287",
+   "288",
+   "102",
+   "198",
+   "254",
+   "289",
+   "290",
+   "291",
+   "293",
+   "294",
+   "298",
+   "299",
+   "301",
+   "303",
+   "304",
+   "305",
+   "307",
+   "308",
+   "309",
+   "311",
+   "312",
+   "313",
+   "315",
+   "316",
+   "317",
+   "318",
+   "320",
+   "321",
+   "322",
+   "323",
+   "324",
+   "325",
+   "326",
+   "327",
+   "329",
+   "330",
+   "332",
+   "333",
+   "334",
+   "337",
+   "338",
+   "339",
+   "341",
+   "342",
+   "343",
+   "345",
+   "349",
+   "350",
+   "351",
+   "355",
+   "356",
+   "357",
+   "358",
+   "359",
+   "360",
+   "361",
+   "362",
+   "364",
+   "365",
+   "367",
+   "368",
+   "369",
+   "370",
+   "372",
+   "373",
+   "292",
+   "295",
+   "296",
+   "300",
+   "319",
+   "331",
+   "344",
+   "346",
+   "348",
+   "352",
+   "354",
+   "374",
+   "375",
+   "376",
+   "377",
+   "378",
+   "379",
+   "380",
+   "382",
+   "383",
+   "384",
+   "385",
+   "386",
+   "387",
+   "388",
+   "389",
+   "391",
+   "392",
+   "394",
+   "395",
+   "396",
+   "397",
+   "398",
+   "399",
+   "400",
+   "401",
+   "402",
+   "403",
+   "404",
+   "407",
+   "408",
+   "411",
+   "412",
+   "414",
+   "415",
+   "416",
+   "417",
+   "419",
+   "421",
+   "422",
+   "425",
+   "426",
+   "429",
+   "430",
+   "431",
+   "432",
+   "433",
+   "434",
+   "435",
+   "436",
+   "437",
+   "438"
+  ],
   "4": []
  },
  "terms_dict": {
   "1": {
    "term": "ὁ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146692
    ],
    "gloss": "the",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "2": {
    "term": "καί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146697
    ],
    "gloss": "and",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "3": {
    "term": "αὐτός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146699
    ],
    "gloss": "he",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "4": {
    "term": "σύ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146786
    ],
    "gloss": "you",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "5": {
    "term": "δέ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146694
    ],
    "gloss": "but",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "6": {
    "term": "ἐν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146763
    ],
    "gloss": "in",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "7": {
    "term": "ἐγώ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146805
    ],
    "gloss": "I",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "8": {
    "term": "εἰμί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146756
    ],
    "gloss": "to be",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "9": {
    "term": "λέγω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146748
    ],
    "gloss": "to say",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "10": {
    "term": "εἰς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146821
    ],
-   "gloss": "to",
+   "gloss": "in, into",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "11": {
    "term": "οὐ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146812
    ],
-   "gloss": "no",
+   "gloss": "not",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "12": {
    "term": "ὅς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146747
    ],
-   "gloss": "who",
+   "gloss": "who, which",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "13": {
    "term": "οὗτος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146775
    ],
    "gloss": "this",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "14": {
    "term": "θεός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146806
    ],
    "gloss": "God",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "15": {
    "term": "ὅτι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146891
    ],
-   "gloss": "that",
+   "gloss": "because, that, when, indeed",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "16": {
    "term": "πᾶς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146749
    ],
    "gloss": "all",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "17": {
    "term": "γάρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146787
    ],
    "gloss": "for",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "18": {
    "term": "μή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146769
    ],
-   "gloss": "no",
+   "gloss": "lest",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "19": {
    "term": "ἐκ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146702
    ],
-   "gloss": "of",
+   "gloss": "from; out of",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "20": {
    "term": "ἐπί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146730
    ],
-   "gloss": "on",
+   "gloss": "on, over, when; on the basis of, at; on, to, against",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "21": {
    "term": "κύριος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146779
    ],
    "gloss": "lord",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "22": {
    "term": "ἔχω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146765
    ],
    "gloss": "to have",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "23": {
    "term": "πρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146877
    ],
    "gloss": "to",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "24": {
    "term": "ὁράω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146777
    ],
    "gloss": "to see",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "25": {
    "term": "γίνομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146795
    ],
    "gloss": "to be",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "26": {
    "term": "ἵνα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146796
    ],
    "gloss": "in order that",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "27": {
    "term": "ἀπό",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146752
    ],
    "gloss": "from",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "28": {
    "term": "ἀλλά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147023
    ],
-   "gloss": "but",
+   "gloss": "but, yet, except",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "29": {
    "term": "διά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146800
    ],
-   "gloss": "through",
+   "gloss": "through; on account of",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "30": {
    "term": "ἔρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146826
    ],
    "gloss": "to come",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "31": {
    "term": "ποιέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146809
    ],
    "gloss": "to do",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "32": {
    "term": "ἄνθρωπος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147022
    ],
-   "gloss": "human being",
+   "gloss": "man",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "33": {
    "term": "τίς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146961
    ],
-   "gloss": "Titius",
+   "gloss": "who? what?",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "34": {
    "term": "τὶς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147163
    ],
-   "gloss": "someone",
+   "gloss": "someone, something",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "35": {
    "term": "ὡς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146810
    ],
    "gloss": "as",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "36": {
    "term": "εἰ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147018
    ],
    "gloss": "if",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "37": {
    "term": "οὖν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146750
    ],
    "gloss": "therefore",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "38": {
    "term": "κατά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146780
    ],
-   "gloss": "against",
+   "gloss": "down from; against; according to; throughout; during",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "39": {
    "term": "μετά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146733
    ],
-   "gloss": "with",
+   "gloss": "with; after",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "40": {
    "term": "ἀκούω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146828
    ],
    "gloss": "to hear",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "41": {
    "term": "δίδωμι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147042
    ],
    "gloss": "to give",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "42": {
    "term": "πολύς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146906
    ],
    "gloss": "many",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "43": {
    "term": "πατήρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146918
    ],
    "gloss": "father",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "44": {
    "term": "ἡμέρα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146816
    ],
    "gloss": "day",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "45": {
    "term": "πνεῦμα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146766
    ],
-   "gloss": "wind",
+   "gloss": "spirit; wind",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "46": {
    "term": "υἱός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146688
    ],
    "gloss": "son",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "47": {
    "term": "ἤ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146760
    ],
-   "gloss": "either...or",
+   "gloss": "or",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "48": {
    "term": "ἀδελφός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146698
    ],
    "gloss": "brother",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "49": {
    "term": "εἷς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147146
    ],
    "gloss": "one",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "50": {
    "term": "περί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146852
    ],
-   "gloss": "about",
+   "gloss": "concerning; about; around",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "51": {
    "term": "ἐάν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147043
    ],
-   "gloss": "if",
+   "gloss": "if, when",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "52": {
    "term": "λόγος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147187
    ],
    "gloss": "word",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "53": {
    "term": "ἑαυτοῦ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146968
    ],
    "gloss": "himself",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "54": {
    "term": "οἶδα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147253
    ],
    "gloss": "to know",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "55": {
    "term": "λαλέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147493
    ],
    "gloss": "to speak",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "56": {
    "term": "οὐρανός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146934
    ],
    "gloss": "sky",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "57": {
    "term": "μαθητής",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147099
    ],
    "gloss": "disciple",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "58": {
    "term": "λαμβάνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147210
    ],
    "gloss": "to take",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "59": {
    "term": "γῆ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146836
    ],
    "gloss": "earth",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "60": {
    "term": "μέγας",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146864
    ],
    "gloss": "great",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "61": {
    "term": "πίστις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147404
    ],
    "gloss": "faith",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "62": {
    "term": "πιστεύω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147410
    ],
    "gloss": "to believe",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "63": {
    "term": "ἐκεῖνος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146926
    ],
    "gloss": "that",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "64": {
    "term": "οὐδείς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147124
    ],
    "gloss": "no one",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "65": {
    "term": "ἀποκρίνομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146998
    ],
    "gloss": "to answer",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "66": {
    "term": "ἅγιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146767
    ],
    "gloss": "holy",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "67": {
    "term": "ὄνομα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146790
    ],
    "gloss": "name",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "68": {
    "term": "γινώσκω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146813
    ],
    "gloss": "to know",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "69": {
    "term": "ἐξέρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146840
    ],
    "gloss": "to go out",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "70": {
    "term": "ὑπό",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146799
    ],
-   "gloss": "by",
+   "gloss": "by; under",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "71": {
    "term": "γυνή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146785
    ],
    "gloss": "woman",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "72": {
    "term": "ἀνήρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146745
    ],
    "gloss": "man",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "73": {
    "term": "τέ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148067
    ],
    "gloss": "and",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "74": {
    "term": "δύναμαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146969
    ],
    "gloss": "to be able",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "75": {
    "term": "θέλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146770
    ],
    "gloss": "to will",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "76": {
    "term": "οὕτω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146755
    ],
-   "gloss": "in this way",
+   "gloss": "thus, so",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "77": {
    "term": "νόμος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147142
    ],
    "gloss": "law",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "78": {
    "term": "εἰσέρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146914
    ],
    "gloss": "to go in",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "79": {
    "term": "παρά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146834
    ],
-   "gloss": "from",
+   "gloss": "from, beside, in the presence of, alongside of",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "80": {
    "term": "γράφω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146835
    ],
    "gloss": "to write",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "81": {
    "term": "κόσμος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147040
    ],
    "gloss": "world",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "82": {
    "term": "καθώς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148011
    ],
    "gloss": "just as",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "83": {
    "term": "μέν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146980
    ],
-   "gloss": "Menna",
+   "gloss": "on the one hand, indeed",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "84": {
    "term": "ἄγγελος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146778
    ],
    "gloss": "angel",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "85": {
    "term": "χείρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146988
    ],
    "gloss": "hand",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "86": {
    "term": "εὑρίσκω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146762
    ],
    "gloss": "to find",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "87": {
    "term": "ὄχλος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147096
    ],
    "gloss": "crowd",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "88": {
    "term": "ἁμαρτία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146793
    ],
    "gloss": "sin",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "89": {
    "term": "ἔργον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147138
    ],
    "gloss": "work",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "90": {
    "term": "δόξα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147041
    ],
    "gloss": "glory",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "91": {
    "term": "ἄν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146885
    ],
-   "gloss": "[indicates potential]",
+   "gloss": "[-ever]",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "92": {
    "term": "πόλις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146923
    ],
    "gloss": "city",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "93": {
    "term": "ἔθνος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147056
    ],
    "gloss": "Gentile",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "94": {
    "term": "βασιλεία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146933
    ],
    "gloss": "kingdom",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "95": {
    "term": "ἐσθίω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147288
    ],
-   "gloss": "to cloak",
+   "gloss": "to eat",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "96": {
    "term": "πρῶτος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147164
    ],
    "gloss": "first",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "97": {
    "term": "τότε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146845
    ],
    "gloss": "then",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "98": {
    "term": "καρδία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147110
    ],
    "gloss": "heart",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "99": {
    "term": "χάρις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148696
    ],
    "gloss": "grace",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "100": {
    "term": "πορεύομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146849
    ],
    "gloss": "to come",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "101": {
    "term": "ἄλλος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146878
    ],
    "gloss": "another",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "102": {
    "term": "ἵστημι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146859
    ],
    "gloss": "to stand",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "103": {
    "term": "ὑπέρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147222
    ],
-   "gloss": "above",
+   "gloss": "on behalf of; above",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "104": {
    "term": "καλέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146789
    ],
    "gloss": "to call",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "105": {
    "term": "νῦν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148155
    ],
    "gloss": "now",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "106": {
    "term": "σάρξ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147866
    ],
    "gloss": "flesh",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "107": {
    "term": "ὅστις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146842
    ],
    "gloss": "who",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "108": {
    "term": "προφήτης",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146801
    ],
    "gloss": "prophet",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "109": {
    "term": "ἕως",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146753
    ],
-   "gloss": "up to",
+   "gloss": "until",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "110": {
    "term": "λαός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146792
    ],
    "gloss": "people",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "111": {
    "term": "ἀγαπάω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147217
    ],
    "gloss": "to love",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "112": {
    "term": "ἀφίημι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146999
    ],
    "gloss": "to forgive",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "113": {
    "term": "ἐγείρω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146807
    ],
    "gloss": "to arise",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "114": {
    "term": "σῶμα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147184
    ],
    "gloss": "body",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "115": {
    "term": "πάλιν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147035
    ],
    "gloss": "again",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "116": {
    "term": "ζάω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147021
    ],
    "gloss": "to be alive",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "117": {
    "term": "φωνή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146902
    ],
    "gloss": "voice",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "118": {
    "term": "οὐδέ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147130
    ],
    "gloss": "and not",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "119": {
    "term": "ζωή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147345
    ],
    "gloss": "life",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "120": {
    "term": "βλέπω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147176
    ],
    "gloss": "to see",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "121": {
    "term": "δύο",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147065
    ],
    "gloss": "two",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "122": {
    "term": "ἀποστέλλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146895
    ],
    "gloss": "to send",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "123": {
    "term": "σύν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148201
    ],
    "gloss": "with",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "124": {
    "term": "νεκρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147425
    ],
    "gloss": "dead",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "125": {
    "term": "ἀμήν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147143
    ],
    "gloss": "amen",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "126": {
    "term": "αἰών",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147673
    ],
    "gloss": "eternity",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "127": {
    "term": "δοῦλος (II)",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147401
    ],
    "gloss": "servant",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "128": {
    "term": "βάλλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146979
    ],
    "gloss": "to throw",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "129": {
    "term": "ὅταν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147114
    ],
    "gloss": "when",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "130": {
    "term": "ἀρχιερεύς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146831
    ],
    "gloss": "chief priest",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "131": {
    "term": "θάνατος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147061
    ],
    "gloss": "death",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "132": {
    "term": "δύναμις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147364
    ],
    "gloss": "power",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "133": {
    "term": "παραδίδωμι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147048
    ],
    "gloss": "to hand over",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "134": {
    "term": "μένω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147539
    ],
-   "gloss": "to stay",
+   "gloss": "to remain",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "135": {
    "term": "ἀπέρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146919
    ],
    "gloss": "to go away",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "136": {
    "term": "ζητέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146887
    ],
-   "gloss": "to look for",
+   "gloss": "to seek",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "137": {
    "term": "ἀγάπη",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148148
    ],
    "gloss": "love",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "138": {
    "term": "οἶκος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147461
    ],
    "gloss": "house",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "139": {
    "term": "βασιλεύς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146714
    ],
    "gloss": "king",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "140": {
    "term": "ἐκκλησία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147868
    ],
    "gloss": "church",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "141": {
    "term": "ἴδιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147454
    ],
    "gloss": "one's own",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "142": {
    "term": "κρίνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147208
    ],
-   "gloss": "to decide",
+   "gloss": "to judge",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "143": {
    "term": "μόνος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147020
    ],
    "gloss": "only",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "144": {
    "term": "ἀποθνῄσκω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147450
    ],
    "gloss": "to die",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "145": {
    "term": "μέλλω",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     146886
    ],
    "gloss": "to be about to",
    "stats": {
-    "seen": 0,
+    "seen": 4,
     "missed": 0
    }
   },
   "146": {
    "term": "ἀλήθεια",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148075
    ],
    "gloss": "truth",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "147": {
    "term": "ὅλος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146794
    ],
-   "gloss": "all",
+   "gloss": "whole",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "148": {
    "term": "ὅσος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147338
    ],
    "gloss": "how great",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "149": {
    "term": "παρακαλέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146910
    ],
-   "gloss": "to ask",
+   "gloss": "to encourage, exhort",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "150": {
    "term": "ἀνίστημι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147466
    ],
    "gloss": "to get up",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "151": {
    "term": "ὥρα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147411
    ],
    "gloss": "hour",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "152": {
    "term": "σῴζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146791
    ],
    "gloss": "to save",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "153": {
    "term": "πῶς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147304
    ],
    "gloss": "how? in what way?",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "154": {
    "term": "δεῖ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147872
    ],
-   "gloss": "to it is a must",
+   "gloss": "it is necessary",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "155": {
    "term": "ἐξουσία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147384
    ],
    "gloss": "authority",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "156": {
    "term": "ἀγαθός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147224
    ],
    "gloss": "good",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "157": {
    "term": "ψυχή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146913
    ],
-   "gloss": "life",
+   "gloss": "soul, life",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "158": {
    "term": "αἴρω",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     147030
    ],
    "gloss": "to take up",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "159": {
    "term": "καλός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146976
    ],
    "gloss": "good",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "160": {
    "term": "ὁδός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146879
    ],
    "gloss": "road",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "161": {
    "term": "ἀλλήλων",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148145
    ],
    "gloss": "one another",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "162": {
    "term": "ὅτε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147380
    ],
    "gloss": "when",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "163": {
    "term": "ὀφθαλμός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147178
    ],
    "gloss": "eye",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "164": {
    "term": "ἕτερος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147283
    ],
    "gloss": "other",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "165": {
    "term": "τίθημι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147133
    ],
    "gloss": "to place",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "166": {
    "term": "τέκνον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146909
    ],
    "gloss": "child",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "167": {
    "term": "αἷμα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147867
    ],
    "gloss": "blood",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "168": {
    "term": "διδάσκω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147081
    ],
    "gloss": "to teach",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "169": {
    "term": "ἄρτος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147019
    ],
    "gloss": "bread",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "170": {
    "term": "γεννάω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146691
    ],
-   "gloss": "to become the father of",
+   "gloss": "to beget",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -6910,739 +6916,739 @@
    ],
    "gloss": "to say",
    "stats": {
-    "seen": 0,
+    "seen": 4,
     "missed": 0
    }
   },
   "172": {
    "term": "τόπος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147690
    ],
    "gloss": "place",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "173": {
    "term": "φοβέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146783
    ],
    "gloss": "to fear",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "174": {
    "term": "οὔτε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147277
    ],
    "gloss": "and not",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "175": {
    "term": "ἔτι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147126
    ],
    "gloss": "still",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "176": {
    "term": "περιπατέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147064
    ],
-   "gloss": "to walk",
+   "gloss": "to walk about",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "177": {
    "term": "ἐκεῖ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146884
    ],
    "gloss": "there",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "178": {
    "term": "οἰκία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146866
    ],
    "gloss": "house",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "179": {
    "term": "ἐνώπιον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148680
    ],
    "gloss": "before",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "180": {
    "term": "μηδείς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147390
    ],
    "gloss": "no one",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "181": {
    "term": "θάλασσα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147054
    ],
    "gloss": "sea",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "182": {
    "term": "δικαιοσύνη",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147002
    ],
    "gloss": "righteousness",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "183": {
    "term": "εἰρήνη",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147540
    ],
    "gloss": "peace",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "184": {
    "term": "ἀκολουθέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147073
    ],
    "gloss": "to follow",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "185": {
    "term": "πούς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147033
    ],
    "gloss": "foot",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "186": {
    "term": "ἀπόλλυμι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146888
    ],
    "gloss": "to destroy",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "187": {
    "term": "κάθημαι",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147057
    ],
    "gloss": "to sit",
    "stats": {
-    "seen": 0,
+    "seen": 4,
     "missed": 0
    }
   },
   "188": {
    "term": "ἑπτά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147695
    ],
    "gloss": "seven",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "189": {
    "term": "πίπτω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146867
    ],
    "gloss": "to fall",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "190": {
    "term": "ἄρχω",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     147063
    ],
    "gloss": "to rule",
    "stats": {
-    "seen": 0,
+    "seen": 4,
     "missed": 0
    }
   },
   "191": {
    "term": "προσέρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147017
    ],
    "gloss": "to come to",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "192": {
    "term": "πληρόω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146797
    ],
    "gloss": "to fulfill",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "193": {
    "term": "καιρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147443
    ],
    "gloss": "time",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "194": {
    "term": "ὥστε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147428
    ],
-   "gloss": "ear",
+   "gloss": "so that",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "195": {
    "term": "προσεύχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147221
    ],
    "gloss": "to pray",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "196": {
    "term": "εὐθέως",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147003
    ],
    "gloss": "immediately",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "197": {
    "term": "κἀγώ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146857
    ],
    "gloss": "and I",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "198": {
    "term": "ἕκαστος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147882
    ],
    "gloss": "each",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "199": {
    "term": "μήτηρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146758
    ],
    "gloss": "mother",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "200": {
    "term": "ὅπου",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147271
    ],
    "gloss": "where",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "201": {
    "term": "ἀναβαίνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147004
    ],
    "gloss": "to go up",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "202": {
    "term": "μᾶλλον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147296
    ],
-   "gloss": "more",
+   "gloss": "rather",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "203": {
    "term": "ὑπάγω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147044
    ],
-   "gloss": "to go",
+   "gloss": "to lead up",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "204": {
    "term": "ἐκβάλλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147327
    ],
-   "gloss": "to take out",
+   "gloss": "to cast out",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "205": {
    "term": "ἀπόστολος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147522
    ],
    "gloss": "apostle",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "206": {
    "term": "καταβαίνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147005
    ],
    "gloss": "to go down",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "207": {
    "term": "πέμπω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146848
    ],
    "gloss": "to send",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "208": {
    "term": "δίκαιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146768
    ],
-   "gloss": "right",
+   "gloss": "righteous",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "209": {
    "term": "πονηρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147116
    ],
-   "gloss": "bad",
+   "gloss": "evil",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "210": {
    "term": "στόμα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147025
    ],
    "gloss": "mouth",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "211": {
    "term": "σημεῖον",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147676
    ],
    "gloss": "sign",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "212": {
    "term": "πρόσωπον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147266
    ],
    "gloss": "face",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "213": {
    "term": "βαπτίζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146953
    ],
    "gloss": "to baptize",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "214": {
    "term": "ἀνοίγω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146868
    ],
    "gloss": "to open",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "215": {
    "term": "μαρτυρέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148130
    ],
    "gloss": "to testify",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "216": {
    "term": "εὐαγγέλιον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147083
    ],
    "gloss": "gospel",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "217": {
    "term": "ὕδωρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146981
    ],
    "gloss": "water",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "218": {
    "term": "δώδεκα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147498
    ],
    "gloss": "twelve",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "219": {
    "term": "κεφαλή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147198
    ],
    "gloss": "head",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "220": {
    "term": "ἀποκτείνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147565
    ],
    "gloss": "to kill",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "221": {
    "term": "ἱερός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147027
    ],
    "gloss": "temple",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "222": {
    "term": "χαίρω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146862
    ],
    "gloss": "to rejoice",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "223": {
    "term": "πίνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147314
    ],
    "gloss": "to drink",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "224": {
    "term": "φῶς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147059
    ],
    "gloss": "light",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "225": {
    "term": "τηρέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147960
    ],
    "gloss": "to keep",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "226": {
    "term": "πῦρ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146978
    ],
    "gloss": "fire",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "227": {
    "term": "αἰώνιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147919
    ],
    "gloss": "eternal",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "228": {
    "term": "ἄγω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147551
    ],
-   "gloss": "to bring",
+   "gloss": "to lead, bring",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "229": {
    "term": "αἰτέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147214
    ],
    "gloss": "to ask",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "230": {
    "term": "ἐμός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147931
    ],
    "gloss": "my",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "231": {
    "term": "σάββατον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147634
    ],
    "gloss": "Sabbath",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "232": {
    "term": "φέρω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147360
    ],
-   "gloss": "to bring",
+   "gloss": "to bear",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -7654,55 +7660,55 @@
    ],
    "gloss": "to say",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "234": {
    "term": "πιστός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148180
    ],
    "gloss": "faithful",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "235": {
    "term": "πρεσβύτερος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147806
    ],
-   "gloss": "older",
+   "gloss": "elder",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "236": {
    "term": "τρεῖς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147681
    ],
    "gloss": "three",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "237": {
    "term": "ῥῆμα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147024
    ],
    "gloss": "word",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -7712,57 +7718,57 @@
    "source_lexemes": [
     146774
    ],
-   "gloss": "to release",
+   "gloss": "to release, forgive",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "239": {
    "term": "ἐντολή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147149
    ],
    "gloss": "command",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "240": {
    "term": "πλοῖον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147078
    ],
    "gloss": "boat",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "241": {
    "term": "καρπός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146964
    ],
    "gloss": "fruit",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "242": {
    "term": "εἴτε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     150653
    ],
    "gloss": "if",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -7774,151 +7780,151 @@
    ],
    "gloss": "to ask",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "244": {
    "term": "ὄρος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147037
    ],
-   "gloss": "hill",
+   "gloss": "mountain, hill",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "245": {
    "term": "γραμματεύς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146832
    ],
-   "gloss": "expert in the law",
+   "gloss": "scribe",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "246": {
    "term": "δαιμόνιον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147363
    ],
    "gloss": "demon",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "247": {
    "term": "θέλημα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147255
    ],
    "gloss": "will",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "248": {
    "term": "θρόνος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147196
    ],
    "gloss": "throne",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "249": {
    "term": "ἔξω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147127
    ],
    "gloss": "out",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "250": {
    "term": "δοκέω",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     146967
    ],
    "gloss": "to think",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "251": {
    "term": "μέσος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147548
    ],
    "gloss": "middle",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "252": {
    "term": "δοξάζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147139
    ],
    "gloss": "to glorify",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "253": {
    "term": "ἀγαπητός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147008
    ],
-   "gloss": "dearly loved one",
+   "gloss": "beloved",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "254": {
    "term": "κηρύσσω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146929
    ],
    "gloss": "to preach",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "255": {
    "term": "νύξ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146889
    ],
    "gloss": "night",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -7928,489 +7934,489 @@
    "source_lexemes": [
     147966
    ],
-   "gloss": "to have",
+   "gloss": "to have, begin [existence]",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "257": {
    "term": "ὧδε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147442
    ],
    "gloss": "here",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "258": {
    "term": "διδάσκαλος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147418
    ],
    "gloss": "teacher",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "259": {
    "term": "λίθος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146970
    ],
    "gloss": "stone",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "260": {
    "term": "ἀσπάζομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147229
    ],
    "gloss": "to give greetings",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "261": {
    "term": "ἱμάτιον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147211
    ],
-   "gloss": "clothing",
+   "gloss": "garment",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "262": {
    "term": "χαρά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146863
    ],
    "gloss": "joy",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "263": {
    "term": "συνάγω",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     146830
    ],
    "gloss": "to gather together",
    "stats": {
-    "seen": 0,
+    "seen": 3,
     "missed": 0
    }
   },
   "264": {
    "term": "προσκυνέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146827
    ],
    "gloss": "to worship",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "265": {
    "term": "ἤδη",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146971
    ],
    "gloss": "already",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "266": {
    "term": "θεωρέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148325
    ],
    "gloss": "to see",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "267": {
    "term": "τοιοῦτος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147462
    ],
    "gloss": "such",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "268": {
    "term": "ἀρχή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147948
    ],
    "gloss": "beginning",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "269": {
    "term": "τρίτος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147874
    ],
    "gloss": "third",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "270": {
    "term": "ἐπερωτάω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147645
    ],
    "gloss": "to ask",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "271": {
    "term": "δέχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147542
    ],
-   "gloss": "to welcome",
+   "gloss": "to receive",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "272": {
    "term": "συναγωγή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147082
    ],
    "gloss": "synagogue",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "273": {
    "term": "λοιπός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148061
    ],
-   "gloss": "remaining",
+   "gloss": "rest",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "274": {
    "term": "κράζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147441
    ],
    "gloss": "to call out",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "275": {
    "term": "εὐαγγελίζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147585
    ],
    "gloss": "to preach the gospel",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "276": {
    "term": "μηδέ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147289
    ],
    "gloss": "nor",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "277": {
    "term": "δεξιός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147179
    ],
    "gloss": "the right side",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "278": {
    "term": "χρόνος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146847
    ],
    "gloss": "time",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "279": {
    "term": "ἐλπίς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     149652
    ],
    "gloss": "hope",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "280": {
    "term": "οὐχί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147227
    ],
    "gloss": "not",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "281": {
    "term": "ἔσχατος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147173
    ],
    "gloss": "last",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "282": {
    "term": "ὅπως",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146856
    ],
    "gloss": "that",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "283": {
    "term": "ἐπαγγελία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     149395
    ],
    "gloss": "promise",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "284": {
    "term": "πείθω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148290
    ],
    "gloss": "to convince",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "285": {
    "term": "διό",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148282
    ],
    "gloss": "therefore",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "286": {
    "term": "σπείρω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147293
    ],
-   "gloss": "to sow seed",
+   "gloss": "to sow",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "287": {
    "term": "παιδίον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146853
    ],
    "gloss": "child",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "288": {
    "term": "σοφία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147608
    ],
    "gloss": "wisdom",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "289": {
    "term": "γλῶσσα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148483
    ],
    "gloss": "tongue",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "290": {
    "term": "γραφή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148050
    ],
-   "gloss": "a passage of Scripture",
+   "gloss": "writings",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "291": {
    "term": "κακός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148049
    ],
    "gloss": "evil",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "292": {
    "term": "παραβολή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147698
    ],
    "gloss": "parable",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "293": {
    "term": "τυφλός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147508
    ],
    "gloss": "blind",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "294": {
    "term": "μακάριος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147100
    ],
    "gloss": "blessed",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "295": {
    "term": "φανερόω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148396
    ],
    "gloss": "to reveal",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "296": {
    "term": "ἄχρι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148175
    ],
    "gloss": "until",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
@@ -8422,103 +8428,103 @@
    ],
    "gloss": "year",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "298": {
    "term": "χρεία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146997
    ],
    "gloss": "need",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "299": {
    "term": "προσφέρω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146870
    ],
    "gloss": "to bring to",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "300": {
    "term": "παραλαμβάνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146784
    ],
    "gloss": "to take with",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "301": {
    "term": "φόβος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147796
    ],
    "gloss": "fear",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "302": {
    "term": "ἀποδίδωμι",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147172
    ],
-   "gloss": "to give",
+   "gloss": "to give back, repay",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "303": {
    "term": "ἔμπροσθεν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147137
    ],
    "gloss": "before",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "304": {
    "term": "ἔρημος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146930
    ],
    "gloss": "deserted",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "305": {
    "term": "οὐκέτι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147952
    ],
    "gloss": "no longer",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -8530,43 +8536,43 @@
    ],
    "gloss": "to arrest",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "307": {
    "term": "ἁμαρτωλός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147468
    ],
    "gloss": "sinful",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "308": {
    "term": "κρίσις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147154
    ],
    "gloss": "judgment",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "309": {
    "term": "πρό",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147120
    ],
    "gloss": "before",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -8578,211 +8584,211 @@
    ],
    "gloss": "to place",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "311": {
    "term": "σταυρόω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147991
    ],
    "gloss": "to crucify",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "312": {
    "term": "οὐαί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147609
    ],
    "gloss": "woe!",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "313": {
    "term": "μικρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147577
    ],
    "gloss": "little",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "314": {
    "term": "φυλακή",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147171
    ],
    "gloss": "prison",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "315": {
    "term": "ἀπαγγέλλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146855
    ],
-   "gloss": "to tell",
+   "gloss": "to announce",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "316": {
    "term": "σωτηρία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148729
    ],
    "gloss": "salvation",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "317": {
    "term": "θηρίον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148351
    ],
    "gloss": "animal",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "318": {
    "term": "ναός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148107
    ],
    "gloss": "temple",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "319": {
    "term": "θλῖψις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147717
    ],
-   "gloss": "trouble",
+   "gloss": "tribulation",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "320": {
    "term": "ὅμοιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147597
    ],
    "gloss": "like",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "321": {
    "term": "ποῦ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146823
    ],
    "gloss": "where?",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "322": {
    "term": "ἁμαρτάνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147924
    ],
    "gloss": "to sin",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "323": {
    "term": "σπέρμα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147727
    ],
    "gloss": "seed",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "324": {
    "term": "ἐπιγινώσκω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147352
    ],
    "gloss": "to know",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "325": {
    "term": "διώκω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147112
    ],
    "gloss": "to pursue",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "326": {
    "term": "κατοικέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146922
    ],
    "gloss": "to live in",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "327": {
    "term": "φωνέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148001
    ],
    "gloss": "to call",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -8792,81 +8798,81 @@
    "source_lexemes": [
     147669
    ],
-   "gloss": "to tie",
+   "gloss": "to bind",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "329": {
    "term": "θεραπεύω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147084
    ],
-   "gloss": "to serve",
+   "gloss": "to heal, serve",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "330": {
    "term": "σεαυτοῦ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147028
    ],
    "gloss": "yourself",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "331": {
    "term": "γενεά",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146751
    ],
    "gloss": "generation",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "332": {
    "term": "δεύτερος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148085
    ],
    "gloss": "second",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "333": {
    "term": "ἀνάστασις",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148082
    ],
    "gloss": "resurrection",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "334": {
    "term": "θαυμάζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147402
    ],
    "gloss": "to be amazed",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -8878,7 +8884,7 @@
    ],
    "gloss": "to say farewell",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
@@ -8890,43 +8896,43 @@
    ],
    "gloss": "to loose",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "337": {
    "term": "ἐγγίζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146932
    ],
    "gloss": "to come near",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "338": {
    "term": "μέρος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146920
    ],
    "gloss": "part",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "339": {
    "term": "τιμή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148279
    ],
    "gloss": "honor",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -8936,273 +8942,273 @@
    "source_lexemes": [
     148254
    ],
-   "gloss": "to place beside",
+   "gloss": "to place beside, stand beside",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "341": {
    "term": "πάντοτε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148224
    ],
    "gloss": "always",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "342": {
    "term": "τέσσαρες",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148166
    ],
    "gloss": "four",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "343": {
    "term": "πάσχω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147873
    ],
-   "gloss": "to experience",
+   "gloss": "to suffer",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "344": {
    "term": "χωρίς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147748
    ],
-   "gloss": "by itself",
+   "gloss": "apart from",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "345": {
    "term": "διέρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147688
    ],
-   "gloss": "to go through",
+   "gloss": "to pass through",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "346": {
    "term": "τέλος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147556
    ],
    "gloss": "end",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "347": {
    "term": "καινός",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147490
    ],
    "gloss": "new",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "348": {
    "term": "ἐργάζομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147368
    ],
    "gloss": "to work",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "349": {
    "term": "σήμερον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147257
    ],
    "gloss": "today",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "350": {
    "term": "ἄξιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146965
    ],
    "gloss": "worthy",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "351": {
    "term": "ἑτοιμάζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146937
    ],
    "gloss": "to prepare",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "352": {
    "term": "λογίζομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     149328
    ],
-   "gloss": "to credit",
+   "gloss": "to account, reckon",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "353": {
    "term": "εὐλογέω",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147786
    ],
    "gloss": "to praise",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "354": {
    "term": "οἰκοδομέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147371
    ],
    "gloss": "to build",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "355": {
    "term": "ὀλίγος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147346
    ],
-   "gloss": "little",
+   "gloss": "few",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "356": {
    "term": "μισέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147219
    ],
    "gloss": "to hate",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "357": {
    "term": "ἱκανός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146984
    ],
    "gloss": "sufficient",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "358": {
    "term": "κλαίω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146908
    ],
    "gloss": "to weep",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "359": {
    "term": "πράσσω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148810
    ],
-   "gloss": "to gentleness",
+   "gloss": "to do, perform",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "360": {
    "term": "πλανάω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147921
    ],
    "gloss": "to lead astray",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "361": {
    "term": "δικαιόω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147607
    ],
    "gloss": "to justify",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "362": {
    "term": "ἐπιτίθημι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147496
    ],
    "gloss": "to place",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9214,31 +9220,31 @@
    ],
    "gloss": "to touch",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "364": {
    "term": "θύρα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147248
    ],
    "gloss": "door",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "365": {
    "term": "περισσεύω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147150
    ],
-   "gloss": "to have abundance",
+   "gloss": "to abound",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9250,55 +9256,55 @@
    ],
    "gloss": "to put in subjection",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "367": {
    "term": "ἐπιθυμία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148394
    ],
    "gloss": "desire",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "368": {
    "term": "εὐχαριστέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147849
    ],
    "gloss": "to thank",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "369": {
    "term": "πέντε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147785
    ],
    "gloss": "five",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "370": {
    "term": "πειράζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147011
    ],
    "gloss": "to test",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9310,115 +9316,115 @@
    ],
    "gloss": "to come",
    "stats": {
-    "seen": 0,
+    "seen": 2,
     "missed": 0
    }
   },
   "372": {
    "term": "μαρτυρία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148599
    ],
    "gloss": "testimony",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "373": {
    "term": "ἄρχων",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147494
    ],
    "gloss": "ruler",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "374": {
    "term": "μνημεῖον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147439
    ],
-   "gloss": "tomb",
+   "gloss": "tomb, monument",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "375": {
    "term": "ἐμαυτοῦ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147399
    ],
    "gloss": "myself",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "376": {
    "term": "πρόβατον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147348
    ],
    "gloss": "sheep",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "377": {
    "term": "διακονέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147047
    ],
    "gloss": "to serve",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "378": {
    "term": "διάβολος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147012
    ],
    "gloss": "devilish",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "379": {
    "term": "καυχάομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     150483
    ],
    "gloss": "to boast",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "380": {
    "term": "περιτομή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     149473
    ],
    "gloss": "circumcision",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9428,105 +9434,105 @@
    "source_lexemes": [
     148591
    ],
-   "gloss": "to turn back toward",
+   "gloss": "to turn back",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "382": {
    "term": "προσευχή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148020
    ],
    "gloss": "prayer",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "383": {
    "term": "καλῶς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147649
    ],
    "gloss": "rightly",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "384": {
    "term": "οὖς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147563
    ],
    "gloss": "ear",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "385": {
    "term": "ἐπιστρέφω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147541
    ],
    "gloss": "to turn",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "386": {
    "term": "ἄρα",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147361
    ],
    "gloss": "then",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "387": {
    "term": "ἀγρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147303
    ],
    "gloss": "field",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "388": {
    "term": "ὥσπερ",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147237
    ],
    "gloss": "just as",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "389": {
    "term": "ὀργή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146963
    ],
    "gloss": "wrath",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9536,33 +9542,33 @@
    "source_lexemes": [
     146772
    ],
-   "gloss": "to wish",
+   "gloss": "to desire",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "391": {
    "term": "ὀφείλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147941
    ],
    "gloss": "to owe",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "392": {
    "term": "μάρτυς",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147927
    ],
    "gloss": "witness",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9574,151 +9580,151 @@
    ],
    "gloss": "behind",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "394": {
    "term": "διακονία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     149060
    ],
    "gloss": "ministry",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "395": {
    "term": "ἀσθενέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147532
    ],
    "gloss": "to be weak",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "396": {
    "term": "οἶνος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147486
    ],
    "gloss": "wine",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "397": {
    "term": "βλασφημέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147457
    ],
    "gloss": "to blaspheme",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "398": {
    "term": "ναί",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147201
    ],
-   "gloss": "Naaman",
+   "gloss": "yes",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "399": {
    "term": "μήτε",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147195
    ],
    "gloss": "and not",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "400": {
    "term": "μέλος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147183
    ],
    "gloss": "part",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "401": {
    "term": "πτωχός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147101
    ],
    "gloss": "poor",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "402": {
    "term": "μετανοέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146931
    ],
    "gloss": "to repent",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "403": {
    "term": "διαθήκη",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148233
    ],
    "gloss": "covenant",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "404": {
    "term": "ποῖος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147961
    ],
-   "gloss": "what?",
+   "gloss": "what sort?",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "405": {
    "term": "ἀρνέομαι",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     147571
    ],
-   "gloss": "to Arni",
+   "gloss": "to deny",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9730,31 +9736,31 @@
    ],
    "gloss": "priest",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "407": {
    "term": "ἄρτι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147000
    ],
    "gloss": "now",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "408": {
    "term": "ἐκπορεύομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146950
    ],
    "gloss": "to go out",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9766,7 +9772,7 @@
    ],
    "gloss": "perseverance",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9776,33 +9782,33 @@
    "source_lexemes": [
     148381
    ],
-   "gloss": "large number",
+   "gloss": "multitude",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "411": {
    "term": "δυνατός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147974
    ],
-   "gloss": "possible",
+   "gloss": "power",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "412": {
    "term": "βιβλίον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147955
    ],
    "gloss": "scroll",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9814,55 +9820,55 @@
    ],
    "gloss": "to read",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "414": {
    "term": "ἔξεστι(ν)",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147638
    ],
-   "gloss": "to it is legal",
+   "gloss": "it is lawful",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "415": {
    "term": "ἥλιος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147223
    ],
    "gloss": "sun",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "416": {
    "term": "ἐχθρός",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147220
    ],
    "gloss": "enemy",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "417": {
    "term": "δείκνυμι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147039
    ],
    "gloss": "to show",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9874,19 +9880,19 @@
    ],
    "gloss": "conscience",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "419": {
    "term": "παρρησία",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148495
    ],
    "gloss": "boldness",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9898,31 +9904,31 @@
    ],
    "gloss": "near",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "421": {
    "term": "ὁμοίως",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     148084
    ],
    "gloss": "likewise",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "422": {
    "term": "φυλή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147976
    ],
    "gloss": "tribe",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9934,7 +9940,7 @@
    ],
    "gloss": "to obey",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9946,31 +9952,31 @@
    ],
    "gloss": "to hope",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "425": {
    "term": "πλήν",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147617
    ],
    "gloss": "but",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "426": {
    "term": "ποτήριον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147578
    ],
    "gloss": "cup",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9982,7 +9988,7 @@
    ],
    "gloss": "unclean",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -9994,127 +10000,127 @@
    ],
    "gloss": "to make clean",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "429": {
    "term": "ἄνεμος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147375
    ],
    "gloss": "wind",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "430": {
    "term": "σκότος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147058
    ],
    "gloss": "darkness",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "431": {
    "term": "φαίνω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146782
    ],
    "gloss": "to shine",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "432": {
    "term": "συνέρχομαι",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     146761
    ],
-   "gloss": "to come together",
+   "gloss": "to come with",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "433": {
    "term": "ἀρνίον",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     149590
    ],
    "gloss": "lamb",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "434": {
    "term": "διάκονος",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147997
    ],
-   "gloss": "servant",
+   "gloss": "minister, servant",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "435": {
    "term": "ἀγοράζω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147756
    ],
    "gloss": "to buy",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "436": {
    "term": "ἐπικαλέω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147559
    ],
-   "gloss": "to call",
+   "gloss": "to call upon",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "437": {
    "term": "παραγγέλλω",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147530
    ],
-   "gloss": "to order",
+   "gloss": "to announce, order",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "438": {
    "term": "διδαχή",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     147383
    ],
    "gloss": "teaching",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -62775,5 +62781,106 @@
    }
   }
  },
- "stats": []
+ "stats": [
+  {
+   "date": "2019-07-11 18:27:11.239114",
+   "duration": "0:14:47.356143",
+   "secs_per_term": 8.87,
+   "deck": {
+    "0": 100
+   },
+   "cycle": 0,
+   "changes": {
+    "0->3": 94
+   },
+   "score_counts": {
+    "0": 4732,
+    "1": 0,
+    "2": 0,
+    "3": 94,
+    "4": 0
+   }
+  },
+  {
+   "date": "2019-07-11 18:43:46.425047",
+   "duration": "0:12:20.915837",
+   "secs_per_term": 7.41,
+   "deck": {
+    "0": 100
+   },
+   "cycle": 0,
+   "changes": {
+    "0->3": 94
+   },
+   "score_counts": {
+    "0": 4638,
+    "1": 0,
+    "2": 0,
+    "3": 188,
+    "4": 0
+   }
+  },
+  {
+   "date": "2019-07-11 18:59:26.341104",
+   "duration": "0:14:32.198669",
+   "secs_per_term": 8.72,
+   "deck": {
+    "0": 100
+   },
+   "cycle": 0,
+   "changes": {
+    "0->3": 85
+   },
+   "score_counts": {
+    "0": 4553,
+    "1": 0,
+    "2": 0,
+    "3": 273,
+    "4": 0
+   }
+  },
+  {
+   "date": "2019-07-12 00:26:37.689386",
+   "duration": "0:12:56.954332",
+   "secs_per_term": 7.77,
+   "deck": {
+    "0": 100
+   },
+   "cycle": 0,
+   "changes": {
+    "0->3": 63,
+    "0->1": 2
+   },
+   "score_counts": {
+    "0": 4488,
+    "1": 2,
+    "2": 0,
+    "3": 336,
+    "4": 0
+   }
+  },
+  {
+   "date": "2019-07-12 11:55:47.152583",
+   "duration": "0:15:13.680782",
+   "secs_per_term": 9.05,
+   "deck": {
+    "1": 1,
+    "0": 100
+   },
+   "cycle": 0,
+   "changes": {
+    "0->2": 8,
+    "0->1": 2,
+    "0->3": 62,
+    "1->2": 1
+   },
+   "score_counts": {
+    "0": 4416,
+    "1": 3,
+    "2": 9,
+    "3": 398,
+    "4": 0
+   }
+  }
+ ]
 }
