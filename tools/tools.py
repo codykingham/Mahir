@@ -69,7 +69,8 @@ def merge(vocdat, ids):
     for tid in ids[1:]:
         origin = vocdat['terms_dict'][tid]
         target['source_lexemes'].extend(origin['source_lexemes'])
-        target['gloss'] += ', '+origin['gloss']
-        deleteterm(vodat, tid)
+        target['gloss'] += '; '+origin['gloss']
+        target['term'] += '; '+origin['term']
+        deleteterm(vocdat, tid)
         
     return vocdat
