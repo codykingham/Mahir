@@ -1,4 +1,4 @@
->   עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה
+>   עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה
 
 Experimental, bulk, long-term vocabulary review program for use with [Text-Fabric](https://annotation.github.io/text-fabric/) and Jupyter notebook. The program requires a corpus in Text-Fabric format and a vocabulary .json with the required keys/data.
 
@@ -35,7 +35,7 @@ Every term has a score, which tells Mahir how often it should be shown. Scores r
 ## Progress Notes
 
 ### 24 Mar 2019
-I've completely re-written most of Mahir. It now runs from inside a Jupyter notebook environment instead of from command line. This allows me to use Text-Fabric, and to see highlighted terms in context. I've vastly simplified the architecture, changing the code from module oriented to class oriented. `iMahir` now contains all of the principle code. A (mostly) arbitrary amount of scores can now be configured freely. However, there are some practical upper limits on division that prevents some possibilities, like a score 10 which would hardly ever appear in a study session. But the flexibility is at least now baked in. The biggest change, overall, is the mode of study: from lexeme-based gloss guessing to context-based. Now all terms are seen in their natural conjugated forms, highlighted in the middle of the verse that they appear in. This changes the learning experience, makes it more natural, and makes it easier to learn new terms. I have found that though it takes slightly longer to evaluate the conjugated surface form, my recall has increased since I am seeing words in context.
+I've completely re-written most of Mahir. It now runs from inside a Jupyter notebook environment instead of from command line. This allows me to use Text-Fabric, and to see highlighted terms in context. I've vastly simplified the architecture, changing the code from module oriented to class oriented. `iMahir` now contains all of the principal code. A (mostly) arbitrary amount of scores can now be configured freely. However, there are some practical upper limits on division that prevents some possibilities, like a score 10 which would hardly ever appear in a study session. But the flexibility is at least now baked in. The biggest change, overall, is the mode of study: from lexeme-based gloss guessing to context-based. Now all terms are seen in their natural conjugated forms, highlighted in the middle of the verse that they appear in. This changes the learning experience, makes it more natural, and makes it easier to learn new terms. I have found that though it takes slightly longer to evaluate the conjugated surface form, my recall has increased since I am seeing words in context.
 
 
 ### 3 Feb 2018
