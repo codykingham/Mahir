@@ -74,3 +74,12 @@ def merge(vocdat, ids):
         deleteterm(vocdat, tid)
         
     return vocdat
+
+def blank(vocdat, ids):
+    '''
+    Prepares a fresh version of a vocab set
+    '''
+    
+    # reset starting scores
+#     for score in vocdat['score_starts']:
+#         vocdat['score_starts']
