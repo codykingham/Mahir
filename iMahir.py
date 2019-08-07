@@ -288,14 +288,23 @@ class Study:
                 # compare old/new score, change if needed
                 if score != cur_score:
 
-                    # make string for stats count
-                    downgrade = int(cur_score) < int(score)
-                    change = f'{cur_score}<-{score}' if downgrade else f'{score}->{cur_score}'
+                    # check for certain term changes
+                    isdowngrade = int(cur_score) < int(score)
+                    change = f'{cur_score}<-{score}' if isdowngrade else f'{score}->{cur_score}'
+                    missed = (int(cur_score) < int(score)
+                                 and int(score) > 2
+                                )
+                    learned = (int(score) < 2 
+                               and int(cur_score) > 2
+			       and terms_dict[term]['stats']['missed'] == 0 
+                              )
 
-                    # make records of change
+                    # make records of missed or learned terms
                     stats_dict.update([change])
-                    if downgrade:
+                    if missed:
                         terms_dict[term]['stats']['missed'] += 1
+                    if learned:
+                        terms_dict[term]['stats']['learned'] = str(datetime.now()) 
 
                     # assign new queue position
                     term_queues[score].remove(term)
