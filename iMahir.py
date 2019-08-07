@@ -148,7 +148,7 @@ class Study:
                     display(HTML(
                         f'<span style="font-family:Times New Roman; font-size:10pt">{std_glosses}</span>'))
                     display(HTML(
-                        f'<span style="font-family:Times New Roman; font-size:10pt">f'missed: {missed}'</span>'))
+                        f'<span style="font-family:Times New Roman; font-size:10pt">missed: {missed}</span>'))
 
 
                 # score term
