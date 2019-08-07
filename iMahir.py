@@ -99,6 +99,7 @@ class Study:
             term_text = terms_dict[term_ID]['term']
             gloss = terms_dict[term_ID]['gloss']
             score = terms_dict[term_ID]['score']
+            missed = terms_dict[term_ID]['stats']['missed']
 
             # -- assemble and select examples (cycle through lexemes) -- 
             lexs = terms_dict[term_ID]['source_lexemes']
@@ -146,6 +147,9 @@ class Study:
                         f'<span style="font-family:Times New Roman; font-size:14pt">{score}</span>'))
                     display(HTML(
                         f'<span style="font-family:Times New Roman; font-size:10pt">{std_glosses}</span>'))
+                    display(HTML(
+                        f'<span style="font-family:Times New Roman; font-size:10pt">f'missed: {missed}'</span>'))
+
 
                 # score term
                 elif user_instruct.isnumeric():
