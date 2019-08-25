@@ -119,7 +119,7 @@ class Study:
                           '2': 'lightgreen',
                           '3': 'lightgreen', 
                           '4': 'lightgreen'}
-            highlight = highlights.get(score, 'purple')
+            highlight = highlights.get(score, '#D7BDE2')
 
             passage = self.TF.sectionStrFromNode(ex_passage)
             display(HTML(
