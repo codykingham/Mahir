@@ -119,7 +119,7 @@ class Study:
                           '2': 'lightgreen',
                           '3': 'lightgreen', 
                           '4': 'lightgreen'}
-            highlight = highlights[score]
+            highlight = highlights.get(score, 'purple')
 
             passage = self.TF.sectionStrFromNode(ex_passage)
             display(HTML(
@@ -298,7 +298,7 @@ class Study:
                     learned = (
                         int(score) < 2 
                         and int(cur_score) > 2
-			and terms_dict[term]['stats']['missed'] == 0 
+                        and terms_dict[term]['stats']['missed'] == 0 
                     )
 
                     # make records of missed or learned terms
