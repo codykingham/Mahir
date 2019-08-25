@@ -153,6 +153,14 @@ class Study:
 
                 # score term
                 elif user_instruct.isnumeric():
+                    
+                    if user_instruct not in self.set_data['term_queues']:
+                        confirm = self.good_choice({'y','n'}, ask=f'Add new score [{user_instruct}]?')
+                        if confirm == 'y':
+                            pass
+                        else:
+                            break
+                    
                     terms_dict[term_ID]['score'] = user_instruct
                     term_n += 1
                     break
