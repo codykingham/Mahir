@@ -443,17 +443,22 @@ class Session:
         # score 4 formula optimizes with decimal issues in Python
         # formula is: int(round(((nterms/nsessions/nreset)*(NthSession-1))-int((nterms/nsessions/nreset)*(NthSession-1)) + (nterms/nsessions/nreset), 2))
 
-        score2quota = {'4': int(round(((s_starts['4']/cycle_len/2)*(nsession-1))-int((s_starts['4']/cycle_len/2)*(nsession-1))
-                                      + (s_starts['4']/cycle_len/2), 2)) if s_counts.get('4', 0) else 0,     # s4 seen every 2 cycles
-                       # s3 seen every cycle
-                       '3': math.ceil(s_starts['3'] / cycle_len) if s_counts.get('3', 0) else 0,
-                       # s2 seen every 4 sessions
-                       '2': math.ceil(s_counts['2'] / 4) if s_counts.get('2', 0) else 0,
-                       # s1 seen ever other session
-                       '1': math.ceil(s_counts['1'] / 2) if s_counts.get('1', 0) else 0,
-                       # s0 set by user
-                       '0': new_min
-                       }
+        score2quota = {
+            # s5 seen every 4 cycles
+            '5': int(round(((s_starts['5']/cycle_len/4)*(nsession-1))-int((s_starts['5']/cycle_len/4)*(nsession-1))
+                          + (s_starts['5']/cycle_len/4), 2)) if s_counts.get('5', 0) else 0,
+            # s4 seen every 2 cycles
+            '4': int(round(((s_starts['4']/cycle_len/2)*(nsession-1))-int((s_starts['4']/cycle_len/2)*(nsession-1))
+                          + (s_starts['4']/cycle_len/2), 2)) if s_counts.get('4', 0) else 0,
+            # s3 seen every cycle
+            '3': math.ceil(s_starts['3'] / cycle_len) if s_counts.get('3', 0) else 0,
+            # s2 seen every 4 sessions
+            '2': math.ceil(s_counts['2'] / 4) if s_counts.get('2', 0) else 0,
+            # s1 seen ever other session
+            '1': math.ceil(s_counts['1'] / 2) if s_counts.get('1', 0) else 0,
+            # s0 set by user
+            '0': new_min
+        }
 
         # construct a study deck and keep stats
         deck = []
