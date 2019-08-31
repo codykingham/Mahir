@@ -440,7 +440,7 @@ class Session:
                         for score, terms in term_queues.items())
 
         # calculate daily set quotas, NB math.ceil rounds up^
-        # score 4 formula optimizes with decimal issues in Python
+        # score 4-5 formula optimizes with decimal issues in Python
         # formula is: int(round(((nterms/nsessions/nreset)*(NthSession-1))-int((nterms/nsessions/nreset)*(NthSession-1)) + (nterms/nsessions/nreset), 2))
 
         score2quota = {
