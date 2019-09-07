@@ -440,6 +440,9 @@ class Session:
         # formula is: int(round(((nterms/nsessions/nreset)*(NthSession-1))-int((nterms/nsessions/nreset)*(NthSession-1)) + (nterms/nsessions/nreset), 2))
 
         score2quota = {
+            # s6 seen every 8 cycles
+            '6': int(round(((s_starts['5']/cycle_len/8)*(nsession-1))-int((s_starts['5']/cycle_len/8)*(nsession-1))
+              + (s_starts['5']/cycle_len/8), 2)) if s_counts.get('6', 0) else 0,
             # s5 seen every 4 cycles
             '5': int(round(((s_starts['5']/cycle_len/4)*(nsession-1))-int((s_starts['5']/cycle_len/4)*(nsession-1))
                           + (s_starts['5']/cycle_len/4), 2)) if s_counts.get('5', 0) else 0,
