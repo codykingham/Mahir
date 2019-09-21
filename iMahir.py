@@ -300,7 +300,7 @@ class Study:
                         and int(score) > 2
                     )
                     learned = (
-                        int(score) < 2 
+                        int(score) < 3 
                         and int(cur_score) > 2
                         and terms_dict[term]['stats']['missed'] == 0 
                     )
