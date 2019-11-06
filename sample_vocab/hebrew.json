@@ -12,7 +12,7 @@
  },
  "cycle_data": {
   "ncycle": 19,
-  "total_sessions": 8,
+  "total_sessions": 9,
   "cycle_length": 10,
   "new_quota": 100,
   "score_starts": {
@@ -42,145 +42,6 @@
  },
  "term_queues": {
   "3": [
-   "2663",
-   "2058",
-   "2137",
-   "2215",
-   "3006",
-   "2671",
-   "2823",
-   "3114",
-   "2921",
-   "697",
-   "2313",
-   "2835",
-   "2097",
-   "2650",
-   "3067",
-   "2141",
-   "2138",
-   "3047",
-   "3041",
-   "1991",
-   "2911",
-   "2918",
-   "3156",
-   "2985",
-   "2647",
-   "2481",
-   "817",
-   "2302",
-   "2304",
-   "2326",
-   "2033",
-   "2023",
-   "2243",
-   "2144",
-   "2581",
-   "1933",
-   "3007",
-   "557",
-   "2491",
-   "2048",
-   "2764",
-   "2898",
-   "2903",
-   "3319",
-   "2949",
-   "2389",
-   "2157",
-   "2080",
-   "2396",
-   "1900",
-   "2096",
-   "594",
-   "2798",
-   "786",
-   "2900",
-   "517",
-   "3029",
-   "2404",
-   "2935",
-   "2201",
-   "3181",
-   "2139",
-   "1868",
-   "1949",
-   "2167",
-   "3356",
-   "2166",
-   "3176",
-   "3121",
-   "2434",
-   "671",
-   "3113",
-   "2627",
-   "2888",
-   "2989",
-   "2977",
-   "2560",
-   "2190",
-   "2420",
-   "2448",
-   "3148",
-   "2690",
-   "2416",
-   "2285",
-   "3071",
-   "2521",
-   "3010",
-   "1925",
-   "2643",
-   "3334",
-   "2563",
-   "2077",
-   "1995",
-   "3068",
-   "1857",
-   "2172",
-   "2595",
-   "2213",
-   "1748",
-   "2099",
-   "102",
-   "2870",
-   "2489",
-   "450",
-   "2571",
-   "1815",
-   "3033",
-   "2151",
-   "2946",
-   "3055",
-   "3077",
-   "2698",
-   "2632",
-   "3170",
-   "1210",
-   "2754",
-   "2477",
-   "2029",
-   "3267",
-   "2417",
-   "2391",
-   "3028",
-   "2808",
-   "762",
-   "3364",
-   "3154",
-   "2661",
-   "2264",
-   "1797",
-   "1996",
-   "2127",
-   "2476",
-   "181",
-   "2375",
-   "1894",
-   "480",
-   "2121",
-   "2143",
-   "1823",
    "2824",
    "2047",
    "2984",
@@ -1488,31 +1349,159 @@
    "3336",
    "3294",
    "3503",
-   "141"
+   "141",
+   "2663",
+   "2058",
+   "2137",
+   "2215",
+   "3006",
+   "2671",
+   "2823",
+   "3114",
+   "2921",
+   "697",
+   "2313",
+   "2835",
+   "2097",
+   "2650",
+   "3067",
+   "2141",
+   "2138",
+   "3047",
+   "3041",
+   "1991",
+   "2911",
+   "2918",
+   "3156",
+   "2985",
+   "2647",
+   "2481",
+   "817",
+   "2302",
+   "2304",
+   "2326",
+   "2033",
+   "2023",
+   "2243",
+   "2144",
+   "2581",
+   "1933",
+   "3007",
+   "557",
+   "2048",
+   "2764",
+   "2898",
+   "2903",
+   "3319",
+   "2949",
+   "2389",
+   "2157",
+   "2080",
+   "2396",
+   "1900",
+   "2096",
+   "594",
+   "2798",
+   "786",
+   "2900",
+   "517",
+   "3029",
+   "2404",
+   "2935",
+   "2201",
+   "3181",
+   "2139",
+   "1868",
+   "1949",
+   "2167",
+   "3356",
+   "2166",
+   "3176",
+   "3121",
+   "2434",
+   "671",
+   "3113",
+   "2627",
+   "2888",
+   "2989",
+   "2977",
+   "2560",
+   "2190",
+   "2420",
+   "2448",
+   "3148",
+   "2690",
+   "2416",
+   "2285",
+   "3071",
+   "2521",
+   "3010",
+   "1925",
+   "2643",
+   "3334",
+   "2563",
+   "2077",
+   "1995",
+   "3068",
+   "1857",
+   "2172",
+   "2595",
+   "2213",
+   "1748",
+   "2099",
+   "102",
+   "2870",
+   "2489",
+   "450",
+   "2571",
+   "3033",
+   "2151",
+   "2946",
+   "3055",
+   "3077",
+   "2698",
+   "2632",
+   "3170",
+   "2754",
+   "2477",
+   "2029",
+   "3267",
+   "2417",
+   "2391",
+   "3028",
+   "2808",
+   "762",
+   "3364",
+   "2661",
+   "2264",
+   "1797",
+   "1996",
+   "2127",
+   "2476",
+   "181",
+   "2375",
+   "1894",
+   "2121",
+   "2143",
+   "1823",
+   "3346",
+   "3403",
+   "3333",
+   "3257",
+   "3362",
+   "3406",
+   "3420",
+   "3441",
+   "3221",
+   "3325",
+   "2719",
+   "2214",
+   "3217",
+   "3277",
+   "3308",
+   "3515"
   ],
   "1": [
-   "3357",
-   "3359",
-   "3378",
-   "3408",
-   "3435",
-   "3457",
-   "3480",
-   "3276",
-   "3291",
-   "3200",
-   "3206",
-   "3214",
-   "3259",
-   "3282",
-   "3296",
-   "3413",
-   "3429",
-   "3443",
-   "3384",
-   "3138",
-   "3198",
-   "3280",
    "2103",
    "3091",
    "3314",
@@ -1534,25 +1523,33 @@
    "3469",
    "3487",
    "3494",
-   "3500"
+   "3500",
+   "3357",
+   "3457",
+   "3276",
+   "3291",
+   "3200",
+   "3206",
+   "3259",
+   "3296",
+   "3429",
+   "3384",
+   "3138",
+   "3198",
+   "3280",
+   "3249",
+   "3263",
+   "3272",
+   "3335",
+   "3361",
+   "3405",
+   "3407",
+   "3454",
+   "3481",
+   "3483",
+   "3485"
   ],
   "2": [
-   "3187",
-   "3346",
-   "3403",
-   "3333",
-   "3257",
-   "3362",
-   "3406",
-   "3420",
-   "3441",
-   "3221",
-   "3325",
-   "2719",
-   "2214",
-   "3217",
-   "3277",
-   "3308",
    "3133",
    "3258",
    "3419",
@@ -1598,28 +1595,36 @@
    "3330",
    "3447",
    "3207",
-   "3250"
+   "3250",
+   "3187",
+   "2491",
+   "3154",
+   "3359",
+   "3378",
+   "3408",
+   "3435",
+   "3480",
+   "3214",
+   "3282",
+   "3413",
+   "3443",
+   "3517"
   ],
   "0": [
    "3195",
    "3211",
    "3227",
-   "3249",
    "3260",
    "3261",
-   "3263",
    "3266",
-   "3272",
    "3293",
    "3299",
    "3318",
    "3327",
    "3332",
-   "3335",
    "3348",
    "3350",
    "3354",
-   "3361",
    "3374",
    "3375",
    "3376",
@@ -1630,8 +1635,6 @@
    "3392",
    "3393",
    "3402",
-   "3405",
-   "3407",
    "3414",
    "3415",
    "3416",
@@ -1645,7 +1648,6 @@
    "3451",
    "3452",
    "3453",
-   "3454",
    "3456",
    "3463",
    "3464",
@@ -1662,10 +1664,7 @@
    "3476",
    "3477",
    "3479",
-   "3481",
-   "3483",
    "3484",
-   "3485",
    "3486",
    "3488",
    "3489",
@@ -1690,9 +1689,7 @@
    "3512",
    "3513",
    "3514",
-   "3515",
    "3516",
-   "3517",
    "3518",
    "3519",
    "3520",
@@ -3436,62 +3433,6 @@
    "5258"
   ],
   "4": [
-   "1129",
-   "739",
-   "1882",
-   "1963",
-   "1124",
-   "125",
-   "1889",
-   "1348",
-   "1165",
-   "1862",
-   "142",
-   "1843",
-   "1476",
-   "873",
-   "1356",
-   "1814",
-   "604",
-   "329",
-   "445",
-   "1243",
-   "519",
-   "1264",
-   "1242",
-   "621",
-   "738",
-   "666",
-   "841",
-   "1429",
-   "1562",
-   "2113",
-   "642",
-   "1228",
-   "319",
-   "1341",
-   "1985",
-   "1103",
-   "104",
-   "1655",
-   "1448",
-   "188",
-   "143",
-   "1308",
-   "1208",
-   "1369",
-   "1028",
-   "1529",
-   "760",
-   "1015",
-   "879",
-   "1321",
-   "1389",
-   "1459",
-   "1290",
-   "1235",
-   "510",
-   "1479",
    "1800",
    "1513",
    "1186",
@@ -4228,17 +4169,40 @@
    "1274",
    "395",
    "1251",
-   "802"
+   "802",
+   "1882",
+   "1963",
+   "1124",
+   "125",
+   "1889",
+   "1348",
+   "1862",
+   "142",
+   "1843",
+   "1814",
+   "329",
+   "445",
+   "1242",
+   "738",
+   "666",
+   "841",
+   "1429",
+   "1562",
+   "2113",
+   "642",
+   "1341",
+   "1985",
+   "104",
+   "188",
+   "760",
+   "1015",
+   "510",
+   "1479",
+   "1815",
+   "1210",
+   "480"
   ],
   "5": [
-   "41",
-   "1300",
-   "1663",
-   "949",
-   "221",
-   "404",
-   "1088",
-   "939",
    "1620",
    "976",
    "983",
@@ -4922,11 +4886,40 @@
    "1514",
    "846",
    "1299",
-   "1158"
+   "1158",
+   "1300",
+   "949",
+   "404",
+   "1088",
+   "939",
+   "1129",
+   "739",
+   "1165",
+   "1476",
+   "873",
+   "1356",
+   "604",
+   "1243",
+   "519",
+   "1264",
+   "621",
+   "1228",
+   "319",
+   "1103",
+   "1448",
+   "143",
+   "1308",
+   "1208",
+   "1369",
+   "1028",
+   "1529",
+   "1321",
+   "1389",
+   "1459",
+   "1290",
+   "1235"
   ],
   "6": [
-   "223",
-   "1598",
    "1606",
    "1698",
    "42",
@@ -5311,7 +5304,14 @@
    "1086",
    "1626",
    "1416",
-   "942"
+   "942",
+   "223",
+   "1598",
+   "1655",
+   "879",
+   "41",
+   "1663",
+   "221"
   ]
  },
  "terms_dict": {
@@ -5809,13 +5809,13 @@
   },
   "41": {
    "term": "עַם",
-   "score": "5",
+   "score": "6",
    "source_lexemes": [
     1438159
    ],
    "gloss": "people",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -6562,7 +6562,7 @@
    ],
    "gloss": "where?",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -6586,7 +6586,7 @@
    ],
    "gloss": "to bake",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -6842,7 +6842,7 @@
    ],
    "gloss": "place, abode; stand",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -7054,19 +7054,19 @@
    ],
    "gloss": "to spread out, divide",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
   "143": {
    "term": "פָּרֹכֶת",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439845
    ],
    "gloss": "curtain",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -7529,7 +7529,7 @@
    ],
    "gloss": "to be poor",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -7615,7 +7615,7 @@
    ],
    "gloss": "sand, mud",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -8011,14 +8011,14 @@
   },
   "221": {
    "term": "דֹּור",
-   "score": "5",
+   "score": "6",
    "source_lexemes": [
     1437945,
     1443214
    ],
    "gloss": "generation",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -8042,7 +8042,7 @@
    ],
    "gloss": "to kill",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -9209,13 +9209,13 @@
   },
   "319": {
    "term": "מעט",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439542
    ],
    "gloss": "to be few",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -9338,7 +9338,7 @@
    ],
    "gloss": "rope; branch, foliage",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -10243,7 +10243,7 @@
    ],
    "gloss": "sinner, sinful",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -10738,7 +10738,7 @@
    ],
    "gloss": "to crush, be oppressed",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -10800,7 +10800,7 @@
    ],
    "gloss": "grass",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 2
    }
   },
@@ -11161,13 +11161,13 @@
   },
   "480": {
    "term": "קִינָה",
-   "score": "3",
+   "score": "4",
    "source_lexemes": [
     1441936
    ],
    "gloss": "dirge, lament",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
@@ -11532,7 +11532,7 @@
    ],
    "gloss": "dominion",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -11618,7 +11618,7 @@
    ],
    "gloss": "to volunteer",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 1
    }
   },
@@ -11636,13 +11636,13 @@
   },
   "519": {
    "term": "נָקָם",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1440290
    ],
    "gloss": "vengeance",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -12108,7 +12108,7 @@
    ],
    "gloss": "to become old and worn",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 3
    }
   },
@@ -12555,7 +12555,7 @@
    ],
    "gloss": "to hunt",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 1
    }
   },
@@ -12670,13 +12670,13 @@
   },
   "604": {
    "term": "שְׂחֹוק",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1443559
    ],
    "gloss": "laughter",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -12876,13 +12876,13 @@
   },
   "621": {
    "term": "מֹאזְנַיִם",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1440214
    ],
    "gloss": "scales, balance",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -13137,7 +13137,7 @@
    ],
    "gloss": "to bow down, kneel down",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -13433,7 +13433,7 @@
    ],
    "gloss": "thin, fine",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
@@ -13493,7 +13493,7 @@
    ],
    "gloss": "to await",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 1
    }
   },
@@ -13812,7 +13812,7 @@
    ],
    "gloss": "to be naked, bare; pour out",
    "stats": {
-    "seen": 23,
+    "seen": 24,
     "missed": 2
    }
   },
@@ -14309,19 +14309,19 @@
    ],
    "gloss": "chest (of animal)",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 1
    }
   },
   "739": {
    "term": "חַנּוּן",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439758
    ],
    "gloss": "gracious, friendly",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -14579,7 +14579,7 @@
    ],
    "gloss": "foolishness",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -14604,7 +14604,7 @@
    ],
    "gloss": "to grow weak, faint; to turn aside",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 3
    }
   },
@@ -14898,7 +14898,7 @@
    ],
    "gloss": "to sigh, groan",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 1
    }
   },
@@ -15274,7 +15274,7 @@
    ],
    "gloss": "fetter",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -15565,7 +15565,7 @@
    ],
    "gloss": "crown of head",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -15949,14 +15949,14 @@
   },
   "873": {
    "term": "כֶּשֶׂב; כִּשְׂבָּה",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1438816,
     1440047
    ],
    "gloss": "lamb",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -16023,13 +16023,13 @@
   },
   "879": {
    "term": "קבר",
-   "score": "4",
+   "score": "6",
    "source_lexemes": [
     1438338
    ],
    "gloss": "to bury",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -16756,7 +16756,7 @@
    ],
    "gloss": "vineyard",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -16881,7 +16881,7 @@
    ],
    "gloss": "to be satisfied",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -17702,7 +17702,7 @@
    ],
    "gloss": "to purchase, create, beget",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -17853,13 +17853,13 @@
   },
   "1028": {
    "term": "זָר",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439935
    ],
    "gloss": "strange, different; illicit",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -18585,7 +18585,7 @@
    ],
    "gloss": "proximity (beside)",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -18760,13 +18760,13 @@
   },
   "1103": {
    "term": "נֶדֶר",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1438765
    ],
    "gloss": "vow",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -19027,7 +19027,7 @@
    ],
    "gloss": "thicket/wood; honeycomb",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -19081,13 +19081,13 @@
   },
   "1129": {
    "term": "מִזְמֹור",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1444294
    ],
    "gloss": "psalm",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -19522,13 +19522,13 @@
   },
   "1165": {
    "term": "מדד",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439659
    ],
    "gloss": "to measure",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -20047,13 +20047,13 @@
   },
   "1208": {
    "term": "סמך",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1438740
    ],
    "gloss": "to lay upon, lean, support",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -20073,14 +20073,14 @@
   },
   "1210": {
    "term": "פַּחַד",
-   "score": "3",
+   "score": "4",
    "source_lexemes": [
     1438877,
     1444800
    ],
    "gloss": "fear; thigh [of Behemoth]",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 2
    }
   },
@@ -20291,13 +20291,13 @@
   },
   "1228": {
    "term": "אוּלַי",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1438354
    ],
    "gloss": "perhaps",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -20375,13 +20375,13 @@
   },
   "1235": {
    "term": "סלח",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439993
    ],
    "gloss": "to forgive",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -20468,19 +20468,19 @@
    ],
    "gloss": "small",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
   "1243": {
    "term": "קשׁב",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1441818
    ],
    "gloss": "to incline, attend",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -20728,13 +20728,13 @@
   },
   "1264": {
    "term": "בדל",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1437591
    ],
    "gloss": "to divide",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -21046,13 +21046,13 @@
   },
   "1290": {
    "term": "מְנֹורָה",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439815
    ],
    "gloss": "lampstand",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -21175,7 +21175,7 @@
    ],
    "gloss": "love",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -21268,13 +21268,13 @@
   },
   "1308": {
    "term": "גָּבֹהַּ",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1437983
    ],
    "gloss": "high",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -21426,13 +21426,13 @@
   },
   "1321": {
    "term": "תְּבוּנָה",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439964
    ],
    "gloss": "skill, intelligence",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -21676,7 +21676,7 @@
    ],
    "gloss": "olive",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -21761,7 +21761,7 @@
    ],
    "gloss": "rain",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -21856,13 +21856,13 @@
   },
   "1356": {
    "term": "בִּינָה",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1440809
    ],
    "gloss": "insight",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -22015,13 +22015,13 @@
   },
   "1369": {
    "term": "תְּאֵנָה",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1437775
    ],
    "gloss": "fig (-tree)",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -22257,13 +22257,13 @@
   },
   "1389": {
    "term": "נסה",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1438528
    ],
    "gloss": "to test",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -22747,7 +22747,7 @@
    ],
    "gloss": "skin disease",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -22972,13 +22972,13 @@
   },
   "1448": {
    "term": "לְבוּשׁ",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439326
    ],
    "gloss": "clothes",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -23106,13 +23106,13 @@
   },
   "1459": {
    "term": "עֹרֶף",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439313
    ],
    "gloss": "neck",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -23313,14 +23313,14 @@
   },
   "1476": {
    "term": "כֹּוס",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1439120,
     1440097
    ],
    "gloss": "cup",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -23356,7 +23356,7 @@
    ],
    "gloss": "to test",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 1
    }
   },
@@ -23960,14 +23960,14 @@
   },
   "1529": {
    "term": "קֶצֶף",
-   "score": "4",
+   "score": "5",
    "source_lexemes": [
     1440332,
     1444055
    ],
    "gloss": "anger; splinter",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -24367,7 +24367,7 @@
    ],
    "gloss": "trap",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -24804,7 +24804,7 @@
    ],
    "gloss": "loyalty; shame",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -25489,13 +25489,13 @@
   },
   "1655": {
    "term": "קרב",
-   "score": "4",
+   "score": "6",
    "source_lexemes": [
     1438196
    ],
    "gloss": "to approach",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -25587,13 +25587,13 @@
   },
   "1663": {
    "term": "רַע",
-   "score": "5",
+   "score": "6",
    "source_lexemes": [
     1437707
    ],
    "gloss": "evil",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -26623,7 +26623,7 @@
    ],
    "gloss": "child",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
@@ -27214,7 +27214,7 @@
    ],
    "gloss": "to soothesay; to appear",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 1
    }
   },
@@ -27418,19 +27418,19 @@
    ],
    "gloss": "breach",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 2
    }
   },
   "1815": {
    "term": "כֶּלֶא",
-   "score": "3",
+   "score": "4",
    "source_lexemes": [
     1442434
    ],
    "gloss": "prison",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -27526,7 +27526,7 @@
    ],
    "gloss": "to be strong",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -27766,7 +27766,7 @@
    ],
    "gloss": "to be thirsty",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -27934,7 +27934,7 @@
    ],
    "gloss": "to press, hurry",
    "stats": {
-    "seen": 31,
+    "seen": 32,
     "missed": 3
    }
   },
@@ -27994,7 +27994,7 @@
    ],
    "gloss": "naked",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -28066,7 +28066,7 @@
    ],
    "gloss": "locust",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 3
    }
   },
@@ -28235,7 +28235,7 @@
    ],
    "gloss": "to be deep",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0
    }
   },
@@ -28319,7 +28319,7 @@
    ],
    "gloss": "charcoals",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -28379,7 +28379,7 @@
    ],
    "gloss": "sleeping",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -28451,7 +28451,7 @@
    ],
    "gloss": "teaching",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
@@ -28754,7 +28754,7 @@
    ],
    "gloss": "to be in excess",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 1
    }
   },
@@ -28850,7 +28850,7 @@
    ],
    "gloss": "to bear",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -29043,7 +29043,7 @@
    ],
    "gloss": "to grow dim; to rebuke",
    "stats": {
-    "seen": 23,
+    "seen": 24,
     "missed": 0
    }
   },
@@ -29211,7 +29211,7 @@
    ],
    "gloss": "to dominate",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -29480,7 +29480,7 @@
    ],
    "gloss": "ghosts",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -29553,7 +29553,7 @@
    ],
    "gloss": "dross",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 0
    }
   },
@@ -29601,7 +29601,7 @@
    ],
    "gloss": "whip",
    "stats": {
-    "seen": 24,
+    "seen": 25,
     "missed": 0
    }
   },
@@ -29613,7 +29613,7 @@
    ],
    "gloss": "garment",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -29938,7 +29938,7 @@
    ],
    "gloss": "to gather",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -30011,7 +30011,7 @@
    ],
    "gloss": "to blossom; to glance",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -30059,7 +30059,7 @@
    ],
    "gloss": "sun-pillar",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -30240,7 +30240,7 @@
    ],
    "gloss": "junction",
    "stats": {
-    "seen": 30,
+    "seen": 31,
     "missed": 0
    }
   },
@@ -30360,7 +30360,7 @@
    ],
    "gloss": "preservation (of life)",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -30591,7 +30591,7 @@
    ],
    "gloss": "to push",
    "stats": {
-    "seen": 24,
+    "seen": 25,
     "missed": 0
    }
   },
@@ -30627,7 +30627,7 @@
    ],
    "gloss": "missile",
    "stats": {
-    "seen": 23,
+    "seen": 24,
     "missed": 0
    }
   },
@@ -30820,7 +30820,7 @@
    ],
    "gloss": "dark place",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0
    }
   },
@@ -30832,7 +30832,7 @@
    ],
    "gloss": "to purify, refine",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 0
    }
   },
@@ -30856,7 +30856,7 @@
    ],
    "gloss": "shouting",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 1
    }
   },
@@ -31027,7 +31027,7 @@
    ],
    "gloss": "faithful",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -31125,7 +31125,7 @@
    ],
    "gloss": "end",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -31197,7 +31197,7 @@
    ],
    "gloss": "flame",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -31317,7 +31317,7 @@
    ],
    "gloss": "slope",
    "stats": {
-    "seen": 25,
+    "seen": 26,
     "missed": 1
    }
   },
@@ -31329,7 +31329,7 @@
    ],
    "gloss": "fiery serpent; Saraph",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -31341,7 +31341,7 @@
    ],
    "gloss": "to revile, blaspheme",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 1
    }
   },
@@ -31365,7 +31365,7 @@
    ],
    "gloss": "tottering; bar",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
@@ -31389,7 +31389,7 @@
    ],
    "gloss": "grape harvest",
    "stats": {
-    "seen": 25,
+    "seen": 26,
     "missed": 1
    }
   },
@@ -31401,7 +31401,7 @@
    ],
    "gloss": "release",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -31488,7 +31488,7 @@
    ],
    "gloss": "swelling, loftiness, forgiveness",
    "stats": {
-    "seen": 28,
+    "seen": 29,
     "missed": 0
    }
   },
@@ -31560,7 +31560,7 @@
    ],
    "gloss": "headdress",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 2
    }
   },
@@ -31668,7 +31668,7 @@
    ],
    "gloss": "span",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -31680,7 +31680,7 @@
    ],
    "gloss": "to distort",
    "stats": {
-    "seen": 34,
+    "seen": 35,
     "missed": 1
    }
   },
@@ -31740,7 +31740,7 @@
    ],
    "gloss": "secrecy",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -31957,7 +31957,7 @@
    ],
    "gloss": "cake",
    "stats": {
-    "seen": 23,
+    "seen": 24,
     "missed": 3
    }
   },
@@ -32089,7 +32089,7 @@
    ],
    "gloss": "lock",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -32235,19 +32235,19 @@
    ],
    "gloss": "apple, apple tree",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
   "2214": {
    "term": "כַּחַשׁ",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1444039
    ],
    "gloss": "deceit; leanness",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 2
    }
   },
@@ -32259,7 +32259,7 @@
    ],
    "gloss": "shoot",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 1
    }
   },
@@ -32603,7 +32603,7 @@
    ],
    "gloss": "ration",
    "stats": {
-    "seen": 24,
+    "seen": 25,
     "missed": 1
    }
   },
@@ -32857,7 +32857,7 @@
    ],
    "gloss": "to be crafty; to heap",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -33109,7 +33109,7 @@
    ],
    "gloss": "overthrow",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -33314,7 +33314,7 @@
    ],
    "gloss": "interest",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -33338,7 +33338,7 @@
    ],
    "gloss": "slanderer",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 2
    }
   },
@@ -33446,7 +33446,7 @@
    ],
    "gloss": "snuffers",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0
    }
   },
@@ -33604,7 +33604,7 @@
    ],
    "gloss": "to seek refuge",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 1
    }
   },
@@ -34199,7 +34199,7 @@
    ],
    "gloss": "honey",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -34367,7 +34367,7 @@
    ],
    "gloss": "gallery",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 0
    }
   },
@@ -34391,7 +34391,7 @@
    ],
    "gloss": "smooth, shiny",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 1
    }
   },
@@ -34451,7 +34451,7 @@
    ],
    "gloss": "to be at ease",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -34548,7 +34548,7 @@
    ],
    "gloss": "to twist",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -34692,7 +34692,7 @@
    ],
    "gloss": "vision",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -34704,7 +34704,7 @@
    ],
    "gloss": "sour grape [unripe]",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -34740,7 +34740,7 @@
    ],
    "gloss": "to growl, groan",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 0
    }
   },
@@ -34911,7 +34911,7 @@
    ],
    "gloss": "to set (esp. cooking)",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 1
    }
   },
@@ -35081,7 +35081,7 @@
    ],
    "gloss": "to drag",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 0
    }
   },
@@ -35418,7 +35418,7 @@
    ],
    "gloss": "to beat out",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -35430,7 +35430,7 @@
    ],
    "gloss": "to pluck off",
    "stats": {
-    "seen": 25,
+    "seen": 26,
     "missed": 0
    }
   },
@@ -35479,7 +35479,7 @@
    ],
    "gloss": "remittance [release]",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -35575,7 +35575,7 @@
    ],
    "gloss": "to join",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 1
    }
   },
@@ -35594,14 +35594,14 @@
   },
   "2491": {
    "term": "זְמֹורָה",
-   "score": "3",
+   "score": "2",
    "source_lexemes": [
     1440439
    ],
    "gloss": "vine branch",
    "stats": {
-    "seen": 16,
-    "missed": 0
+    "seen": 17,
+    "missed": 1
    }
   },
   "2492": {
@@ -35960,7 +35960,7 @@
    ],
    "gloss": "hand-mill",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -36433,7 +36433,7 @@
    ],
    "gloss": "drachmas",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -36470,7 +36470,7 @@
    ],
    "gloss": "satrap",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -36567,7 +36567,7 @@
    ],
    "gloss": "throat",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -36688,7 +36688,7 @@
    ],
    "gloss": "night watch",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -36861,7 +36861,7 @@
    ],
    "gloss": "to be calm, quiet",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 2
    }
   },
@@ -37249,7 +37249,7 @@
    ],
    "gloss": "veil",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -37309,7 +37309,7 @@
    ],
    "gloss": "trembling",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -37442,7 +37442,7 @@
    ],
    "gloss": "glowing; clear [speech]",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 0
    }
   },
@@ -37490,7 +37490,7 @@
    ],
    "gloss": "branch",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -37526,7 +37526,7 @@
    ],
    "gloss": "to chirp",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -37661,7 +37661,7 @@
    ],
    "gloss": "birth",
    "stats": {
-    "seen": 8,
+    "seen": 9,
     "missed": 0
    }
   },
@@ -37685,7 +37685,7 @@
    ],
    "gloss": "assembly",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 1
    }
   },
@@ -37783,7 +37783,7 @@
    ],
    "gloss": "torn rags",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -38014,7 +38014,7 @@
    ],
    "gloss": "weaver's beam",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -38114,7 +38114,7 @@
    ],
    "gloss": "crypt",
    "stats": {
-    "seen": 30,
+    "seen": 31,
     "missed": 0
    }
   },
@@ -38362,13 +38362,13 @@
   },
   "2719": {
    "term": "גַּרְזֶן",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1440895
    ],
    "gloss": "axe",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 1
    }
   },
@@ -38792,7 +38792,7 @@
    ],
    "gloss": "headdress",
    "stats": {
-    "seen": 28,
+    "seen": 29,
     "missed": 0
    }
   },
@@ -38912,7 +38912,7 @@
    ],
    "gloss": "what is lost",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -39333,7 +39333,7 @@
    ],
    "gloss": "to twist, wrestle",
    "stats": {
-    "seen": 29,
+    "seen": 30,
     "missed": 0,
     "learned": "2019-09-22 23:22:07.324629"
    }
@@ -39457,7 +39457,7 @@
    ],
    "gloss": "smoke",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -39643,7 +39643,7 @@
    ],
    "gloss": "to wrap",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -39792,7 +39792,7 @@
    ],
    "gloss": "to spread out",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 0
    }
   },
@@ -40229,7 +40229,7 @@
    ],
    "gloss": "to sink, be low",
    "stats": {
-    "seen": 38,
+    "seen": 39,
     "missed": 0,
     "learned": "2019-10-12 21:43:22.833931"
    }
@@ -40454,7 +40454,7 @@
    ],
    "gloss": "to make plain",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -40581,7 +40581,7 @@
    ],
    "gloss": "to flow, float",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 0,
     "learned": "2019-09-30 10:26:30.639831"
    }
@@ -40607,7 +40607,7 @@
    ],
    "gloss": "to bruise",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -40645,7 +40645,7 @@
    ],
    "gloss": "to mix",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0,
     "learned": "2019-10-03 10:06:12.175779"
    }
@@ -40746,7 +40746,7 @@
    ],
    "gloss": "band",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
@@ -40835,7 +40835,7 @@
    ],
    "gloss": "cumin",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -40871,7 +40871,7 @@
    ],
    "gloss": "flask",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0,
     "learned": "2019-09-24 10:05:44.469914"
    }
@@ -41052,7 +41052,7 @@
    ],
    "gloss": "want",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0,
     "learned": "2019-09-06 20:04:16.474088"
    }
@@ -41193,7 +41193,7 @@
    ],
    "gloss": "attentive",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0,
     "learned": "2019-09-07 16:52:02.195684"
    }
@@ -41232,7 +41232,7 @@
    ],
    "gloss": "joint",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 0,
     "learned": "2019-10-04 10:51:09.162970"
    }
@@ -41595,7 +41595,7 @@
    ],
    "gloss": "debt",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0,
     "learned": "2019-09-23 10:12:36.323320"
    }
@@ -41698,7 +41698,7 @@
    ],
    "gloss": "dungeon",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 0,
     "learned": "2019-10-10 12:46:29.848484"
    }
@@ -41750,7 +41750,7 @@
    ],
    "gloss": "scorn",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0,
     "learned": "2019-09-10 12:43:23.449619"
    }
@@ -41972,7 +41972,7 @@
    ],
    "gloss": "desire",
    "stats": {
-    "seen": 8,
+    "seen": 9,
     "missed": 0,
     "learned": "2019-09-22 23:22:07.324615"
    }
@@ -41985,7 +41985,7 @@
    ],
    "gloss": "clinging",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0,
     "learned": "2019-09-11 15:07:23.981844"
    }
@@ -42024,7 +42024,7 @@
    ],
    "gloss": "drunkenness",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0,
     "learned": "2019-09-11 15:07:23.981859"
    }
@@ -42259,7 +42259,7 @@
    ],
    "gloss": "empty",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0,
     "learned": "2019-09-12 23:45:24.603725"
    }
@@ -42272,7 +42272,7 @@
    ],
    "gloss": "bat",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0,
     "learned": "2019-10-02 10:11:21.771471"
    }
@@ -42324,7 +42324,7 @@
    ],
    "gloss": "falcon",
    "stats": {
-    "seen": 31,
+    "seen": 32,
     "missed": 0,
     "learned": "2019-10-26 14:18:18.822295"
    }
@@ -42429,7 +42429,7 @@
    ],
    "gloss": "viper",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -42506,7 +42506,7 @@
    ],
    "gloss": "living form",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0,
     "learned": "2019-09-30 10:26:30.639845"
    }
@@ -42610,7 +42610,7 @@
    ],
    "gloss": "net",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0,
     "learned": "2019-10-03 10:06:12.175816"
    }
@@ -42767,7 +42767,7 @@
    ],
    "gloss": "veil",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0,
     "learned": "2019-10-13 15:48:34.148459"
    }
@@ -42780,7 +42780,7 @@
    ],
    "gloss": "hope",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0,
     "learned": "2019-10-12 21:43:22.833923"
    }
@@ -42819,7 +42819,7 @@
    ],
    "gloss": "deposit",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0,
     "learned": "2019-10-13 15:48:34.148516"
    }
@@ -42897,7 +42897,7 @@
    ],
    "gloss": "middle",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0,
     "learned": "2019-09-18 11:53:49.439107"
    }
@@ -43365,7 +43365,7 @@
    ],
    "gloss": "opponent",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0,
     "learned": "2019-10-12 21:43:22.833956"
    }
@@ -43378,7 +43378,7 @@
    ],
    "gloss": "dung",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0,
     "learned": "2019-10-15 10:32:13.601286"
    }
@@ -43470,7 +43470,7 @@
    ],
    "gloss": "marching",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0,
     "learned": "2019-10-05 15:24:12.436902"
    }
@@ -43691,7 +43691,7 @@
    ],
    "gloss": "rash",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -43819,7 +43819,7 @@
    ],
    "gloss": "prophecy",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0,
     "learned": "2019-09-30 10:26:30.639954"
    }
@@ -43891,14 +43891,14 @@
   },
   "3154": {
    "term": "מַפָּלָה",
-   "score": "3",
+   "score": "2",
    "source_lexemes": [
     1442942
    ],
    "gloss": "ruins",
    "stats": {
-    "seen": 8,
-    "missed": 0,
+    "seen": 9,
+    "missed": 1,
     "learned": "2019-10-14 12:36:16.930138"
    }
   },
@@ -43923,7 +43923,7 @@
    ],
    "gloss": "palace",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0,
     "learned": "2019-10-15 10:32:13.601317"
    }
@@ -44106,7 +44106,7 @@
    ],
    "gloss": "writing-case (inkpot)",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0,
     "learned": "2019-10-25 12:17:23.728677"
    }
@@ -44184,7 +44184,7 @@
    ],
    "gloss": "lion",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0,
     "learned": "2019-10-02 10:11:21.771553"
    }
@@ -44249,7 +44249,7 @@
    ],
    "gloss": "trampling, subjugation",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0,
     "learned": "2019-10-03 10:06:12.175960"
    }
@@ -44327,7 +44327,7 @@
    ],
    "gloss": "to overhang; be corrupt",
    "stats": {
-    "seen": 25,
+    "seen": 26,
     "missed": 0
    }
   },
@@ -44430,7 +44430,7 @@
    ],
    "gloss": "to beat down",
    "stats": {
-    "seen": 29,
+    "seen": 30,
     "missed": 0
    }
   },
@@ -44468,7 +44468,7 @@
    ],
    "gloss": "to commit, assign",
    "stats": {
-    "seen": 23,
+    "seen": 24,
     "missed": 0
    }
   },
@@ -44492,7 +44492,7 @@
    ],
    "gloss": "to wash away",
    "stats": {
-    "seen": 26,
+    "seen": 27,
     "missed": 0
    }
   },
@@ -44568,7 +44568,7 @@
    ],
    "gloss": "to gnaw",
    "stats": {
-    "seen": 27,
+    "seen": 28,
     "missed": 0
    }
   },
@@ -44631,7 +44631,7 @@
    ],
    "gloss": "to be crushed",
    "stats": {
-    "seen": 28,
+    "seen": 29,
     "missed": 0
    }
   },
@@ -44663,13 +44663,13 @@
   },
   "3214": {
    "term": "קמט",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1444666
    ],
    "gloss": "to seize? shrivel up?",
    "stats": {
-    "seen": 26,
+    "seen": 27,
     "missed": 0
    }
   },
@@ -44701,14 +44701,15 @@
   },
   "3217": {
    "term": "תאה",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1440731
    ],
    "gloss": "to mark out",
    "stats": {
-    "seen": 20,
-    "missed": 0
+    "seen": 21,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465962"
    }
   },
   "3218": {
@@ -44752,14 +44753,15 @@
   },
   "3221": {
    "term": "ימר",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1443394
    ],
    "gloss": "to boast [from אמר?]",
    "stats": {
-    "seen": 15,
-    "missed": 0
+    "seen": 16,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465942"
    }
   },
   "3222": {
@@ -44836,7 +44838,7 @@
    ],
    "gloss": "to lament; follow after",
    "stats": {
-    "seen": 26,
+    "seen": 27,
     "missed": 0
    }
   },
@@ -45114,13 +45116,13 @@
   },
   "3249": {
    "term": "שׁלב",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1439837
    ],
    "gloss": "to bind",
    "stats": {
-    "seen": 24,
+    "seen": 25,
     "missed": 0
    }
   },
@@ -45217,14 +45219,15 @@
   },
   "3257": {
    "term": "סמר",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1444551
    ],
    "gloss": "to bristle",
    "stats": {
-    "seen": 19,
-    "missed": 0
+    "seen": 20,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465910"
    }
   },
   "3258": {
@@ -45247,7 +45250,7 @@
    ],
    "gloss": "to mock",
    "stats": {
-    "seen": 21,
+    "seen": 22,
     "missed": 0
    }
   },
@@ -45259,7 +45262,7 @@
    ],
    "gloss": "to cry out",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -45271,7 +45274,7 @@
    ],
    "gloss": "to exclude",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -45290,13 +45293,13 @@
   },
   "3263": {
    "term": "ציר",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1441106
    ],
    "gloss": "to bring a message",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -45336,7 +45339,7 @@
    ],
    "gloss": "to treat violently; to heap",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -45348,7 +45351,7 @@
    ],
    "gloss": "to swell",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0,
     "learned": "2019-10-23 12:05:30.063982"
    }
@@ -45405,13 +45408,13 @@
   },
   "3272": {
    "term": "פגר",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1441925
    ],
    "gloss": "to be exhausted",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -45462,20 +45465,21 @@
    ],
    "gloss": "to open up",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
   "3277": {
    "term": "זחח",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1439898
    ],
    "gloss": "to displace",
    "stats": {
-    "seen": 14,
-    "missed": 0
+    "seen": 15,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465969"
    }
   },
   "3278": {
@@ -45512,7 +45516,7 @@
    ],
    "gloss": "to bind",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -45531,13 +45535,13 @@
   },
   "3282": {
    "term": "סבך",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1444174
    ],
    "gloss": "to be interwoven",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -45649,9 +45653,9 @@
    "source_lexemes": [
     1444875
    ],
-   "gloss": "to eat up",
+   "gloss": "to be devoured",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0
    }
   },
@@ -45676,7 +45680,7 @@
    ],
    "gloss": "to peel",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -45714,7 +45718,7 @@
    ],
    "gloss": "to long for; to loathe",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -45750,7 +45754,7 @@
    ],
    "gloss": "clamps",
    "stats": {
-    "seen": 19,
+    "seen": 20,
     "missed": 0
    }
   },
@@ -45857,14 +45861,15 @@
   },
   "3308": {
    "term": "תַּחְרָא",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1439903
    ],
    "gloss": "coat of mail?",
    "stats": {
-    "seen": 12,
-    "missed": 0
+    "seen": 13,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465975"
    }
   },
   "3309": {
@@ -45990,7 +45995,7 @@
    ],
    "gloss": "food",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -46002,7 +46007,7 @@
    ],
    "gloss": "confidence",
    "stats": {
-    "seen": 1,
+    "seen": 2,
     "missed": 0,
     "learned": "2019-10-17 12:48:06.313934"
    }
@@ -46073,14 +46078,15 @@
   },
   "3325": {
    "term": "נִיב",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1443366
    ],
    "gloss": "fruit",
    "stats": {
-    "seen": 9,
-    "missed": 0
+    "seen": 10,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465948"
    }
   },
   "3326": {
@@ -46104,7 +46110,7 @@
    ],
    "gloss": "socket; forehead",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -46166,20 +46172,21 @@
    ],
    "gloss": "swarm",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0
    }
   },
   "3333": {
    "term": "שֶׂכֶר",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1442982
    ],
    "gloss": "wage",
    "stats": {
-    "seen": 7,
-    "missed": 0
+    "seen": 8,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465903"
    }
   },
   "3334": {
@@ -46190,20 +46197,20 @@
    ],
    "gloss": "fortification",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0,
     "learned": "2019-10-25 12:17:23.728620"
    }
   },
   "3335": {
    "term": "כֶּסֶא",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1444487
    ],
    "gloss": "full moon",
    "stats": {
-    "seen": 16,
+    "seen": 17,
     "missed": 0
    }
   },
@@ -46338,14 +46345,15 @@
   },
   "3346": {
    "term": "רֹומַם",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1444437
    ],
    "gloss": "praise",
    "stats": {
-    "seen": 10,
-    "missed": 0
+    "seen": 11,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465876"
    }
   },
   "3347": {
@@ -46369,7 +46377,7 @@
    ],
    "gloss": "storehouse",
    "stats": {
-    "seen": 15,
+    "seen": 16,
     "missed": 0
    }
   },
@@ -46394,7 +46402,7 @@
    ],
    "gloss": "strong",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -46444,7 +46452,7 @@
    ],
    "gloss": "in return",
    "stats": {
-    "seen": 14,
+    "seen": 15,
     "missed": 0
    }
   },
@@ -46469,7 +46477,7 @@
    ],
    "gloss": "cool",
    "stats": {
-    "seen": 1,
+    "seen": 2,
     "missed": 0,
     "learned": "2019-10-22 12:01:35.179638"
    }
@@ -46482,7 +46490,7 @@
    ],
    "gloss": "groats",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46501,13 +46509,13 @@
   },
   "3359": {
    "term": "דּוּר",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1443014
    ],
    "gloss": "circle",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46527,26 +46535,27 @@
   },
   "3361": {
    "term": "כֶּלַח",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1444612
    ],
    "gloss": "vigor",
    "stats": {
-    "seen": 13,
+    "seen": 14,
     "missed": 0
    }
   },
   "3362": {
    "term": "קֻבַּעַת",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1443336
    ],
    "gloss": "cup",
    "stats": {
-    "seen": 9,
-    "missed": 0
+    "seen": 10,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465916"
    }
   },
   "3363": {
@@ -46570,7 +46579,7 @@
    ],
    "gloss": "silence",
    "stats": {
-    "seen": 1,
+    "seen": 2,
     "missed": 0,
     "learned": "2019-10-22 12:01:35.179669"
    }
@@ -46697,7 +46706,7 @@
    ],
    "gloss": "amount",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -46709,7 +46718,7 @@
    ],
    "gloss": "quarry, missile",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -46721,7 +46730,7 @@
    ],
    "gloss": "steeps",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -46739,13 +46748,13 @@
   },
   "3378": {
    "term": "בָּרֶקֶת",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1439887
    ],
    "gloss": "emerald?",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -46769,7 +46778,7 @@
    ],
    "gloss": "cauldron",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46794,7 +46803,7 @@
    ],
    "gloss": "misfortune",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46818,7 +46827,7 @@
    ],
    "gloss": "mixed wine",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
@@ -46881,7 +46890,7 @@
    ],
    "gloss": "song? instrument?",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46893,7 +46902,7 @@
    ],
    "gloss": "cake",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46917,7 +46926,7 @@
    ],
    "gloss": "wreath",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -46929,7 +46938,7 @@
    ],
    "gloss": "crane? swallow?",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -47044,20 +47053,21 @@
    ],
    "gloss": "quilt? net?",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
   "3403": {
    "term": "מַאֲכֹלֶת",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1442822
    ],
    "gloss": "food",
    "stats": {
-    "seen": 5,
-    "missed": 0
+    "seen": 6,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465896"
    }
   },
   "3404": {
@@ -47075,49 +47085,50 @@
   },
   "3405": {
    "term": "עֶלֶם",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1441847
    ],
    "gloss": "young man",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
   "3406": {
    "term": "יְקָהָה",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1439322
    ],
    "gloss": "obedience",
    "stats": {
-    "seen": 5,
-    "missed": 0
+    "seen": 6,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465923"
    }
   },
   "3407": {
    "term": "כַּרְכֹּב",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1439857
    ],
    "gloss": "rim",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
   "3408": {
    "term": "נִצָּה",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1442963
    ],
    "gloss": "blossom",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -47175,13 +47186,13 @@
   },
   "3413": {
    "term": "מֶלְצַר",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1445190
    ],
    "gloss": "guardian",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -47191,9 +47202,9 @@
    "source_lexemes": [
     1445764
    ],
-   "gloss": "basket",
+   "gloss": "basket? bowl?",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -47205,7 +47216,7 @@
    ],
    "gloss": "bright red",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -47217,7 +47228,7 @@
    ],
    "gloss": "braids",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -47229,7 +47240,7 @@
    ],
    "gloss": "cake?",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 0
    }
   },
@@ -47260,14 +47271,15 @@
   },
   "3420": {
    "term": "זִרְמָה",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1443862
    ],
    "gloss": "ejaculation",
    "stats": {
-    "seen": 5,
-    "missed": 0
+    "seen": 6,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465929"
    }
   },
   "3421": {
@@ -47291,7 +47303,7 @@
    ],
    "gloss": "storm",
    "stats": {
-    "seen": 8,
+    "seen": 9,
     "missed": 0
    }
   },
@@ -47328,7 +47340,7 @@
    ],
    "gloss": "vulture",
    "stats": {
-    "seen": 8,
+    "seen": 9,
     "missed": 0
    }
   },
@@ -47379,7 +47391,7 @@
    ],
    "gloss": "relief",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47391,7 +47403,7 @@
    ],
    "gloss": "two saddle-baskets",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -47448,13 +47460,13 @@
   },
   "3435": {
    "term": "מַכָּר",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1442514
    ],
    "gloss": "merchant",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47524,14 +47536,15 @@
   },
   "3441": {
    "term": "תַּאֲנִיָּה",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     1443108
    ],
    "gloss": "mourning",
    "stats": {
-    "seen": 3,
-    "missed": 0
+    "seen": 4,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.465936"
    }
   },
   "3442": {
@@ -47542,19 +47555,19 @@
    ],
    "gloss": "antelope?",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
   "3443": {
    "term": "גַּבְלֻת",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1439896
    ],
    "gloss": "weld together",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47566,7 +47579,7 @@
    ],
    "gloss": "coverlets",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -47615,7 +47628,7 @@
    ],
    "gloss": "dominion",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47652,7 +47665,7 @@
    ],
    "gloss": "leaky roof",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47664,7 +47677,7 @@
    ],
    "gloss": "rock",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47676,19 +47689,19 @@
    ],
    "gloss": "plunder; fork [in road]?",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
   "3454": {
    "term": "בֵּנַיִם",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1441828
    ],
    "gloss": "champion [\"in-between man\"]",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47713,7 +47726,7 @@
    ],
    "gloss": "jagged",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47725,7 +47738,7 @@
    ],
    "gloss": "lady?? demon??",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
@@ -47801,7 +47814,7 @@
    ],
    "gloss": "she-gazelle",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47813,7 +47826,7 @@
    ],
    "gloss": "quantity",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -47825,7 +47838,7 @@
    ],
    "gloss": "agate",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47837,7 +47850,7 @@
    ],
    "gloss": "heat, dryness",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47849,7 +47862,7 @@
    ],
    "gloss": "vigil",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47861,7 +47874,7 @@
    ],
    "gloss": "festival dress",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47885,7 +47898,7 @@
    ],
    "gloss": "put-away clothes [rags]",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47897,7 +47910,7 @@
    ],
    "gloss": "haughty",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47909,7 +47922,7 @@
    ],
    "gloss": "shawl",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47921,7 +47934,7 @@
    ],
    "gloss": "natron [salt mineral]",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47931,9 +47944,9 @@
    "source_lexemes": [
     1441477
    ],
-   "gloss": "left handed [impeded right hand]",
+   "gloss": "impeded right hand [left handed]",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47945,7 +47958,7 @@
    ],
    "gloss": "corner",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47957,7 +47970,7 @@
    ],
    "gloss": "necklace",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47969,7 +47982,7 @@
    ],
    "gloss": "wood block; produce?",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -47994,31 +48007,31 @@
    ],
    "gloss": "bewilderment",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
   "3480": {
    "term": "דְּלִי",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     1440551
    ],
    "gloss": "bucket",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
   "3481": {
    "term": "מְלִיצָה",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1444201
    ],
    "gloss": "saying",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -48037,13 +48050,13 @@
   },
   "3483": {
    "term": "פִּיחַ",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1439507
    ],
    "gloss": "soot",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
@@ -48055,19 +48068,19 @@
    ],
    "gloss": "delivery",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
   "3485": {
    "term": "נֹקֶף",
-   "score": "0",
+   "score": "1",
    "source_lexemes": [
     1442944
    ],
    "gloss": "knocked down",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
@@ -48079,7 +48092,7 @@
    ],
    "gloss": "sickle",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
@@ -48103,7 +48116,7 @@
    ],
    "gloss": "craftsman",
    "stats": {
-    "seen": 4,
+    "seen": 5,
     "missed": 0
    }
   },
@@ -48115,7 +48128,7 @@
    ],
    "gloss": "scale",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48127,7 +48140,7 @@
    ],
    "gloss": "origin",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48139,7 +48152,7 @@
    ],
    "gloss": "mastic tree",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48163,7 +48176,7 @@
    ],
    "gloss": "anaphah bird",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48185,9 +48198,9 @@
    "source_lexemes": [
     1442801
    ],
-   "gloss": "thorn-bush",
+   "gloss": "camel-thorn [bush]",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48200,7 +48213,7 @@
    ],
    "gloss": "swarm; udder",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48212,7 +48225,7 @@
    ],
    "gloss": "clear-sighted",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48224,7 +48237,7 @@
    ],
    "gloss": "unwillingly? in bonds?",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48236,7 +48249,7 @@
    ],
    "gloss": "spelt wheat",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48260,7 +48273,7 @@
    ],
    "gloss": "whisper?",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48272,7 +48285,7 @@
    ],
    "gloss": "treasure",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -48297,7 +48310,7 @@
    ],
    "gloss": "ornament",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48309,7 +48322,7 @@
    ],
    "gloss": "gall",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48321,7 +48334,7 @@
    ],
    "gloss": "caprice",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48333,7 +48346,7 @@
    ],
    "gloss": "loan",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48345,7 +48358,7 @@
    ],
    "gloss": "oar",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48357,7 +48370,7 @@
    ],
    "gloss": "portion",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48369,7 +48382,7 @@
    ],
    "gloss": "commander",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48381,7 +48394,7 @@
    ],
    "gloss": "garment",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48393,7 +48406,7 @@
    ],
    "gloss": "fetter",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48405,7 +48418,7 @@
    ],
    "gloss": "dry place",
    "stats": {
-    "seen": 2,
+    "seen": 3,
     "missed": 0
    }
   },
@@ -48417,20 +48430,21 @@
    ],
    "gloss": "covering",
    "stats": {
-    "seen": 1,
+    "seen": 2,
     "missed": 0
    }
   },
   "3515": {
    "term": "רַחַב",
-   "score": "0",
+   "score": "3",
    "source_lexemes": [
     1444759
    ],
    "gloss": "expanse",
    "stats": {
-    "seen": 0,
-    "missed": 0
+    "seen": 1,
+    "missed": 0,
+    "learned": "2019-11-06 10:17:07.466033"
    }
   },
   "3516": {
@@ -48441,19 +48455,19 @@
    ],
    "gloss": "lotus",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
   "3517": {
    "term": "סַד",
-   "score": "0",
+   "score": "2",
    "source_lexemes": [
     1444653
    ],
    "gloss": "stock",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48465,7 +48479,7 @@
    ],
    "gloss": "anklet",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48477,7 +48491,7 @@
    ],
    "gloss": "hunger",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48487,9 +48501,9 @@
    "source_lexemes": [
     1443167
    ],
-   "gloss": "<uncertain>",
+   "gloss": "servant? deceiver?",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48501,7 +48515,7 @@
    ],
    "gloss": "bracelet",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48513,7 +48527,7 @@
    ],
    "gloss": "darkness",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48525,7 +48539,7 @@
    ],
    "gloss": "breaking in",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48537,7 +48551,7 @@
    ],
    "gloss": "cucumber field",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -48549,7 +48563,7 @@
    ],
    "gloss": "village",
    "stats": {
-    "seen": 0,
+    "seen": 1,
     "missed": 0
    }
   },
@@ -74573,6 +74587,42 @@
     "4": 793,
     "5": 692,
     "6": 387
+   }
+  },
+  {
+   "date": "2019-11-06 10:17:07.458810",
+   "duration": "1:01:14.174236",
+   "secs_per_term": 10.71,
+   "deck": {
+    "6": 2,
+    "5": 8,
+    "4": 56,
+    "3": 139,
+    "2": 16,
+    "1": 22,
+    "0": 100
+   },
+   "cycle": 19,
+   "changes": {
+    "2<-3": 2,
+    "3->4": 3,
+    "1->2": 9,
+    "2->3": 15,
+    "0->1": 11,
+    "0->3": 1,
+    "0->2": 1,
+    "4->5": 26,
+    "4->6": 2,
+    "5->6": 3
+   },
+   "score_counts": {
+    "3": 1458,
+    "1": 46,
+    "2": 59,
+    "0": 1820,
+    "4": 768,
+    "5": 715,
+    "6": 392
    }
   }
  ]
