@@ -43,7 +43,7 @@ def loadStudy(vocab_json, tf_app='bhsa'):
         if savefile is not None:
             lastmod = datetime.fromtimestamp(os.path.getmtime(savefile))
             elapsed = ((datetime.now() - lastmod).total_seconds() / 60) / 60
-            if elapsed > 5:
+            if elapsed > 15:
                 print('\nOld session found but expired! Deleting it!\n')
                 savefile.unlink() # bye bye :) 
 
