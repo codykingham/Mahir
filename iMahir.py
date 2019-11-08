@@ -9,6 +9,9 @@ FOR THE FUTURE:
 • Design a term object with callable attributes that can be populated from terms_dict.
 '''
 
+import os
+from pathlib import Path
+import pickle
 import collections
 import json
 import random
@@ -27,21 +30,66 @@ def safediv(a, b):
     except ZeroDivisionError:
         return 0
 
+def loadStudy(vocab_json, tf_app='bhsa'):
+        """Determine how to load a study session"""
+
+        vocab_json = Path(vocab_json)
+        
+        # check for existing saves
+        savefile = next(Path().glob(f'{vocab_json.stem}.save'), None)
+        # check for expiration of save
+        # if expired, delete the save (!)
+        # this is a little extra motivation to finish each day
+        if savefile is not None:
+            lastmod = datetime.fromtimestamp(os.path.getmtime(savefile))
+            elapsed = ((datetime.now() - lastmod).total_seconds() / 60) / 60
+            if elapsed > 5:
+                print('\nOld session found but expired! Deleting it!\n')
+                savefile.unlink() # bye bye :) 
+
+        # load the save
+        if savefile is not None and savefile.exists():
+            with open(savefile, 'rb') as infile:
+                savedata = pickle.load(infile)
+            return Study(
+                vocab_json, 
+                tf_app, 
+                set_data=savedata['set_data'],
+                session_data=savedata['session_data'],
+                resume_time=savedata['resume_time'],
+                term_n=savedata['term_n'],
+                pause_times=savedata['pause_times'],
+            )
+            
+        # load new session
+        else:
+            return Study(vocab_json, tf_app)
+        
+    
 class Study:
     '''
     Prepares and consumes data from Mahir 
     and formats it for use in a Jupyter notebook.
     '''
 
-    def __init__(self, vocab_json, tf_app='bhsa'):
-        '''
-        vocab_json - a json file formatted with term data for use with Mahir
-        data_version - version of the data for Text-Fabric
-        '''
+    def __init__(self, vocab_json, tf_app='bhsa', 
+                 set_data=None, session_data=None,
+                 resume_time=False, term_n=0, 
+                 pause_times=[]):
+
+        # set meta data for study loop (for saves)
+        self.session_data = session_data
+        self.set_data = set_data
+        self.term_n = term_n
+        self.pause_times = pause_times
+        self.tf_app = tf_app
+        self.fstem = vocab_json.stem # for save names
+        
         # load set data
-        with open(vocab_json) as setfile:
-            set_data = json.load(setfile)
-            self.set_data = set_data
+        if not set_data:
+            with open(vocab_json) as setfile:
+                set_data = json.load(setfile)
+                self.set_data = set_data
         
         # retrieve TF app data
         appdata = set_data['app_data']
@@ -64,9 +112,13 @@ class Study:
             raise Exception('EXIT PROGRAM INITIATED; FILE SHUFFLED AND SAVED')
 
         # build the study set, prep data for study session
-        self.session_data = Session(set_data)  # build session data
+        if session_data is None:
+            self.session_data = Session(set_data)  # build session data
         self.vocab_json = vocab_json
 
+        if resume_time:
+            print(f'\nSession is resumed from {resume_time}.\n')
+        
         # preliminary session report
         deck_stats = self.session_data.deck_stats
         print(set_data['name'], 'ready for study.')
@@ -80,8 +132,13 @@ class Study:
         Runs a study session with the user.
         '''
         print('beginning study session...')
-        start_time = datetime.now() # to be filled in on first instructions
-        pause_times = []
+        self.start_time = datetime.now() # to be filled in on first instructions
+        
+        def pause_time():
+            """Pause the timer"""
+            this_duration = datetime.now() - self.start_time
+            self.pause_times.append(this_duration)
+            self.start_time = None # reset clock
 
         deck = self.session_data.deck
         terms_dict = self.set_data['terms_dict']
@@ -89,9 +146,9 @@ class Study:
         # make shortform TF methods / data names
         glossfeat, freqfeat, wordtype, context = self.glossfeat, self.freqfeat, self.wordtype, self.context
         L, T, Fs = self.L, self.T, self.TF.api.Fs
-              
+        
         # begin UI loop
-        term_n = 0
+        term_n = self.term_n
         while True:
               
             # get term data
@@ -125,11 +182,14 @@ class Study:
             # -- get user input --
             while True:
                 user_instruct = self.good_choice(
-                    {'', ',', '.', 'q', 'c', 'e', 'l', '>', '<', 'p'}, ask='', allowNumber=True)
+                    {'', ',', '.', 'q', 'c', 
+                     'e', 'l', '>', '<', 'p',
+                     'save'}
+                    , ask='', allowNumber=True)
                 
                 # start timer upon user instruct if not already
-                if not start_time:
-                    start_time = datetime.now()
+                if self.start_time is None:
+                    self.start_time = datetime.now()
                     print('Resuming session...')
                     time.sleep(0.5)
               
@@ -145,7 +205,6 @@ class Study:
                         f'<span style="font-family:Times New Roman; font-size:10pt">{std_glosses}</span>'))
                     display(HTML(
                         f'<span style="font-family:Times New Roman; font-size:10pt">missed: {missed}</span>'))
-
 
                 # score term
                 elif user_instruct.isnumeric():
@@ -202,14 +261,17 @@ class Study:
               
                 # pause timer
                 elif user_instruct == 'p':
-                    this_duration = datetime.now() - start_time
-                    pause_times.append(this_duration)
-                    start_time = None # reset clock
+                    pause_time()
                     print('Session time paused...')
+
+                # allow for saving sessions
+                elif user_instruct == 'save':
+                    self.save_session(term_n)
+                    print('Session saved for 15 hours...')
+                    return
 
                 # user quit
                 elif user_instruct == 'q':
-                    
                     confirm = self.good_choice({'y', 'n'}, ask='confirm quit?') # double check
                     if confirm == 'y':
                         raise Exception('Quit initiated. Nothing saved.')
@@ -223,7 +285,7 @@ class Study:
                     {'y', 'n'}, 'session is complete, quit now?')
 
                 if ask_end == 'y':
-                    times = [datetime.now() - start_time] + pause_times
+                    times = [datetime.now() - self.start_time] + self.pause_times
                     self.finalize_session(times)
                     break
 
@@ -237,11 +299,29 @@ class Study:
         print('\nduration: ', self.set_data['stats'][-1]['duration'])
         print('\nseconds per term:', self.set_data['stats'][-1]['secs_per_term'])
 
+    def save_session(self, term_n):
+        """Save a session for later."""
+        savedata = {
+            'set_data': self.set_data,
+            'session_data': self.session_data,
+            'resume_time': str(datetime.now()),
+            'pause_times': self.pause_times,
+            'term_n': term_n,
+        }
+        with open(f'{self.fstem}.save', 'wb') as outfile:
+            pickle.dump(savedata, outfile)
+            
+    def clean_session_saves(self):
+        """Checks for saves and removes them"""
+        savefile = next(Path().glob(f'{self.fstem}.save'), None)
+        if savefile is not None and savefile.exists():
+            savefile.unlink()
+            
     def finalize_session(self, times):
         '''
         Updates and saves session data and stats.
         '''
-
+        
         # log session stats
         session_stats = {}
         duration = sum(times, timedelta())
@@ -269,6 +349,7 @@ class Study:
 
         # save new data
         self.save_file(self.set_data, self.vocab_json)
+        self.clean_session_saves()
 
     def update_queues(self, stats_dict):
         '''
