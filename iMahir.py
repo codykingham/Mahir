@@ -82,6 +82,7 @@ class Study:
         self.set_data = set_data
         self.term_n = term_n
         self.pause_times = pause_times
+
         self.tf_app = tf_app
         self.fstem = vocab_json.stem # for save names
         
@@ -134,6 +135,7 @@ class Study:
         print('beginning study session...')
         self.start_time = datetime.now() # to be filled in on first instructions
         
+               
         def pause_time():
             """Pause the timer"""
             this_duration = datetime.now() - self.start_time
@@ -266,8 +268,10 @@ class Study:
 
                 # allow for saving sessions
                 elif user_instruct == 'save':
+                    pause_time()
                     self.save_session(term_n)
                     print('Session saved for 15 hours...')
+                    print(f'\telapsed: {sum(self.pause_times, timedelta())}')
                     return
 
                 # user quit
