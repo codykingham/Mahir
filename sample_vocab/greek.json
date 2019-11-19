@@ -12,7 +12,7 @@
  },
  "cycle_data": {
   "ncycle": 6,
-  "total_sessions": 7,
+  "total_sessions": 8,
   "cycle_length": 10,
   "new_quota": 25,
   "score_starts": {
@@ -4101,89 +4101,13 @@
    "4826"
   ],
   "1": [
-   "522",
-   "614",
-   "585"
+   "585",
+   "614"
   ],
   "2": [
-   "516"
+   "522"
   ],
   "3": [
-   "603",
-   "659",
-   "104",
-   "657",
-   "537",
-   "122",
-   "604",
-   "75",
-   "629",
-   "140",
-   "687",
-   "244",
-   "428",
-   "722",
-   "777",
-   "643",
-   "490",
-   "642",
-   "102",
-   "269",
-   "753",
-   "341",
-   "283",
-   "84",
-   "785",
-   "79",
-   "644",
-   "630",
-   "188",
-   "558",
-   "73",
-   "510",
-   "111",
-   "230",
-   "279",
-   "361",
-   "195",
-   "394",
-   "507",
-   "368",
-   "679",
-   "141",
-   "157",
-   "25",
-   "180",
-   "345",
-   "136",
-   "257",
-   "50",
-   "718",
-   "44",
-   "198",
-   "259",
-   "584",
-   "547",
-   "443",
-   "464",
-   "168",
-   "144",
-   "395",
-   "453",
-   "342",
-   "187",
-   "623",
-   "10",
-   "386",
-   "204",
-   "287",
-   "801",
-   "94",
-   "288",
-   "491",
-   "473",
-   "664",
-   "520",
    "648",
    "637",
    "396",
@@ -4863,7 +4787,83 @@
    "417",
    "472",
    "220",
-   "371"
+   "371",
+   "603",
+   "659",
+   "104",
+   "657",
+   "537",
+   "122",
+   "604",
+   "75",
+   "629",
+   "140",
+   "687",
+   "244",
+   "428",
+   "722",
+   "777",
+   "643",
+   "490",
+   "642",
+   "102",
+   "269",
+   "753",
+   "341",
+   "283",
+   "84",
+   "785",
+   "79",
+   "644",
+   "630",
+   "188",
+   "558",
+   "73",
+   "510",
+   "111",
+   "230",
+   "279",
+   "361",
+   "195",
+   "394",
+   "507",
+   "368",
+   "679",
+   "141",
+   "157",
+   "25",
+   "180",
+   "345",
+   "136",
+   "257",
+   "50",
+   "718",
+   "44",
+   "198",
+   "259",
+   "584",
+   "547",
+   "443",
+   "464",
+   "168",
+   "144",
+   "395",
+   "453",
+   "342",
+   "187",
+   "623",
+   "10",
+   "386",
+   "204",
+   "287",
+   "801",
+   "94",
+   "288",
+   "491",
+   "473",
+   "664",
+   "520",
+   "516"
   ],
   "4": []
  },
@@ -4984,7 +4984,7 @@
    ],
    "gloss": "in, into",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -5164,7 +5164,7 @@
    ],
    "gloss": "to be, become",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -5392,7 +5392,7 @@
    ],
    "gloss": "day",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -5464,7 +5464,7 @@
    ],
    "gloss": "concerning; about; around",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -5740,7 +5740,7 @@
    ],
    "gloss": "and",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -5764,7 +5764,7 @@
    ],
    "gloss": "to will",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -5812,7 +5812,7 @@
    ],
    "gloss": "from, beside, in the presence of, alongside of",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -5872,7 +5872,7 @@
    ],
    "gloss": "angel",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -5992,7 +5992,7 @@
    ],
    "gloss": "kingdom",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6088,7 +6088,7 @@
    ],
    "gloss": "to stand",
    "stats": {
-    "seen": 8,
+    "seen": 9,
     "missed": 0
    }
   },
@@ -6112,7 +6112,7 @@
    ],
    "gloss": "to call",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6196,7 +6196,7 @@
    ],
    "gloss": "to love",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6328,7 +6328,7 @@
    ],
    "gloss": "to send",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6496,7 +6496,7 @@
    ],
    "gloss": "to seek",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6544,7 +6544,7 @@
    ],
    "gloss": "church",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6556,7 +6556,7 @@
    ],
    "gloss": "one's own",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6592,7 +6592,7 @@
    ],
    "gloss": "to die",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6748,7 +6748,7 @@
    ],
    "gloss": "soul, life",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -6880,7 +6880,7 @@
    ],
    "gloss": "to teach",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7024,7 +7024,7 @@
    ],
    "gloss": "no one",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7108,7 +7108,7 @@
    ],
    "gloss": "to sit",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -7120,7 +7120,7 @@
    ],
    "gloss": "seven",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7204,7 +7204,7 @@
    ],
    "gloss": "to pray",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7240,7 +7240,7 @@
    ],
    "gloss": "each",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -7312,7 +7312,7 @@
    ],
    "gloss": "to cast out",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7624,7 +7624,7 @@
    ],
    "gloss": "my",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7792,7 +7792,7 @@
    ],
    "gloss": "mountain, hill",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7936,7 +7936,7 @@
    ],
    "gloss": "to have, begin [existence]",
    "stats": {
-    "seen": 68,
+    "seen": 69,
     "missed": 0
    }
   },
@@ -7948,7 +7948,7 @@
    ],
    "gloss": "here",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -7972,7 +7972,7 @@
    ],
    "gloss": "stone",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8092,7 +8092,7 @@
    ],
    "gloss": "third",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8212,7 +8212,7 @@
    ],
    "gloss": "hope",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8260,7 +8260,7 @@
    ],
    "gloss": "promise",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8308,7 +8308,7 @@
    ],
    "gloss": "child",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8320,7 +8320,7 @@
    ],
    "gloss": "wisdom",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8584,7 +8584,7 @@
    ],
    "gloss": "to sit, place",
    "stats": {
-    "seen": 63,
+    "seen": 64,
     "missed": 1
    }
   },
@@ -8800,7 +8800,7 @@
    ],
    "gloss": "to bind",
    "stats": {
-    "seen": 67,
+    "seen": 68,
     "missed": 0
    }
   },
@@ -8956,7 +8956,7 @@
    ],
    "gloss": "always",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -8968,7 +8968,7 @@
    ],
    "gloss": "four",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -9004,7 +9004,7 @@
    ],
    "gloss": "to pass through",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -9196,7 +9196,7 @@
    ],
    "gloss": "to justify",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -9280,7 +9280,7 @@
    ],
    "gloss": "to thank",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -9497,7 +9497,7 @@
    ],
    "gloss": "then",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -9593,7 +9593,7 @@
    ],
    "gloss": "ministry",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -9605,7 +9605,7 @@
    ],
    "gloss": "to be weak",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -10001,7 +10001,7 @@
    ],
    "gloss": "to purify",
    "stats": {
-    "seen": 9,
+    "seen": 10,
     "missed": 1
    }
   },
@@ -10181,7 +10181,7 @@
    ],
    "gloss": "Passover",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -10265,7 +10265,7 @@
    ],
    "gloss": "to pass by, away",
    "stats": {
-    "seen": 65,
+    "seen": 66,
     "missed": 0
    }
   },
@@ -10301,7 +10301,7 @@
    ],
    "gloss": "true",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -10433,7 +10433,7 @@
    ],
    "gloss": "powerful",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -10457,7 +10457,7 @@
    ],
    "gloss": "to rule; consider",
    "stats": {
-    "seen": 65,
+    "seen": 66,
     "missed": 0
    }
   },
@@ -10541,7 +10541,7 @@
    ],
    "gloss": "mercy",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -10745,7 +10745,7 @@
    ],
    "gloss": "to come",
    "stats": {
-    "seen": 20,
+    "seen": 21,
     "missed": 1
    }
   },
@@ -10757,7 +10757,7 @@
    ],
    "gloss": "soldier",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -10949,7 +10949,7 @@
    ],
    "gloss": "to love",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -10985,7 +10985,7 @@
    ],
    "gloss": "to leave",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -11051,13 +11051,13 @@
   },
   "516": {
    "term": "πάρειμι",
-   "score": "2",
+   "score": "3",
    "source_lexemes": [
     148250
    ],
    "gloss": "to be present",
    "stats": {
-    "seen": 58,
+    "seen": 59,
     "missed": 1
    }
   },
@@ -11105,7 +11105,7 @@
    ],
    "gloss": "why?",
    "stats": {
-    "seen": 17,
+    "seen": 18,
     "missed": 0
    }
   },
@@ -11123,13 +11123,13 @@
   },
   "522": {
    "term": "προσέχω",
-   "score": "1",
+   "score": "2",
    "source_lexemes": [
     147233
    ],
    "gloss": "to watch over, watch out",
    "stats": {
-    "seen": 55,
+    "seen": 56,
     "missed": 2
    }
   },
@@ -11165,7 +11165,7 @@
    ],
    "gloss": "to take up; to kill",
    "stats": {
-    "seen": 64,
+    "seen": 65,
     "missed": 0
    }
   },
@@ -11309,7 +11309,7 @@
    ],
    "gloss": "unbelieving",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -11430,7 +11430,7 @@
    ],
    "gloss": "to be hungry",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -11562,7 +11562,7 @@
    ],
    "gloss": "to sell",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -11574,7 +11574,7 @@
    ],
    "gloss": "to need, ask, pray",
    "stats": {
-    "seen": 64,
+    "seen": 65,
     "missed": 0
    }
   },
@@ -11718,7 +11718,7 @@
    ],
    "gloss": "to place, set",
    "stats": {
-    "seen": 63,
+    "seen": 64,
     "missed": 0
    }
   },
@@ -11874,7 +11874,7 @@
    ],
    "gloss": "uncircumcision",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12103,7 +12103,7 @@
    ],
    "gloss": "to lead, go first",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12115,7 +12115,7 @@
    ],
    "gloss": "ruler",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12187,7 +12187,7 @@
    ],
    "gloss": "to test, reprove",
    "stats": {
-    "seen": 61,
+    "seen": 62,
     "missed": 0
    }
   },
@@ -12236,7 +12236,7 @@
    ],
    "gloss": "to take hold",
    "stats": {
-    "seen": 57,
+    "seen": 58,
     "missed": 0
    }
   },
@@ -12248,7 +12248,7 @@
    ],
    "gloss": "to set before, entrust",
    "stats": {
-    "seen": 54,
+    "seen": 55,
     "missed": 1
    }
   },
@@ -12344,7 +12344,7 @@
    ],
    "gloss": "to hide",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12417,7 +12417,7 @@
    ],
    "gloss": "wrath",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12429,7 +12429,7 @@
    ],
    "gloss": "revelation",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12577,7 +12577,7 @@
    ],
    "gloss": "often",
    "stats": {
-    "seen": 11,
+    "seen": 12,
     "missed": 0
    }
   },
@@ -12589,7 +12589,7 @@
    ],
    "gloss": "to go in",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12601,7 +12601,7 @@
    ],
    "gloss": "truly",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12673,7 +12673,7 @@
    ],
    "gloss": "to add to",
    "stats": {
-    "seen": 58,
+    "seen": 59,
     "missed": 0
    }
   },
@@ -12685,7 +12685,7 @@
    ],
    "gloss": "to receive; be distant",
    "stats": {
-    "seen": 58,
+    "seen": 59,
     "missed": 0
    }
   },
@@ -12757,7 +12757,7 @@
    ],
    "gloss": "gift",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12781,7 +12781,7 @@
    ],
    "gloss": "to hold back",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12805,7 +12805,7 @@
    ],
    "gloss": "to grasp, apprehend",
    "stats": {
-    "seen": 58,
+    "seen": 59,
     "missed": 0
    }
   },
@@ -12841,7 +12841,7 @@
    ],
    "gloss": "ready",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -12938,7 +12938,7 @@
    ],
    "gloss": "to stay behind, endure",
    "stats": {
-    "seen": 47,
+    "seen": 48,
     "missed": 0
    }
   },
@@ -13023,7 +13023,7 @@
    ],
    "gloss": "hypocrite",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -13047,7 +13047,7 @@
    ],
    "gloss": "to destroy, throw down",
    "stats": {
-    "seen": 38,
+    "seen": 39,
     "missed": 0
    }
   },
@@ -13119,7 +13119,7 @@
    ],
    "gloss": "suffering",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -13155,7 +13155,7 @@
    ],
    "gloss": "to examine",
    "stats": {
-    "seen": 33,
+    "seen": 34,
     "missed": 0
    }
   },
@@ -13217,7 +13217,7 @@
    ],
    "gloss": "to set aside, reject",
    "stats": {
-    "seen": 24,
+    "seen": 25,
     "missed": 0
    }
   },
@@ -13239,9 +13239,9 @@
    "source_lexemes": [
     148256
    ],
-   "gloss": "to seize",
+   "gloss": "to seize; conceive",
    "stats": {
-    "seen": 23,
+    "seen": 24,
     "missed": 0
    }
   },
@@ -13253,7 +13253,7 @@
    ],
    "gloss": "to present",
    "stats": {
-    "seen": 22,
+    "seen": 23,
     "missed": 0
    }
   },
@@ -13265,7 +13265,7 @@
    ],
    "gloss": "wonder",
    "stats": {
-    "seen": 18,
+    "seen": 19,
     "missed": 0
    }
   },
@@ -13410,7 +13410,7 @@
    ],
    "gloss": "to expect, wait for",
    "stats": {
-    "seen": 12,
+    "seen": 13,
     "missed": 0
    }
   },
@@ -13494,7 +13494,7 @@
    ],
    "gloss": "thief",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -13543,7 +13543,7 @@
    ],
    "gloss": "to be thirsty",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -13639,7 +13639,7 @@
    ],
    "gloss": "to charge",
    "stats": {
-    "seen": 10,
+    "seen": 11,
     "missed": 0
    }
   },
@@ -13676,7 +13676,7 @@
    ],
    "gloss": "to understand, know",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -13771,9 +13771,9 @@
    "source_lexemes": [
     148044
    ],
-   "gloss": "to beat up",
+   "gloss": "to beat",
    "stats": {
-    "seen": 5,
+    "seen": 6,
     "missed": 0
    }
   },
@@ -13833,7 +13833,7 @@
    ],
    "gloss": "to put up with",
    "stats": {
-    "seen": 3,
+    "seen": 4,
     "missed": 0
    }
   },
@@ -13917,7 +13917,7 @@
    ],
    "gloss": "to shake, greet",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -14205,7 +14205,7 @@
    ],
    "gloss": "to create",
    "stats": {
-    "seen": 7,
+    "seen": 8,
     "missed": 0
    }
   },
@@ -14301,7 +14301,7 @@
    ],
    "gloss": "inheritance",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -14493,7 +14493,7 @@
    ],
    "gloss": "evening",
    "stats": {
-    "seen": 6,
+    "seen": 7,
     "missed": 0
    }
   },
@@ -64352,6 +64352,29 @@
     "1": 3,
     "2": 1,
     "3": 755,
+    "4": 0
+   }
+  },
+  {
+   "date": "2019-11-19 11:47:59.095447",
+   "duration": "0:07:55.550658",
+   "secs_per_term": 4.62,
+   "deck": {
+    "3": 75,
+    "2": 1,
+    "1": 2,
+    "0": 25
+   },
+   "cycle": 6,
+   "changes": {
+    "1->2": 1,
+    "2->3": 1
+   },
+   "score_counts": {
+    "0": 4067,
+    "1": 2,
+    "2": 1,
+    "3": 756,
     "4": 0
    }
   }
