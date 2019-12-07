@@ -34,9 +34,9 @@ Every term has a score, which tells Mahir how often it should be shown. Scores r
 From within a Jupyter notebook, invoke:
 
 ```
-from iMahir import Study
+from iMahir import loadStudy
 
-study = Study('sample_vocab/hebrew.json')
+study = loadStudy('sample_vocab/hebrew.json')
 
 study.learn()
 ```
