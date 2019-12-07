@@ -1,4 +1,4 @@
-# Mahir
+# Mahir [![DOI](https://zenodo.org/badge/86166512.svg)](https://zenodo.org/badge/latestdoi/86166512)
 >   עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה
 
 Corpus-driven vocabulary review program for use with [Text-Fabric](https://annotation.github.io/text-fabric/) and Jupyter notebook.
