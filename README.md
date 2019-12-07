@@ -23,7 +23,7 @@ The review strategy of Mahir is designed for reviewing large amounts of vocabula
 
 ## Set-Up and Use
 
- your corpus will need to be in the [Text-Fabric corpus library](https://annotation.github.io/text-fabric/About/Corpora/). This requires 1) a corpus in TF format (instructions [here](https://annotation.github.io/text-fabric/Create/Convert/)), and 2) an app written to fit the corpus (instructions [here](https://annotation.github.io/text-fabric/Implementation/Apps/)). Finally, each of these elements need to be stored in a Github repository. The first should be in its own repo with a top-level directory called `tf`. The second must be stored under the `annotation/` organization's github. Please contact me for details. Of course, you may also simply rely on the dozens of corpora already available in Text-Fabric.
+ your corpus will need to be in the [Text-Fabric corpus library](https://annotation.github.io/text-fabric/About/Corpora/). This requires 1) a corpus in TF format (instructions [here](https://annotation.github.io/text-fabric/Create/Convert/)), and 2) an app written to fit the corpus (instructions [here](https://annotation.github.io/text-fabric/Implementation/Apps/)). Finally, each of these elements need to be stored in a Github repository. The first should be in its own repo with a top-level directory called `tf`. The second must be stored under the `annotation/` organization's github. Please contact me for details. Of course, you may also simply rely on the numerous corpora already available in Text-Fabric.
 
 You will also need a vocabulary .json file formatted in a way Mahir expects. See the [sample vocabulary json](sample_vocab/hebrew.json) to see how to do this.
 
