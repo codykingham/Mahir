@@ -1,8 +1,7 @@
+# Mahir
 >   עָלָה מִבָּבֶל וְהוּא־סֹפֵר מָהִיר בְּתוֹרַת משֶׁה
 
 Corpus-driven vocabulary review program for use with [Text-Fabric](https://annotation.github.io/text-fabric/) and Jupyter notebook.
-
-© 2020 Cody Kingham
 
 > <img src="docs/images/review_ex.png"><br>
 > *Example of Mahir Study Session in the Hebrew Bible*
@@ -73,4 +72,6 @@ how this goes in practice.
 Also to do: add argparser to run Mahir with vocabulary file as a required argument instead of having to edit config file. Does Mahir really need a config file?
 I would like to phase it out soon.
 
-*This program has been built and tested on Mac OS 10.12.4 with Python 3.6. It has not yet been tested on other systems. I am sure some of the display features may be quirky in other terminals. Please let me know where you see room for improvement.*
+<hr>
+
+© 2020 Cody Kingham, MIT License
