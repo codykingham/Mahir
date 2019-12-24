@@ -254,6 +254,12 @@ class Study:
 
                 # edit lexeme nodes on the fly
                 elif user_instruct == 'l':
+
+                    # confirm lexeme edit
+                    confirm = self.good_choice({'y','n'}, ask='Edit lex nodes?')
+                    if confirm == 'n':
+                        break
+
                     lexs = terms_dict[term_ID].get('source_lexemes', )
                     new_lexs = self.good_choice(
                         set(), ask=f'edit lex nodes {lexs}')
