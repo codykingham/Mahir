@@ -86,11 +86,11 @@ def blank(vocdat):
         'description': vocdat['description'],
         'app_data': vocdat['app_data'],
         'cycle_data': vocdat['cycle_data'],
-        'score_config': vocdat['score_config'],
+        'scoreconfig': vocdat['scoreconfig'],
         'term_queues': {
-            score:[] for score in term_queues
+            score:[] for score in vocdat['term_queues']
         },
-        'terms_dict': voc_dat['terms_dict'],
+        'terms_dict': vocdat['terms_dict'],
         'stats': [],
     }
     
@@ -107,7 +107,7 @@ def blank(vocdat):
     }
 
     # reset individual term stats
-    for term, tdat in new_vocdat['terms_dict']:
+    for term, tdat in new_vocdat['terms_dict'].items():
         tdat['stats'] = {'seen':0,'missed':0}
 
     return new_vocdat
