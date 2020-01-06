@@ -3,6 +3,7 @@ Tools for maintaining and editing Mahir vocab jsons
 '''
 
 import json
+from datetime import datetime
 
 def save(data, file):
     '''
@@ -75,11 +76,38 @@ def merge(vocdat, ids):
         
     return vocdat
 
-def blank(vocdat, ids):
+def blank(vocdat):
     '''
     Prepares a fresh version of a vocab set
     '''
+    new_vocdat = {
+        'name': vocdat['name'],
+        'init_date': str(datetime.now()),
+        'description': vocdat['description'],
+        'app_data': vocdat['app_data'],
+        'cycle_data': vocdat['cycle_data'],
+        'score_config': vocdat['score_config'],
+        'term_queues': {
+            score:[] for score in term_queues
+        },
+        'terms_dict': voc_dat['terms_dict'],
+        'stats': [],
+    }
     
-    # reset starting scores
-#     for score in vocdat['score_starts']:
-#         vocdat['score_starts']
+    # set score 0 queue
+    new_vocdat['term_queues']['0'] = [
+        id for id in new_vocdat['terms_dict']
+    ]
+
+    # zero out and configure cycle_data
+    new_vocdat['cycle_data']['ncycle'] = 0
+    new_vocdat['cycle_data']['total_sessions'] = 0
+    new_vocdat['cycle_data']['score_starts'] = {
+        score:len(queue) for score, queue in new_vocdat['term_queues'].items()
+    }
+
+    # reset individual term stats
+    for term, tdat in new_vocdat['terms_dict']:
+        tdat['stats'] = {'seen':0,'missed':0}
+
+    return new_vocdat
