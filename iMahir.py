@@ -192,8 +192,6 @@ class Study:
                 # start timer upon user instruct if not already
                 if self.start_time is None:
                     self.start_time = datetime.now()
-                    print('Resuming session...')
-                    time.sleep(0.5)
               
                 # show term glosses and data
                 if user_instruct in {''}:
@@ -270,6 +268,7 @@ class Study:
                 # pause timer
                 elif user_instruct == 'p':
                     pause_time()
+                    self.save_session(term_n) # save a back up just in case
                     print('Session time paused...')
 
                 # allow for saving sessions
