@@ -43,7 +43,9 @@ def loadStudy(vocab_json, tf_app='bhsa'):
         if savefile is not None:
             lastmod = datetime.fromtimestamp(os.path.getmtime(savefile))
             elapsed = ((datetime.now() - lastmod).total_seconds() / 60) / 60
-            if elapsed > 15:
+            
+            # disable file deletions for now
+            if False: #elapsed > 15:
                 print('\nOld session found but expired! Deleting it!\n')
                 savefile.unlink() # bye bye :) 
 
@@ -557,6 +559,10 @@ class Session:
         # add quotas from scores and advance known queues
         for score, quota in score2quota.items():
             for i in range(0, quota):
+
+                # stop if no more terms
+                if len(term_queues[score]) == 0 or len(term_queues[score]) < i+1:
+                    continue
 
                 # add new terms to deck
                 # move known terms to back of their queues
