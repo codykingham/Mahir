@@ -561,8 +561,8 @@ class Session:
             for i in range(0, quota):
 
                 # stop if no more terms
-                if len(term_queues[score]) == 0 or len(term_queues[score]) < i+1:
-                    continue
+                if len(term_queues[score]) < i+1:
+                    break
 
                 # add new terms to deck
                 # move known terms to back of their queues
