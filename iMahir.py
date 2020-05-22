@@ -218,7 +218,7 @@ class Study:
                     # show parse string for BHSA app
                     if self.TF.appName == 'bhsa':
                         display(HTML(
-                            f'<span style="font-family:Times New Roman; font-size:14pt">{parse_string} </span>')
+                            f'<span style="font-family:Times New Roman; font-size:10pt">{parse_string} </span>')
                         )
 
                     display(HTML(
