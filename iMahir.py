@@ -149,7 +149,7 @@ class Study:
 
         # make shortform TF methods / data names
         glossfeat, freqfeat, wordtype, context = self.glossfeat, self.freqfeat, self.wordtype, self.context
-        L, T, Fs = self.L, self.T, self.TF.api.Fs
+        F, L, T, Fs = self.F, self.L, self.T, self.TF.api.Fs
         
         # begin UI loop
         term_n = self.term_n
@@ -169,6 +169,19 @@ class Study:
             ex_passage = L.u(ex_instance, context)[0]
             std_glosses = [(lx, Fs(glossfeat).v(lx), Fs(freqfeat).v(lx))
                                for lx in lexs]
+            
+            # build parse string for BHSA app
+            if self.TF.appName == 'bhsa':
+                gender = F.gn.v(ex_instance)
+                number = F.nu.v(ex_instance)
+                if F.pdp.v(ex_instance) == 'verb':
+                    person = F.ps.v(ex_instance)
+                    stem = F.vs.v(ex_instance)
+                    tense = F.vt.v(ex_instance)
+                    parse_string = f'{stem}.{tense}.{person}.{gender}.{number}'
+                else:
+                    state = F.st.v(ex_instance)
+                    parse_string = f'{gender}.{number}.{state}'
 
             # -- display passage prompt and score box -- 
             clear_output()
@@ -201,6 +214,13 @@ class Study:
                         f'<span style="font-family:Times New Roman; font-size:16pt">{term_text}</span>'))
                     display(HTML(
                         f'<span style="font-family:Times New Roman; font-size:14pt">{gloss} </span>'))
+
+                    # show parse string for BHSA app
+                    if self.TF.appName == 'bhsa':
+                        display(HTML(
+                            f'<span style="font-family:Times New Roman; font-size:14pt">{parse_string} </span>')
+                        )
+
                     display(HTML(
                         f'<span style="font-family:Times New Roman; font-size:14pt">{score}</span>'))
                     display(HTML(
