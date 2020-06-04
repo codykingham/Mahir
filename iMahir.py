@@ -151,6 +151,9 @@ class Study:
         glossfeat, freqfeat, wordtype, context = self.glossfeat, self.freqfeat, self.wordtype, self.context
         F, L, T, Fs = self.F, self.L, self.T, self.TF.api.Fs
         
+        # allow toggling of progress indicator
+        show_progress = True
+
         # begin UI loop
         term_n = self.term_n
         while True:
@@ -182,11 +185,14 @@ class Study:
                 else:
                     state = F.st.v(ex_instance)
                     parse_string = f'{gender}.{number}.{state}'
-
+            
             # -- display passage prompt and score box -- 
             clear_output()
-            display(HTML(
-                f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>'))
+            
+            if show_progress:
+                display(
+                    HTML(f'<span style="font-family:Times New Roman; font-size:14pt">{term_n+1}/{len(deck)}</span>')
+                )
 
             highlights = {'0': 'pink'}
             highlight = highlights.get(score, 'lightgreen') # default to light green
@@ -201,7 +207,7 @@ class Study:
                 user_instruct = self.good_choice(
                     {'', ',', '.', 'q', 'c', 
                      'e', 'l', '>', '<', 'p',
-                     'save'}
+                     'save', 'hprog'}
                     , ask='', allowNumber=True)
                 
                 # start timer upon user instruct if not already
@@ -308,6 +314,11 @@ class Study:
                         raise Exception('Quit initiated. Nothing saved.')
                     else:
                         break
+
+                # toggle progress indicator
+                elif user_instruct == 'hprog':
+                    show_progress = not show_progress
+                    break
 
             # launch end program sequence
             if term_n > len(deck)-1:
