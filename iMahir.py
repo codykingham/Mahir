@@ -90,7 +90,7 @@ class Study:
         
         # load set data
         if not set_data:
-            with open(vocab_json) as setfile:
+            with open(vocab_json, encoding='utf8') as setfile:
                 set_data = json.load(setfile)
                 self.set_data = set_data
         
@@ -525,7 +525,7 @@ class Study:
         Save json set dat with proper encoding
         and indentation.
         '''
-        with open(file, 'w') as outfile:
+        with open(file, 'w', encoding='utf8') as outfile:
             json.dump(set_data, outfile, indent=1, ensure_ascii=False)
 
 
