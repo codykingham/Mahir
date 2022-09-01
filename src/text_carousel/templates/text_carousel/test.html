@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Text Carousel</title>
+</head>
+<body>
+
+<h1>Welcome to the (Test) Carousel!</h1>
+
+<ul>
+    {% for bhsa_node in bhsa_nodes %}
+    <li>
+        {{ bhsa_node.book }} {{ bhsa_node.chapter }}:{{ bhsa_node.verse }}
+        - {% for word in bhsa_node.oslot_list %}{{ word.text }}{% endfor %}
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

@@ -1,9 +1,10 @@
-# Mahir: Contextual Vocabulary Acquisition for Readers of Literature
+# Mahir
+## Contextual Vocabulary Acquisition for Readers of Literature
 
 > וְהֽוּא־סֹפֵ֤ר מָהִיר֙ בְּתֹורַ֣ת מֹשֶׁ֔ה
 
 Mahir is a vocabulary acquisition app that focuses on regular, in-context exposure to lexical items within 
-literary corpora. A number of vocabulary apps already exist which approach vocabulary acquisition in different
+select literary corpora. A number of vocabulary apps already exist which approach vocabulary acquisition in different
 ways. For example, some solutions simply show a lexical item by itself, relying on algorithms to track
 visited items and those due for review. Other methods employ a living-language approach, where terms are paired with 
 images or sounds, thus providing invaluable cognitive context for remembering items. However, when the learning goal
