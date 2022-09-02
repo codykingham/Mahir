@@ -35,18 +35,6 @@ function getHebrewText(){
 };
 
 
-// Update color progressively
-function changeColor() {
-    const flagColor = 'green'
-    let hebText = getHebrewText()
-    if (hebText.style.color === ''){
-        hebText.style.color = flagColor;
-    } else if (hebText.style.color === flagColor){
-        hebText.style.color = ''
-    };
-}
-
-
 document.addEventListener('keydown', (event) => {
     const arrows = [
         'ArrowRight', 'ArrowLeft',
