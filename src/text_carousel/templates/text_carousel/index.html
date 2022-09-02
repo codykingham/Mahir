@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'text_carousel/style.css' %}">
     <title>Text Carousel</title>
 </head>
 <body>
-Welcome to the real carousel!
+
+<div class="interface">
+    <div class="textContent">
+        <div class="refText">
+            <span>
+                {{ bhsaNode.book }} {{ bhsaNode.chapter }}:{{ bhsaNode.verse }}
+            </span>
+        </div>
+        <div class="textSlide">
+            <span class="hebrewText">
+                {% for word in bhsaNode.oslot_list %}{{ word.text }}{% endfor %}
+            </span>
+        </div>
+    </div>
+</div>
+
+<form id="statusForm" action="{% url 'text_carousel:index' %}" method="get">
+    {% csrf_token %}
+    <input id="myInput" type="hidden" name="input" value="">
+</form>
+
+<script>
+
+function getHebrewText(){
+    return document.getElementsByClassName('hebrewText')[0];
+};
+
+
+// Update color progressively
+function changeColor() {
+    const flagColor = 'green'
+    let hebText = getHebrewText()
+    if (hebText.style.color === ''){
+        hebText.style.color = flagColor;
+    } else if (hebText.style.color === flagColor){
+        hebText.style.color = ''
+    };
+}
+
+
+document.addEventListener('keydown', (event) => {
+    const arrows = [
+        'ArrowRight', 'ArrowLeft',
+        'ArrowDown', 'ArrowUp',
+    ];
+    if (arrows.includes(event.key)) {
+        let form = document.getElementById("statusForm");
+        let input = document.getElementById("myInput");
+        input.value = event.key;
+        form.submit();
+    }
+});
+
+</script>
+
 </body>
 </html>

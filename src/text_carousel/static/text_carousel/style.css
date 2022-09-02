@@ -1,0 +1,43 @@
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+@font-face {
+    font-family: "SBL Biblit";
+    src: "SBL_BLit.ttf" format("truetype");
+}
+
+
+.interface {
+    margin: auto;
+    padding-top: 15%;
+    height: 50%;
+    width: 50%;
+}
+
+.textContent {
+    margin: auto;
+}
+
+.refText {
+    font-family: "SBL Biblit";
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.textSlide {
+    font-family: "SBL Biblit";
+    text-align: center;
+    font-size: 30px;
+}
+
+/*
+* {
+
+   outline:2px blue solid;
+ }
+ */
